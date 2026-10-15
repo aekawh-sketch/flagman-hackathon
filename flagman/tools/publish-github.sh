@@ -28,6 +28,10 @@ sync_dir "$ROOT/flagman" "$REPO/flagman" \
   --exclude='/android/keystore/' --exclude='/android/Flagman.apk' --exclude='/android/local.properties'
 sync_dir "$ROOT/istok" "$REPO/istok" --exclude='/server/orders/'
 sync_dir "$ROOT/supplier" "$REPO/supplier"
+# Готовые приложения — на виду, в apps/ в корне: Android-приложение (1–2 МБ) лежит прямо в репозитории.
+# Программа для Windows (~300 МБ) в репозиторий не помещается (лимит GitHub — 100 МБ) — она в Releases.
+mkdir -p "$REPO/apps"
+[ -f "$ROOT/flagman/android/Flagman.apk" ] && cp "$ROOT/flagman/android/Flagman.apk" "$REPO/apps/Flagman.apk"
 
 # Последний рубеж: ни ключей, ни дампов, ни файлов .env
 cd "$REPO"
