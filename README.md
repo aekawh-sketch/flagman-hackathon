@@ -6,8 +6,8 @@
 
 ## Скачать приложения
 
-- **Android** — [apps/Flagman.apk](apps/Flagman.apk)
-- **Windows** — `Flagman-win-x64.zip` в разделе **Releases** (справа на главной странице репозитория)
+- **Android** — [apps/Flagman.apk](apps/Flagman.apk) (то же — в [Releases](https://github.com/aekawh-sketch/flagman-hackathon/releases/latest))
+- **Windows** — [Flagman-win-x64.zip](https://github.com/aekawh-sketch/flagman-hackathon/releases/latest/download/Flagman-win-x64.zip) (307 МБ, раздел [Releases](https://github.com/aekawh-sketch/flagman-hackathon/releases/latest))
 
 Как поставить — [apps/README.md](apps/README.md).
 

@@ -3,7 +3,7 @@
 | Платформа | Файл | Как поставить |
 |---|---|---|
 | **Android** 8+ | [Flagman.apk](Flagman.apk) | скачать на телефон и открыть; Android спросит разрешение на установку из этого источника — разрешить |
-| **Windows** 10/11 (64 бита) | `Flagman-win-x64.zip` — в разделе **Releases** справа на главной странице репозитория | распаковать целиком в `C:\Flagman`, запустить `Flagman.exe` |
+| **Windows** 10/11 (64 бита) | [Flagman-win-x64.zip](https://github.com/aekawh-sketch/flagman-hackathon/releases/latest/download/Flagman-win-x64.zip) — 307 МБ, раздел [Releases](https://github.com/aekawh-sketch/flagman-hackathon/releases/latest) | распаковать целиком в `C:\Flagman`, запустить `Flagman.exe` |
 
 Оба приложения сразу подключаются к складу на сервере: http://31.76.28.248:8085 — те же данные, что в браузере.
 Вход: «Демо-вход» → любая роль, пароль `demo1234`.
