@@ -1,0 +1,5 @@
+node_modules/
+# скачанные Java и PostgreSQL для Windows, сборка и её итог
+.cache/
+stage/
+out/

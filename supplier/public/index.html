@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ФрешПоставка — портал поставщика</title>
+  <link rel="icon" href="logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="top">
+    <div class="wrap top-in">
+      <a class="brand" href="/">
+        <img src="logo.svg" alt="" width="34" height="34">
+        <span><b>ФрешПоставка</b><small>портал поставщика</small></span>
+      </a>
+      <div class="conn" id="conn"><span class="dot"></span><span>Подключаемся к складу…</span></div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <h1>Отгрузка в ресторан</h1>
+      <p>Соберите накладную — она уйдёт в склад ресторана по API, как из настоящей учётной системы поставщика.
+        Справа видно ровно то, что отправлено, и что ответил склад. Ниже — что ресторан сделал с отгрузкой при приёмке.</p>
+    </section>
+
+    <div class="grid">
+      <form class="card" id="form" autocomplete="off">
+        <div class="card-h">
+          <h2>Накладная</h2>
+          <div class="seg" role="group" aria-label="Формат">
+            <button type="button" data-format="json" aria-pressed="true">JSON</button>
+            <button type="button" data-format="xml" aria-pressed="false">XML</button>
+          </div>
+        </div>
+
+        <div class="fields">
+          <label class="f f-wide"><span>Ресторан <em>— все рестораны платформы, новые сверху</em></span><select id="rest" required></select></label>
+          <label class="f"><span>Точка доставки</span><select id="loc" required></select></label>
+          <label class="f"><span>Номер накладной</span><input id="number" required maxlength="40"></label>
+          <label class="f f-wide">
+            <span>Дата отгрузки, МСК <em>— от неё ресторан считает сроки</em></span>
+            <div class="row">
+              <input id="created" type="datetime-local" required>
+              <div class="chips" id="backdate">
+                <button type="button" data-days="0">сейчас</button>
+                <button type="button" data-days="1">−1 день</button>
+                <button type="button" data-days="3">−3 дня</button>
+              </div>
+            </div>
+          </label>
+        </div>
+
+        <div class="lines-h">
+          <h3>Позиции</h3>
+          <div class="row">
+            <button type="button" class="btn ghost sm" id="typical">Типовая отгрузка</button>
+            <button type="button" class="btn ghost sm" id="addLine">+ Позиция</button>
+          </div>
+        </div>
+        <p class="note" id="emptyCat" hidden>У этого ресторана каталог пока пуст — он только что подключился. Добавляйте
+          позиции как «+ Новый продукт»: ресторан заведёт карточку и проверит её при приёмке.</p>
+        <div id="lines" class="lines"></div>
+
+        <div class="total" id="total"></div>
+        <div class="actions">
+          <button type="submit" class="btn primary" id="sendBtn">Отправить на склад</button>
+          <button type="button" class="btn ghost" id="resendBtn" hidden title="Тот же документ ещё раз: склад не должен задвоить поставку">
+            Отправить ещё раз</button>
+        </div>
+      </form>
+
+      <section class="card api">
+        <div class="card-h">
+          <h2>Запрос в API склада</h2>
+          <span class="muted" id="reqMeta"></span>
+        </div>
+        <pre class="code" id="reqBody">Соберите накладную слева</pre>
+        <div class="resp" id="resp" hidden>
+          <div class="resp-h"><span class="code-badge" id="respCode"></span><span id="respText"></span></div>
+          <pre class="code small" id="respBody"></pre>
+        </div>
+      </section>
+    </div>
+
+    <section class="card">
+      <div class="card-h">
+        <h2>Наши отгрузки в ресторан</h2>
+        <span class="muted">обновляется само</span>
+      </div>
+      <div id="history" class="history"><p class="muted">Пока ни одной отгрузки</p></div>
+    </section>
+  </main>
+
+  <footer class="wrap foot">
+    Демо внешней системы для склада «Флагман»: ключ API хранится на сервере портала с единственным правом
+    <code>deliveries:create</code> — прислать поставку. Дальше решает ресторан: управляющий одобряет целиком или частично,
+    кладовщик принимает по факту.
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script type="module" src="app.js"></script>
+</body>
+</html>

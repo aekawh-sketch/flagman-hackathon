@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="teal">#0D9488</color>
+    <color name="orange">#F97316</color>
+    <color name="page">#FFFFFF</color>
+
+    <style name="Theme.Flagman.Base" parent="android:Theme.Material.Light.NoActionBar">
+        <item name="android:colorPrimary">@color/teal</item>
+        <item name="android:colorPrimaryDark">@color/page</item>
+        <item name="android:colorAccent">@color/teal</item>
+        <item name="android:windowBackground">@color/page</item>
+        <item name="android:statusBarColor">@color/page</item>
+        <item name="android:navigationBarColor">@color/page</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+
+    <style name="Theme.Flagman" parent="Theme.Flagman.Base" />
+</resources>

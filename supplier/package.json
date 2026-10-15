@@ -1,0 +1,13 @@
+{
+  "name": "supplier-portal",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Портал поставщика «ФрешПоставка»: отправляет поставки в склад ресторана (Флагман) по API",
+  "type": "module",
+  "scripts": {
+    "start": "node --env-file=.env server.js"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

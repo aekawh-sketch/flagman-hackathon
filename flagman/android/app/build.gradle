@@ -1,0 +1,58 @@
+plugins {
+    id "com.android.application"
+}
+
+// Адрес склада по умолчанию: ./gradlew assembleRelease -PserverUrl=http://IP:8085 (или build-apk.sh АДРЕС).
+// В самом приложении адрес можно сменить: долгое нажатие на иконку → «Адрес сервера».
+def serverUrl = (project.findProperty("serverUrl") ?: "http://31.76.28.248:8085").toString().replaceAll('/+$', '')
+
+// Ключ подписи — keystore/ рядом (его создаёт build-apk.sh); без него релиз подписывается отладочным ключом
+def ksProps = new Properties()
+def ksFile = rootProject.file("keystore/keystore.properties")
+if (ksFile.exists()) ksFile.withInputStream { ksProps.load(it) }
+
+android {
+    namespace "ru.sphere.flagman"
+    compileSdk 36
+
+    defaultConfig {
+        applicationId "ru.sphere.flagman"
+        minSdk 26
+        targetSdk 35
+        versionCode 2
+        versionName "1.1"
+        buildConfigField "String", "SERVER_URL", "\"${serverUrl}\""
+    }
+
+    buildFeatures {
+        buildConfig true
+    }
+
+    signingConfigs {
+        release {
+            if (ksFile.exists()) {
+                storeFile rootProject.file("keystore/" + ksProps["storeFile"])
+                storePassword ksProps["storePassword"]
+                keyAlias ksProps["keyAlias"]
+                keyPassword ksProps["keyPassword"]
+            }
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            signingConfig ksFile.exists() ? signingConfigs.release : signingConfigs.debug
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+}
+
+dependencies {
+    // Сканер QR этикеток — готовый экран из сервисов Google Play: разрешение на камеру приложению не нужно
+    implementation "com.google.android.gms:play-services-code-scanner:16.1.0"
+}

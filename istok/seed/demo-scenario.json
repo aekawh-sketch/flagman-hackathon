@@ -1,0 +1,80 @@
+{
+  "_comment": "Особые стартовые партии: hoursLeft — часов до конца срока на момент старта",
+  "scenario": {
+    "shrimp": [
+      {
+        "qty": 40,
+        "hoursLeft": 50,
+        "supplier": "ООО «Морепродукт»"
+      },
+      {
+        "qty": 600,
+        "hoursLeft": -6,
+        "supplier": "ООО «Морепродукт»"
+      }
+    ],
+    "dorblu": [],
+    "salmon": [
+      {
+        "qty": 2200,
+        "hoursLeft": 14,
+        "supplier": "ООО «Норд Фиш»"
+      },
+      {
+        "qty": 900,
+        "hoursLeft": 66,
+        "supplier": "ООО «Норд Фиш»"
+      }
+    ],
+    "mozzarella": [
+      {
+        "qty": 4200,
+        "hoursLeft": 30,
+        "supplier": "Сыроварня «Кубань»"
+      },
+      {
+        "qty": 2000,
+        "hoursLeft": 200,
+        "supplier": "Сыроварня «Кубань»"
+      }
+    ],
+    "milk": [
+      {
+        "qty": 7000,
+        "hoursLeft": 20,
+        "supplier": "АО «Молочный край»"
+      },
+      {
+        "qty": 3000,
+        "hoursLeft": 110,
+        "supplier": "АО «Молочный край»"
+      }
+    ],
+    "lettuce": [
+      {
+        "qty": 800,
+        "hoursLeft": -3,
+        "supplier": "ИП Гринёв"
+      },
+      {
+        "qty": 1200,
+        "hoursLeft": 60,
+        "supplier": "ИП Гринёв"
+      }
+    ],
+    "berries": [
+      {
+        "qty": 1400,
+        "hoursLeft": 9,
+        "supplier": "ИП Гринёв"
+      }
+    ],
+    "minced_meat": [
+      {
+        "qty": 900,
+        "hoursLeft": 22,
+        "supplier": "Мясокомбинат «Юг»"
+      }
+    ]
+  }
+}

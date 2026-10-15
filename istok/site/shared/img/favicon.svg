@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="276 228 700 780">
+  <defs>
+    <clipPath id="t"><path d="M250 200 H1000 V668 L984 668 Q625 574 262 706 Z"/></clipPath>
+    <clipPath id="b"><path d="M262 706 Q625 574 984 668 V1030 H262 Z"/></clipPath>
+    <mask id="m" maskUnits="userSpaceOnUse" x="250" y="200" width="760" height="840">
+      <rect x="250" y="200" width="760" height="840" fill="#fff"/>
+      <g fill="none" stroke="#000" stroke-width="27">
+        <path d="M262 706 Q625 574 984 668" stroke-width="30"/>
+        <path d="M262 880 Q625 704 984 698"/>
+        <path d="M398 1018 Q640 798 984 748"/>
+        <path d="M664 1016 Q800 898 984 850"/>
+      </g>
+    </mask>
+  </defs>
+  <g mask="url(#m)" fill="#E2603F">
+    <g clip-path="url(#t)">
+      <circle cx="625" cy="580" r="315" fill="none" stroke="#E2603F" stroke-width="54"/>
+      <circle cx="625" cy="612" r="187"/>
+    </g>
+    <path clip-path="url(#b)" d="M290 640 H960 V865 Q960 1000 825 1000 H410 Q290 1000 290 880 Z"/>
+  </g>
+</svg>

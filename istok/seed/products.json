@@ -1,0 +1,708 @@
+{
+  "groups": {
+    "meat": "Мясо",
+    "poultry": "Птица",
+    "fish": "Рыба и морепродукты",
+    "dairy": "Молочное и сыры",
+    "veg": "Овощи и зелень",
+    "grocery": "Бакалея и заготовки",
+    "bakery": "Хлеб и тесто",
+    "sauce": "Соусы",
+    "drinks": "Напитки и сиропы"
+  },
+  "items": [
+    {
+      "id": "pork_patty",
+      "name": "Котлета свиная",
+      "unit": "pcs",
+      "shelf_hours": 96,
+      "group": "meat",
+      "cost": 55,
+      "pack": 20
+    },
+    {
+      "id": "beef_patty",
+      "name": "Котлета говяжья",
+      "unit": "pcs",
+      "shelf_hours": 72,
+      "group": "meat",
+      "cost": 85,
+      "pack": 20
+    },
+    {
+      "id": "bacon",
+      "name": "Бекон",
+      "unit": "g",
+      "shelf_hours": 168,
+      "group": "meat",
+      "cost": 780,
+      "pack": 1000
+    },
+    {
+      "id": "minced_meat",
+      "name": "Фарш свино-говяжий",
+      "unit": "g",
+      "shelf_hours": 48,
+      "group": "meat",
+      "cost": 520,
+      "pack": 2000
+    },
+    {
+      "id": "pork",
+      "name": "Свинина томлёная",
+      "unit": "g",
+      "shelf_hours": 72,
+      "group": "meat",
+      "cost": 560,
+      "pack": 2000
+    },
+    {
+      "id": "ribs",
+      "name": "Рёбра свиные",
+      "unit": "g",
+      "shelf_hours": 72,
+      "group": "meat",
+      "cost": 490,
+      "pack": 3000
+    },
+    {
+      "id": "ham",
+      "name": "Ветчина",
+      "unit": "g",
+      "shelf_hours": 168,
+      "group": "meat",
+      "cost": 610,
+      "pack": 1000
+    },
+    {
+      "id": "pepperoni",
+      "name": "Пепперони",
+      "unit": "g",
+      "shelf_hours": 480,
+      "group": "meat",
+      "cost": 980,
+      "pack": 1000
+    },
+    {
+      "id": "chicken_fillet",
+      "name": "Куриное филе",
+      "unit": "g",
+      "shelf_hours": 72,
+      "group": "poultry",
+      "cost": 420,
+      "pack": 2000
+    },
+    {
+      "id": "smoked_chicken",
+      "name": "Курица копчёная",
+      "unit": "g",
+      "shelf_hours": 168,
+      "group": "poultry",
+      "cost": 640,
+      "pack": 1000
+    },
+    {
+      "id": "chicken_patty",
+      "name": "Котлета куриная",
+      "unit": "pcs",
+      "shelf_hours": 96,
+      "group": "poultry",
+      "cost": 45,
+      "pack": 20
+    },
+    {
+      "id": "schnitzel",
+      "name": "Шницель куриный",
+      "unit": "pcs",
+      "shelf_hours": 96,
+      "group": "poultry",
+      "cost": 60,
+      "pack": 20
+    },
+    {
+      "id": "nuggets",
+      "name": "Наггетсы (зам.)",
+      "unit": "g",
+      "shelf_hours": 720,
+      "group": "poultry",
+      "cost": 460,
+      "pack": 2000
+    },
+    {
+      "id": "wings",
+      "name": "Куриные крылья",
+      "unit": "g",
+      "shelf_hours": 72,
+      "group": "poultry",
+      "cost": 330,
+      "pack": 2000
+    },
+    {
+      "id": "salmon",
+      "name": "Лосось",
+      "unit": "g",
+      "shelf_hours": 72,
+      "group": "fish",
+      "cost": 1900,
+      "pack": 1000
+    },
+    {
+      "id": "shrimp",
+      "name": "Креветки",
+      "unit": "g",
+      "shelf_hours": 96,
+      "group": "fish",
+      "cost": 1500,
+      "pack": 1000
+    },
+    {
+      "id": "crab_mix",
+      "name": "Крабовый замес",
+      "unit": "g",
+      "shelf_hours": 72,
+      "group": "fish",
+      "cost": 620,
+      "pack": 1000
+    },
+    {
+      "id": "seafood_mix",
+      "name": "Морской коктейль",
+      "unit": "g",
+      "shelf_hours": 96,
+      "group": "fish",
+      "cost": 980,
+      "pack": 1000
+    },
+    {
+      "id": "masago",
+      "name": "Икра масаго",
+      "unit": "g",
+      "shelf_hours": 336,
+      "group": "fish",
+      "cost": 2400,
+      "pack": 500
+    },
+    {
+      "id": "gouda",
+      "name": "Сыр гауда",
+      "unit": "g",
+      "shelf_hours": 336,
+      "group": "dairy",
+      "cost": 890,
+      "pack": 1000
+    },
+    {
+      "id": "cheddar",
+      "name": "Сыр чеддер",
+      "unit": "g",
+      "shelf_hours": 336,
+      "group": "dairy",
+      "cost": 950,
+      "pack": 1000
+    },
+    {
+      "id": "mozzarella",
+      "name": "Моцарелла",
+      "unit": "g",
+      "shelf_hours": 240,
+      "group": "dairy",
+      "cost": 820,
+      "pack": 2000
+    },
+    {
+      "id": "parmesan",
+      "name": "Пармезан",
+      "unit": "g",
+      "shelf_hours": 720,
+      "group": "dairy",
+      "cost": 1900,
+      "pack": 500
+    },
+    {
+      "id": "dorblu",
+      "name": "Сыр дор блю",
+      "unit": "g",
+      "shelf_hours": 504,
+      "group": "dairy",
+      "cost": 2300,
+      "pack": 500
+    },
+    {
+      "id": "cream_cheese",
+      "name": "Сливочный сыр",
+      "unit": "g",
+      "shelf_hours": 240,
+      "group": "dairy",
+      "cost": 990,
+      "pack": 1000
+    },
+    {
+      "id": "feta",
+      "name": "Брынза",
+      "unit": "g",
+      "shelf_hours": 240,
+      "group": "dairy",
+      "cost": 720,
+      "pack": 1000
+    },
+    {
+      "id": "cottage",
+      "name": "Творог",
+      "unit": "g",
+      "shelf_hours": 120,
+      "group": "dairy",
+      "cost": 420,
+      "pack": 1000
+    },
+    {
+      "id": "milk",
+      "name": "Молоко 3,2%",
+      "unit": "ml",
+      "shelf_hours": 120,
+      "group": "dairy",
+      "cost": 95,
+      "pack": 1000
+    },
+    {
+      "id": "alt_milk",
+      "name": "Альтернативное молоко",
+      "unit": "ml",
+      "shelf_hours": 720,
+      "group": "dairy",
+      "cost": 330,
+      "pack": 1000
+    },
+    {
+      "id": "cream",
+      "name": "Сливки 33%",
+      "unit": "ml",
+      "shelf_hours": 168,
+      "group": "dairy",
+      "cost": 520,
+      "pack": 1000
+    },
+    {
+      "id": "eggs",
+      "name": "Яйцо куриное",
+      "unit": "pcs",
+      "shelf_hours": 504,
+      "group": "dairy",
+      "cost": 11,
+      "pack": 30
+    },
+    {
+      "id": "ice_cream",
+      "name": "Мороженое пломбир",
+      "unit": "g",
+      "shelf_hours": 1440,
+      "group": "dairy",
+      "cost": 480,
+      "pack": 1000
+    },
+    {
+      "id": "tomato",
+      "name": "Томаты",
+      "unit": "g",
+      "shelf_hours": 120,
+      "group": "veg",
+      "cost": 260,
+      "pack": 3000
+    },
+    {
+      "id": "cucumber",
+      "name": "Огурцы свежие",
+      "unit": "g",
+      "shelf_hours": 144,
+      "group": "veg",
+      "cost": 210,
+      "pack": 2000
+    },
+    {
+      "id": "pickles",
+      "name": "Огурцы солёные",
+      "unit": "g",
+      "shelf_hours": 720,
+      "group": "veg",
+      "cost": 240,
+      "pack": 2000
+    },
+    {
+      "id": "lettuce",
+      "name": "Салат айсберг",
+      "unit": "g",
+      "shelf_hours": 96,
+      "group": "veg",
+      "cost": 480,
+      "pack": 1000
+    },
+    {
+      "id": "onion",
+      "name": "Лук репчатый",
+      "unit": "g",
+      "shelf_hours": 480,
+      "group": "veg",
+      "cost": 45,
+      "pack": 5000
+    },
+    {
+      "id": "red_onion",
+      "name": "Лук красный",
+      "unit": "g",
+      "shelf_hours": 480,
+      "group": "veg",
+      "cost": 75,
+      "pack": 2000
+    },
+    {
+      "id": "mushrooms",
+      "name": "Шампиньоны",
+      "unit": "g",
+      "shelf_hours": 96,
+      "group": "veg",
+      "cost": 390,
+      "pack": 2000
+    },
+    {
+      "id": "bell_pepper",
+      "name": "Перец болгарский",
+      "unit": "g",
+      "shelf_hours": 168,
+      "group": "veg",
+      "cost": 380,
+      "pack": 2000
+    },
+    {
+      "id": "jalapeno",
+      "name": "Халапеньо",
+      "unit": "g",
+      "shelf_hours": 720,
+      "group": "veg",
+      "cost": 690,
+      "pack": 1000
+    },
+    {
+      "id": "cabbage",
+      "name": "Капуста пекинская",
+      "unit": "g",
+      "shelf_hours": 168,
+      "group": "veg",
+      "cost": 140,
+      "pack": 2000
+    },
+    {
+      "id": "carrot",
+      "name": "Морковь",
+      "unit": "g",
+      "shelf_hours": 336,
+      "group": "veg",
+      "cost": 55,
+      "pack": 3000
+    },
+    {
+      "id": "zucchini",
+      "name": "Кабачок",
+      "unit": "g",
+      "shelf_hours": 168,
+      "group": "veg",
+      "cost": 160,
+      "pack": 2000
+    },
+    {
+      "id": "herbs",
+      "name": "Зелень (укроп, кинза)",
+      "unit": "g",
+      "shelf_hours": 72,
+      "group": "veg",
+      "cost": 900,
+      "pack": 300
+    },
+    {
+      "id": "olives",
+      "name": "Маслины",
+      "unit": "g",
+      "shelf_hours": 1440,
+      "group": "veg",
+      "cost": 640,
+      "pack": 1000
+    },
+    {
+      "id": "pineapple",
+      "name": "Ананас конс.",
+      "unit": "g",
+      "shelf_hours": 720,
+      "group": "veg",
+      "cost": 330,
+      "pack": 1000
+    },
+    {
+      "id": "corn",
+      "name": "Кукуруза конс.",
+      "unit": "g",
+      "shelf_hours": 720,
+      "group": "veg",
+      "cost": 260,
+      "pack": 1000
+    },
+    {
+      "id": "berries",
+      "name": "Ягоды (клубника, малина)",
+      "unit": "g",
+      "shelf_hours": 72,
+      "group": "veg",
+      "cost": 780,
+      "pack": 1000
+    },
+    {
+      "id": "orange",
+      "name": "Апельсины",
+      "unit": "g",
+      "shelf_hours": 336,
+      "group": "veg",
+      "cost": 160,
+      "pack": 5000
+    },
+    {
+      "id": "rice",
+      "name": "Рис для суши",
+      "unit": "g",
+      "shelf_hours": 4320,
+      "group": "grocery",
+      "cost": 190,
+      "pack": 5000
+    },
+    {
+      "id": "nori",
+      "name": "Нори (лист)",
+      "unit": "pcs",
+      "shelf_hours": 4320,
+      "group": "grocery",
+      "cost": 9,
+      "pack": 100
+    },
+    {
+      "id": "noodles",
+      "name": "Лапша фунчоза/удон",
+      "unit": "g",
+      "shelf_hours": 4320,
+      "group": "grocery",
+      "cost": 380,
+      "pack": 2000
+    },
+    {
+      "id": "pasta",
+      "name": "Паста",
+      "unit": "g",
+      "shelf_hours": 8640,
+      "group": "grocery",
+      "cost": 170,
+      "pack": 3000
+    },
+    {
+      "id": "fries",
+      "name": "Картофель фри (зам.)",
+      "unit": "g",
+      "shelf_hours": 2160,
+      "group": "grocery",
+      "cost": 210,
+      "pack": 5000
+    },
+    {
+      "id": "wedges",
+      "name": "Картофельные дольки (зам.)",
+      "unit": "g",
+      "shelf_hours": 2160,
+      "group": "grocery",
+      "cost": 230,
+      "pack": 5000
+    },
+    {
+      "id": "onion_rings",
+      "name": "Луковые кольца (зам.)",
+      "unit": "g",
+      "shelf_hours": 2160,
+      "group": "grocery",
+      "cost": 520,
+      "pack": 2000
+    },
+    {
+      "id": "tapioca",
+      "name": "Тапиока (шарики)",
+      "unit": "g",
+      "shelf_hours": 720,
+      "group": "grocery",
+      "cost": 650,
+      "pack": 1000
+    },
+    {
+      "id": "croutons",
+      "name": "Крутоны",
+      "unit": "g",
+      "shelf_hours": 720,
+      "group": "grocery",
+      "cost": 420,
+      "pack": 500
+    },
+    {
+      "id": "coffee",
+      "name": "Кофе в зёрнах",
+      "unit": "g",
+      "shelf_hours": 1440,
+      "group": "grocery",
+      "cost": 1800,
+      "pack": 1000
+    },
+    {
+      "id": "tea",
+      "name": "Чай листовой / матча",
+      "unit": "g",
+      "shelf_hours": 4320,
+      "group": "grocery",
+      "cost": 1400,
+      "pack": 500
+    },
+    {
+      "id": "cocoa",
+      "name": "Какао",
+      "unit": "g",
+      "shelf_hours": 4320,
+      "group": "grocery",
+      "cost": 900,
+      "pack": 1000
+    },
+    {
+      "id": "bun",
+      "name": "Булочка для бургера",
+      "unit": "pcs",
+      "shelf_hours": 72,
+      "group": "bakery",
+      "cost": 22,
+      "pack": 30
+    },
+    {
+      "id": "lavash",
+      "name": "Лаваш",
+      "unit": "pcs",
+      "shelf_hours": 120,
+      "group": "bakery",
+      "cost": 18,
+      "pack": 30
+    },
+    {
+      "id": "pizza_dough",
+      "name": "Тесто для пиццы",
+      "unit": "g",
+      "shelf_hours": 72,
+      "group": "bakery",
+      "cost": 90,
+      "pack": 5000
+    },
+    {
+      "id": "sauce_house",
+      "name": "Соус фирменный",
+      "unit": "ml",
+      "shelf_hours": 336,
+      "group": "sauce",
+      "cost": 350,
+      "pack": 1000
+    },
+    {
+      "id": "sauce_bbq",
+      "name": "Соус барбекю",
+      "unit": "ml",
+      "shelf_hours": 1440,
+      "group": "sauce",
+      "cost": 290,
+      "pack": 1000
+    },
+    {
+      "id": "sauce_caesar",
+      "name": "Соус цезарь",
+      "unit": "ml",
+      "shelf_hours": 240,
+      "group": "sauce",
+      "cost": 420,
+      "pack": 1000
+    },
+    {
+      "id": "sauce_cheese",
+      "name": "Соус сырный",
+      "unit": "ml",
+      "shelf_hours": 336,
+      "group": "sauce",
+      "cost": 460,
+      "pack": 1000
+    },
+    {
+      "id": "sauce_spicy",
+      "name": "Соус спайс / шрирача",
+      "unit": "ml",
+      "shelf_hours": 720,
+      "group": "sauce",
+      "cost": 480,
+      "pack": 1000
+    },
+    {
+      "id": "sauce_teriyaki",
+      "name": "Соус терияки / унаги",
+      "unit": "ml",
+      "shelf_hours": 1440,
+      "group": "sauce",
+      "cost": 390,
+      "pack": 1000
+    },
+    {
+      "id": "sauce_tomato",
+      "name": "Соус томатный",
+      "unit": "ml",
+      "shelf_hours": 336,
+      "group": "sauce",
+      "cost": 210,
+      "pack": 1000
+    },
+    {
+      "id": "sauce_cream",
+      "name": "Соус сливочный",
+      "unit": "ml",
+      "shelf_hours": 168,
+      "group": "sauce",
+      "cost": 430,
+      "pack": 1000
+    },
+    {
+      "id": "bolognese",
+      "name": "Соус болоньезе",
+      "unit": "ml",
+      "shelf_hours": 96,
+      "group": "sauce",
+      "cost": 520,
+      "pack": 2000
+    },
+    {
+      "id": "syrup",
+      "name": "Сиропы (ассорти)",
+      "unit": "ml",
+      "shelf_hours": 2160,
+      "group": "drinks",
+      "cost": 480,
+      "pack": 1000
+    },
+    {
+      "id": "fruit_puree",
+      "name": "Фруктовое пюре",
+      "unit": "ml",
+      "shelf_hours": 240,
+      "group": "drinks",
+      "cost": 640,
+      "pack": 1000
+    },
+    {
+      "id": "lemonade_base",
+      "name": "Основа для лимонада",
+      "unit": "ml",
+      "shelf_hours": 720,
+      "group": "drinks",
+      "cost": 160,
+      "pack": 5000
+    }
+  ]
+}

@@ -1,0 +1,1038 @@
+{
+  "_comment": "RECIPES[dishId] = { productId: qty } на 1 порцию базового размера. Количества ПРИМЕРНЫЕ — сверить с ТТК кухни.",
+  "recipes": {
+    "b1": {
+      "bun": 1,
+      "pork_patty": 1,
+      "bacon": 30,
+      "gouda": 20,
+      "cheddar": 20,
+      "onion_rings": 30,
+      "tomato": 30,
+      "pickles": 20,
+      "sauce_house": 25,
+      "sauce_spicy": 15
+    },
+    "b2": {
+      "bun": 1,
+      "pork_patty": 1,
+      "bacon": 30,
+      "bolognese": 40,
+      "gouda": 20,
+      "tomato": 30,
+      "pickles": 20,
+      "onion": 15,
+      "lettuce": 10
+    },
+    "b3": {
+      "bun": 1,
+      "schnitzel": 1,
+      "tomato": 30,
+      "pickles": 20,
+      "red_onion": 15,
+      "sauce_house": 35
+    },
+    "b4": {
+      "bun": 1,
+      "pork_patty": 1,
+      "gouda": 20,
+      "tomato": 30,
+      "pickles": 15,
+      "lettuce": 10,
+      "sauce_house": 25
+    },
+    "b5": {
+      "bun": 1,
+      "pork_patty": 1,
+      "bacon": 30,
+      "gouda": 20,
+      "tomato": 30,
+      "pickles": 20,
+      "onion": 15,
+      "sauce_bbq": 25
+    },
+    "b6": {
+      "bun": 1,
+      "beef_patty": 1,
+      "pork": 60,
+      "bacon": 30,
+      "gouda": 20,
+      "tomato": 30,
+      "lettuce": 10,
+      "onion": 15,
+      "sauce_bbq": 20
+    },
+    "b7": {
+      "bun": 1,
+      "pork_patty": 1,
+      "bacon": 30,
+      "gouda": 20,
+      "mushrooms": 40,
+      "fries": 40,
+      "tomato": 30,
+      "pickles": 20,
+      "lettuce": 10,
+      "onion": 15,
+      "sauce_house": 15,
+      "sauce_caesar": 15
+    },
+    "b8": {
+      "bun": 1,
+      "pork_patty": 1,
+      "cheddar": 50,
+      "gouda": 20,
+      "tomato": 30,
+      "pickles": 20,
+      "lettuce": 10,
+      "sauce_house": 20
+    },
+    "b9": {
+      "bun": 1,
+      "pork_patty": 1,
+      "gouda": 20,
+      "tomato": 30,
+      "onion": 30,
+      "jalapeno": 20,
+      "sauce_bbq": 20,
+      "sauce_spicy": 10
+    },
+    "b10": {
+      "bun": 1,
+      "pork_patty": 1,
+      "gouda": 20,
+      "mozzarella": 20,
+      "dorblu": 25,
+      "tomato": 30,
+      "pickles": 20,
+      "sauce_cheese": 20
+    },
+    "b11": {
+      "bun": 1,
+      "pork_patty": 2,
+      "bacon": 30,
+      "gouda": 30,
+      "tomato": 30,
+      "pickles": 20,
+      "lettuce": 10,
+      "onion": 15,
+      "sauce_house": 25
+    },
+    "b12": {
+      "bun": 1,
+      "pork_patty": 3,
+      "bacon": 40,
+      "gouda": 30,
+      "tomato": 30,
+      "onion": 15,
+      "pickles": 20,
+      "lettuce": 10,
+      "sauce_house": 30
+    },
+    "b13": {
+      "bun": 1,
+      "chicken_patty": 1,
+      "gouda": 20,
+      "tomato": 30,
+      "cucumber": 30,
+      "lettuce": 10,
+      "onion": 15,
+      "sauce_caesar": 25
+    },
+    "b14": {
+      "bun": 1,
+      "chicken_patty": 1,
+      "bacon": 30,
+      "gouda": 20,
+      "cheddar": 20,
+      "tomato": 30,
+      "pickles": 20,
+      "sauce_house": 25
+    },
+    "b15": {
+      "bun": 1,
+      "beef_patty": 1,
+      "cheddar": 20,
+      "bacon": 30,
+      "pickles": 20,
+      "tomato": 30,
+      "jalapeno": 15,
+      "red_onion": 15,
+      "sauce_caesar": 15
+    },
+    "b16": {
+      "bun": 1,
+      "shrimp": 80,
+      "cheddar": 20,
+      "gouda": 20,
+      "pickles": 20,
+      "tomato": 30,
+      "zucchini": 30,
+      "sauce_house": 20
+    },
+    "nb1": {
+      "lavash": 1,
+      "chicken_fillet": 120,
+      "tomato": 40,
+      "cucumber": 40,
+      "carrot": 30,
+      "onion": 15,
+      "cabbage": 40,
+      "sauce_house": 40
+    },
+    "nb2": {
+      "lavash": 1,
+      "ribs": 120,
+      "pickles": 30,
+      "cabbage": 40,
+      "onion": 15,
+      "jalapeno": 15,
+      "sauce_house": 40
+    },
+    "nb3": {
+      "lavash": 1,
+      "pork": 120,
+      "tomato": 40,
+      "pickles": 30,
+      "cabbage": 40,
+      "carrot": 30,
+      "onion": 15,
+      "sauce_bbq": 20,
+      "sauce_caesar": 20
+    },
+    "nb4": {
+      "lavash": 1,
+      "chicken_fillet": 150,
+      "tomato": 50,
+      "cucumber": 50,
+      "fries": 100,
+      "onion": 20,
+      "sauce_house": 40
+    },
+    "nb5": {
+      "chicken_fillet": 150,
+      "tomato": 50,
+      "cucumber": 50,
+      "fries": 120,
+      "onion": 20,
+      "sauce_house": 40
+    },
+    "sn1": {
+      "fries": 150
+    },
+    "sn2": {
+      "wedges": 150
+    },
+    "sn3": {
+      "wedges": 200,
+      "minced_meat": 100,
+      "sauce_bbq": 30
+    },
+    "sn4": {
+      "mozzarella": 150,
+      "berries": 20
+    },
+    "sn5": {
+      "nuggets": 150,
+      "sauce_bbq": 20
+    },
+    "sn6": {
+      "wings": 250,
+      "sauce_bbq": 20
+    },
+    "sn7": {
+      "onion_rings": 170
+    },
+    "sal1": {
+      "chicken_fillet": 80,
+      "tomato": 40,
+      "lettuce": 50,
+      "parmesan": 15,
+      "sauce_caesar": 30,
+      "croutons": 15
+    },
+    "sal2": {
+      "salmon": 70,
+      "tomato": 40,
+      "lettuce": 50,
+      "parmesan": 15,
+      "sauce_caesar": 30,
+      "croutons": 15
+    },
+    "sal3": {
+      "tomato": 80,
+      "cucumber": 80,
+      "lettuce": 30,
+      "herbs": 10,
+      "onion": 20
+    },
+    "sal4": {
+      "chicken_fillet": 80,
+      "mushrooms": 60,
+      "wedges": 60,
+      "tomato": 40,
+      "lettuce": 30,
+      "sauce_house": 20
+    },
+    "sal5": {
+      "tomato": 70,
+      "cucumber": 70,
+      "feta": 50,
+      "olives": 20,
+      "onion": 20
+    },
+    "sp1": {
+      "shrimp": 50,
+      "seafood_mix": 40,
+      "mushrooms": 40,
+      "cream": 100,
+      "sauce_spicy": 20,
+      "tomato": 30
+    },
+    "sp2": {
+      "ham": 50,
+      "pork": 40,
+      "pickles": 40,
+      "olives": 15,
+      "sauce_tomato": 30,
+      "onion": 20
+    },
+    "sp3": {
+      "mushrooms": 120,
+      "cream": 100,
+      "onion": 20,
+      "croutons": 10
+    },
+    "pz1": {
+      "pizza_dough": 250,
+      "bolognese": 80,
+      "mozzarella": 80,
+      "gouda": 40,
+      "tomato": 40,
+      "herbs": 5,
+      "sauce_bbq": 15
+    },
+    "pz2": {
+      "pizza_dough": 250,
+      "parmesan": 30,
+      "mozzarella": 100,
+      "dorblu": 40,
+      "cheddar": 40,
+      "sauce_cream": 60
+    },
+    "pz3": {
+      "pizza_dough": 250,
+      "chicken_fillet": 100,
+      "sauce_cream": 60,
+      "mozzarella": 100,
+      "tomato": 40
+    },
+    "pz4": {
+      "pizza_dough": 250,
+      "minced_meat": 80,
+      "bacon": 40,
+      "sauce_house": 30,
+      "sauce_bbq": 20,
+      "mozzarella": 90,
+      "gouda": 30,
+      "tomato": 40,
+      "jalapeno": 15
+    },
+    "pz5": {
+      "pizza_dough": 250,
+      "minced_meat": 80,
+      "bacon": 40,
+      "sauce_house": 40,
+      "mozzarella": 100,
+      "bell_pepper": 40,
+      "pickles": 30,
+      "red_onion": 20
+    },
+    "pz6": {
+      "pizza_dough": 250,
+      "chicken_fillet": 80,
+      "bacon": 40,
+      "sauce_house": 30,
+      "sauce_caesar": 20,
+      "mozzarella": 100,
+      "tomato": 40
+    },
+    "pz7": {
+      "pizza_dough": 250,
+      "ham": 90,
+      "sauce_house": 40,
+      "mozzarella": 100,
+      "tomato": 50,
+      "mushrooms": 40
+    },
+    "pz8": {
+      "pizza_dough": 250,
+      "pepperoni": 40,
+      "sauce_tomato": 50,
+      "ham": 40,
+      "mozzarella": 90,
+      "dorblu": 25,
+      "tomato": 30,
+      "mushrooms": 30,
+      "bell_pepper": 30
+    },
+    "pz9": {
+      "pizza_dough": 250,
+      "smoked_chicken": 100,
+      "mozzarella": 100,
+      "mushrooms": 40,
+      "tomato": 40,
+      "sauce_house": 40
+    },
+    "pz10": {
+      "pizza_dough": 250,
+      "smoked_chicken": 90,
+      "sauce_house": 30,
+      "mozzarella": 100,
+      "pineapple": 60,
+      "tomato": 30
+    },
+    "pz11": {
+      "pizza_dough": 250,
+      "chicken_fillet": 70,
+      "bacon": 40,
+      "sauce_cream": 60,
+      "mozzarella": 100,
+      "mushrooms": 40,
+      "red_onion": 20
+    },
+    "pz12": {
+      "pizza_dough": 250,
+      "pepperoni": 70,
+      "mozzarella": 110,
+      "mushrooms": 40,
+      "sauce_tomato": 50
+    },
+    "pz13": {
+      "pizza_dough": 250,
+      "seafood_mix": 100,
+      "mozzarella": 100,
+      "tomato": 40,
+      "olives": 20,
+      "sauce_house": 30
+    },
+    "pz14": {
+      "pizza_dough": 250,
+      "salmon": 90,
+      "tomato": 40,
+      "mozzarella": 90,
+      "dorblu": 30,
+      "sauce_house": 30
+    },
+    "pz15": {
+      "pizza_dough": 200,
+      "ham": 50,
+      "bacon": 30,
+      "pork": 40,
+      "mozzarella": 80,
+      "parmesan": 15,
+      "herbs": 5
+    },
+    "pz16": {
+      "pizza_dough": 200,
+      "salmon": 50,
+      "shrimp": 50,
+      "mozzarella": 80,
+      "sauce_house": 20,
+      "herbs": 5
+    },
+    "pz17": {
+      "pizza_dough": 200,
+      "ham": 60,
+      "bacon": 30,
+      "mushrooms": 50,
+      "mozzarella": 80,
+      "parmesan": 15
+    },
+    "rc1": {
+      "rice": 70,
+      "nori": 1,
+      "shrimp": 40
+    },
+    "rc2": {
+      "rice": 70,
+      "nori": 1,
+      "salmon": 40
+    },
+    "rc3": {
+      "rice": 70,
+      "nori": 1,
+      "cucumber": 40
+    },
+    "rc4": {
+      "rice": 110,
+      "nori": 1,
+      "crab_mix": 60,
+      "cucumber": 30,
+      "masago": 15
+    },
+    "rc5": {
+      "rice": 110,
+      "nori": 1,
+      "shrimp": 40,
+      "cucumber": 30,
+      "crab_mix": 30,
+      "masago": 15
+    },
+    "rc6": {
+      "rice": 110,
+      "nori": 1,
+      "salmon": 50,
+      "cucumber": 30,
+      "crab_mix": 30,
+      "masago": 15
+    },
+    "rc7": {
+      "rice": 110,
+      "nori": 1,
+      "salmon": 50,
+      "cucumber": 30,
+      "cream_cheese": 40,
+      "masago": 15,
+      "sauce_teriyaki": 15
+    },
+    "rc8": {
+      "rice": 110,
+      "nori": 1,
+      "shrimp": 50,
+      "cucumber": 30,
+      "cream_cheese": 40,
+      "sauce_spicy": 15
+    },
+    "rc9": {
+      "rice": 110,
+      "nori": 1,
+      "salmon": 70,
+      "cucumber": 30,
+      "cream_cheese": 50
+    },
+    "rc10": {
+      "cottage": 180,
+      "eggs": 1,
+      "cream": 30,
+      "berries": 20
+    },
+    "rh1": {
+      "rice": 110,
+      "nori": 1,
+      "smoked_chicken": 50,
+      "tomato": 30,
+      "sauce_house": 15,
+      "lettuce": 10,
+      "sauce_caesar": 20
+    },
+    "rh2": {
+      "rice": 110,
+      "nori": 1,
+      "seafood_mix": 40,
+      "shrimp": 30,
+      "cucumber": 30,
+      "sauce_teriyaki": 15,
+      "cream_cheese": 30,
+      "sauce_cheese": 20
+    },
+    "rh3": {
+      "rice": 110,
+      "nori": 1,
+      "shrimp": 40,
+      "cucumber": 30,
+      "masago": 15,
+      "crab_mix": 30,
+      "sauce_house": 20
+    },
+    "rh4": {
+      "rice": 110,
+      "nori": 1,
+      "salmon": 50,
+      "cucumber": 30,
+      "masago": 15,
+      "crab_mix": 30,
+      "sauce_house": 20
+    },
+    "rh5": {
+      "rice": 110,
+      "nori": 1,
+      "salmon": 50,
+      "cucumber": 30,
+      "cream_cheese": 30,
+      "bell_pepper": 20,
+      "sauce_house": 15,
+      "sauce_teriyaki": 15
+    },
+    "rh6": {
+      "rice": 110,
+      "nori": 1,
+      "crab_mix": 60,
+      "cucumber": 30,
+      "sauce_spicy": 15,
+      "sauce_teriyaki": 15,
+      "sauce_cheese": 15,
+      "masago": 10
+    },
+    "rh7": {
+      "rice": 110,
+      "nori": 1,
+      "salmon": 60,
+      "cucumber": 30,
+      "cream_cheese": 40,
+      "sauce_house": 20
+    },
+    "rh8": {
+      "rice": 110,
+      "nori": 1,
+      "crab_mix": 40,
+      "shrimp": 30,
+      "cream_cheese": 40,
+      "sauce_cheese": 20
+    },
+    "rh9": {
+      "rice": 110,
+      "nori": 1,
+      "smoked_chicken": 40,
+      "bacon": 25,
+      "cream_cheese": 30,
+      "cucumber": 30,
+      "sauce_teriyaki": 15
+    },
+    "rh10": {
+      "rice": 110,
+      "nori": 1,
+      "smoked_chicken": 50,
+      "bell_pepper": 20,
+      "lettuce": 10,
+      "cucumber": 30,
+      "cream_cheese": 30,
+      "sauce_house": 15
+    },
+    "rh11": {
+      "rice": 110,
+      "nori": 1,
+      "shrimp": 40,
+      "cucumber": 30,
+      "cream_cheese": 40
+    },
+    "rh12": {
+      "rice": 110,
+      "nori": 1,
+      "crab_mix": 60,
+      "cucumber": 30,
+      "sauce_teriyaki": 15,
+      "sauce_spicy": 15,
+      "herbs": 5
+    },
+    "mn1": {
+      "pasta": 100,
+      "bacon": 50,
+      "parmesan": 20,
+      "cream": 80,
+      "eggs": 1
+    },
+    "mn2": {
+      "pasta": 100,
+      "seafood_mix": 100,
+      "parmesan": 20,
+      "cream": 80
+    },
+    "mn3": {
+      "pasta": 100,
+      "bolognese": 120,
+      "parmesan": 20
+    },
+    "mn4": {
+      "rice": 150,
+      "seafood_mix": 100,
+      "eggs": 1,
+      "zucchini": 40,
+      "bell_pepper": 30,
+      "carrot": 30,
+      "onion": 20,
+      "herbs": 5,
+      "sauce_teriyaki": 20,
+      "sauce_spicy": 10
+    },
+    "mn5": {
+      "rice": 150,
+      "shrimp": 80,
+      "corn": 30,
+      "tomato": 40,
+      "cucumber": 40,
+      "masago": 15,
+      "nori": 1,
+      "sauce_house": 15,
+      "sauce_teriyaki": 15
+    },
+    "mn6": {
+      "rice": 150,
+      "chicken_fillet": 90,
+      "corn": 30,
+      "tomato": 40,
+      "cucumber": 40,
+      "masago": 15,
+      "nori": 1,
+      "sauce_house": 15,
+      "sauce_teriyaki": 15
+    },
+    "mn7": {
+      "noodles": 100,
+      "chicken_fillet": 100,
+      "zucchini": 40,
+      "carrot": 30,
+      "cabbage": 40,
+      "onion": 20,
+      "herbs": 5,
+      "sauce_teriyaki": 20,
+      "sauce_spicy": 10
+    },
+    "mn8": {
+      "noodles": 100,
+      "seafood_mix": 100,
+      "zucchini": 40,
+      "carrot": 30,
+      "cabbage": 40,
+      "herbs": 5,
+      "onion": 20,
+      "cream": 50,
+      "sauce_teriyaki": 20
+    },
+    "mn9": {
+      "ribs": 350,
+      "pickles": 40,
+      "jalapeno": 15,
+      "red_onion": 20,
+      "sauce_bbq": 40
+    },
+    "mn10": {
+      "beef_patty": 1,
+      "wedges": 150,
+      "eggs": 1,
+      "sauce_caesar": 20,
+      "herbs": 5
+    },
+    "dr1": {
+      "coffee": 18,
+      "milk": 200,
+      "fruit_puree": 30,
+      "syrup": 15
+    },
+    "dr2": {
+      "tea": 5,
+      "cream": 40,
+      "fruit_puree": 40,
+      "syrup": 15
+    },
+    "dr3": {
+      "coffee": 18,
+      "milk": 200,
+      "cocoa": 15,
+      "tapioca": 50,
+      "cream": 30
+    },
+    "dr4": {
+      "cocoa": 25,
+      "milk": 250,
+      "fruit_puree": 30,
+      "syrup": 15
+    },
+    "dr5": {
+      "tea": 6,
+      "milk": 220,
+      "tapioca": 50,
+      "cream": 30,
+      "berries": 20
+    },
+    "dr6": {
+      "coffee": 18,
+      "milk": 200,
+      "tapioca": 50,
+      "syrup": 20,
+      "cream": 30
+    },
+    "dr7": {
+      "lemonade_base": 250,
+      "syrup": 25,
+      "fruit_puree": 20
+    },
+    "dr8": {
+      "tea": 5,
+      "syrup": 20,
+      "berries": 30
+    },
+    "dr9": {
+      "lemonade_base": 250,
+      "fruit_puree": 30,
+      "syrup": 15
+    },
+    "dr10": {
+      "lemonade_base": 250,
+      "fruit_puree": 40,
+      "syrup": 15
+    },
+    "dr11": {
+      "coffee": 9
+    },
+    "dr12": {
+      "coffee": 18
+    },
+    "dr13": {
+      "coffee": 18,
+      "milk": 150
+    },
+    "dr14": {
+      "coffee": 18,
+      "alt_milk": 150
+    },
+    "dr15": {
+      "coffee": 18,
+      "milk": 150
+    },
+    "dr16": {
+      "coffee": 20,
+      "milk": 120
+    },
+    "dr17": {
+      "coffee": 18,
+      "milk": 220
+    },
+    "dr18": {
+      "coffee": 18,
+      "cream": 150,
+      "syrup": 15
+    },
+    "dr19": {
+      "cocoa": 25,
+      "milk": 250,
+      "syrup": 10
+    },
+    "dr20": {
+      "tea": 5
+    },
+    "dr21": {
+      "tea": 5,
+      "fruit_puree": 40,
+      "syrup": 15
+    },
+    "dr22": {
+      "tea": 5,
+      "fruit_puree": 40,
+      "berries": 20
+    },
+    "dr23": {
+      "tea": 5,
+      "fruit_puree": 50,
+      "syrup": 10
+    },
+    "dr24": {
+      "fruit_puree": 80,
+      "berries": 40,
+      "syrup": 15
+    },
+    "dr25": {
+      "milk": 200,
+      "ice_cream": 120
+    },
+    "dr26": {
+      "milk": 200,
+      "ice_cream": 120,
+      "cocoa": 20
+    },
+    "dr27": {
+      "milk": 200,
+      "ice_cream": 120,
+      "berries": 40
+    },
+    "dr28": {
+      "coffee": 18,
+      "tapioca": 50,
+      "fruit_puree": 40
+    },
+    "dr40": {
+      "tea": 5,
+      "berries": 40,
+      "syrup": 15
+    },
+    "dr41": {
+      "tea": 5,
+      "tapioca": 50,
+      "syrup": 20,
+      "milk": 100
+    },
+    "dr42": {
+      "orange": 350
+    },
+    "dr43": {
+      "tea": 5,
+      "orange": 120,
+      "syrup": 10
+    },
+    "dr44": {
+      "tea": 5,
+      "berries": 50,
+      "syrup": 15
+    },
+    "dr45": {
+      "coffee": 18,
+      "milk": 200,
+      "cream": 40,
+      "syrup": 10
+    },
+    "dr46": {
+      "tea": 5,
+      "milk": 150,
+      "syrup": 20
+    },
+    "dr47": {
+      "cocoa": 25,
+      "milk": 200,
+      "tapioca": 50
+    },
+    "dr48": {
+      "coffee": 18,
+      "milk": 150,
+      "ice_cream": 100,
+      "cocoa": 15
+    },
+    "dr49": {
+      "coffee": 18,
+      "milk": 150,
+      "ice_cream": 80,
+      "cream_cheese": 30,
+      "cocoa": 10
+    },
+    "dr50": {
+      "tea": 6,
+      "milk": 200,
+      "tapioca": 50
+    },
+    "dr51": {
+      "coffee": 18,
+      "milk": 200,
+      "tapioca": 50,
+      "syrup": 20
+    },
+    "st1": {
+      "rice": 440,
+      "nori": 4,
+      "salmon": 100,
+      "cucumber": 90,
+      "masago": 15,
+      "crab_mix": 70,
+      "sauce_house": 35,
+      "shrimp": 30,
+      "cream_cheese": 100,
+      "sauce_cheese": 20,
+      "bell_pepper": 20,
+      "sauce_teriyaki": 30,
+      "smoked_chicken": 40,
+      "bacon": 25
+    },
+    "st2": {
+      "rice": 400,
+      "nori": 4,
+      "crab_mix": 120,
+      "cucumber": 90,
+      "sauce_teriyaki": 30,
+      "sauce_spicy": 15,
+      "herbs": 5,
+      "salmon": 50,
+      "cream_cheese": 30,
+      "bell_pepper": 20,
+      "sauce_house": 15,
+      "masago": 15,
+      "shrimp": 40
+    },
+    "st3": {
+      "rice": 510,
+      "nori": 5,
+      "smoked_chicken": 40,
+      "bacon": 25,
+      "cream_cheese": 70,
+      "cucumber": 120,
+      "sauce_teriyaki": 30,
+      "crab_mix": 120,
+      "masago": 25,
+      "salmon": 40,
+      "shrimp": 50,
+      "sauce_spicy": 30,
+      "sauce_cheese": 15
+    },
+    "st4": {
+      "rice": 840,
+      "nori": 8,
+      "seafood_mix": 40,
+      "shrimp": 150,
+      "cucumber": 220,
+      "sauce_teriyaki": 30,
+      "cream_cheese": 220,
+      "sauce_cheese": 40,
+      "salmon": 100,
+      "crab_mix": 70,
+      "masago": 30,
+      "sauce_spicy": 15,
+      "smoked_chicken": 50,
+      "bell_pepper": 20,
+      "lettuce": 10,
+      "sauce_house": 15
+    }
+  },
+  "combos": {
+    "st1": [
+      "rh4",
+      "rh8",
+      "rh5",
+      "rh9"
+    ],
+    "st2": [
+      "rh12",
+      "rh5",
+      "rc4",
+      "rc1"
+    ],
+    "st3": [
+      "rh9",
+      "rc4",
+      "rc2",
+      "rc8",
+      "rh6"
+    ],
+    "st4": [
+      "rh2",
+      "rc6",
+      "rh11",
+      "rc7",
+      "rc8",
+      "rc3",
+      "rh8",
+      "rh10"
+    ]
+  },
+  "variant_swaps": {
+    "sal2": [
+      {},
+      {
+        "salmon": "shrimp"
+      }
+    ],
+    "mn5": [
+      {},
+      {
+        "shrimp": "salmon"
+      }
+    ]
+  },
+  "size_swaps": {
+    "dr15": {
+      "milk": "alt_milk"
+    },
+    "dr16": {
+      "milk": "alt_milk"
+    },
+    "dr17": {
+      "milk": "alt_milk"
+    }
+  },
+  "size_factor_rule": "для size=1 количество × price2/price, кроме блюд из size_swaps (там только замена продуктов)"
+}

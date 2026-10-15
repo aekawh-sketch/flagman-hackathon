@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; script-src 'unsafe-inline'">
+  <title>Флагман — подключение к складу</title>
+  <style>
+    :root { --teal: #0d9488; --ink: #18181b; --muted: #52525b; --line: #d4d4d8; --red: #b91c1c }
+    html, body { height: 100%; margin: 0 }
+    body { display: grid; place-items: center; background: #fafafa; color: var(--ink); font: 15px/1.5 "Segoe UI", system-ui, sans-serif }
+    .card { width: min(480px, calc(100vw - 32px)); background: #fff; border: 1px solid #e4e4e7; border-radius: 14px; padding: 28px }
+    .logo { display: flex; align-items: center; gap: 12px; margin-bottom: 18px }
+    h1 { margin: 0; font-size: 20px }
+    p { margin: 0 0 14px; color: var(--muted) }
+    .error { color: var(--red); background: #fef2f2; border-radius: 8px; padding: 8px 12px; margin-bottom: 14px }
+    label { display: block; font-size: 13px; color: var(--muted); margin-bottom: 6px }
+    input { box-sizing: border-box; width: 100%; padding: 10px 12px; border: 1px solid var(--line); border-radius: 8px; font: inherit }
+    input:focus { outline: 2px solid var(--teal); outline-offset: -1px; border-color: transparent }
+    .row { display: flex; gap: 10px; margin-top: 14px; flex-wrap: wrap }
+    button { font: inherit; border-radius: 8px; padding: 10px 16px; cursor: pointer; border: 1px solid var(--line); background: #fff }
+    button.primary { background: var(--teal); border-color: var(--teal); color: #fff }
+    button:disabled { opacity: .6; cursor: default }
+    .alt { margin-top: 22px; padding-top: 16px; border-top: 1px solid #f0f0f2 }
+    .alt p { font-size: 13px; margin-bottom: 10px }
+    [hidden] { display: none !important }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <div class="logo">
+      <svg width="40" height="40" viewBox="0 0 64 64" aria-hidden="true">
+        <rect width="64" height="64" rx="14" fill="#0d9488"/>
+        <path d="M18 22h28M18 32h28M18 42h18" stroke="#fff" stroke-width="5" stroke-linecap="round"/>
+        <circle cx="45" cy="43" r="7" fill="#f97316" stroke="#fff" stroke-width="3"/>
+      </svg>
+      <h1>Подключение к складу</h1>
+    </div>
+    <p>Склад работает на сервере — тот же, что открывается в телефоне и браузере. Все видят одни и те же данные.</p>
+    <div class="error" id="error" hidden></div>
+    <form id="form">
+      <label for="url">Адрес сервера склада</label>
+      <input id="url" type="text" inputmode="url" spellcheck="false" placeholder="http://адрес:8085" autocomplete="off">
+      <div class="row">
+        <button class="primary" id="go" type="submit">Подключиться</button>
+        <button id="back" type="button" hidden>Назад к складу</button>
+      </div>
+    </form>
+    <div class="alt">
+      <p>Нет интернета или нужен свой склад? Программа может работать без сервера — со своей базой на этом компьютере
+        (данные — отдельные, с телефоном не общие).</p>
+      <button id="local" type="button">Работать без сервера</button>
+    </div>
+  </main>
+  <script>
+    const $ = (id) => document.getElementById(id);
+    const showError = (text) => { $("error").textContent = text || ""; $("error").hidden = !text; };
+
+    window.flagman.info().then((i) => {
+      $("url").value = i.serverUrl || "";
+      showError(i.error);
+      $("back").hidden = !i.canGoBack;
+      $("url").focus();
+      $("url").select();
+    });
+
+    $("form").addEventListener("submit", async (e) => {
+      e.preventDefault();
+      $("go").disabled = true;
+      $("go").textContent = "Проверяем адрес…";
+      showError("");
+      const r = await window.flagman.connect($("url").value);
+      if (!r.ok) {
+        showError(r.error);
+        $("go").disabled = false;
+        $("go").textContent = "Подключиться";
+      }
+    });
+    $("back").addEventListener("click", () => window.flagman.back());
+    $("local").addEventListener("click", () => window.flagman.useLocal());
+  </script>
+</body>
+</html>

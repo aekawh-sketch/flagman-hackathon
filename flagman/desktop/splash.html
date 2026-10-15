@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; script-src 'unsafe-inline'">
+  <title>Флагман</title>
+  <style>
+    html, body { height: 100%; margin: 0 }
+    body {
+      display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 14px;
+      background: #0d9488; color: #fff; font: 14px/1.4 "Segoe UI", system-ui, sans-serif;
+      -webkit-app-region: drag; user-select: none; cursor: default;
+    }
+    h1 { margin: 0; font-size: 26px; font-weight: 600; letter-spacing: .2px }
+    .sub { margin-top: -10px; opacity: .8 }
+    .status { min-height: 20px; margin-top: 10px; opacity: .95 }
+    .bar { width: 180px; height: 3px; border-radius: 2px; background: rgba(255,255,255,.25); overflow: hidden }
+    .bar::after { content: ""; display: block; width: 40%; height: 100%; background: #fff; border-radius: 2px;
+                  animation: run 1.2s ease-in-out infinite }
+    @keyframes run { from { transform: translateX(-100%) } to { transform: translateX(250%) } }
+    .hint { position: fixed; bottom: 14px; font-size: 12px; opacity: .7 }
+  </style>
+</head>
+<body>
+  <svg width="56" height="56" viewBox="0 0 64 64" aria-hidden="true">
+    <rect width="64" height="64" rx="14" fill="#fff" fill-opacity=".14"/>
+    <path d="M18 22h28M18 32h28M18 42h18" stroke="#fff" stroke-width="5" stroke-linecap="round"/>
+    <circle cx="45" cy="43" r="7" fill="#f97316" stroke="#fff" stroke-width="3"/>
+  </svg>
+  <h1>Флагман</h1>
+  <div class="sub">Склад ресторана</div>
+  <div class="bar"></div>
+  <div class="status" id="status">Запуск…</div>
+  <div class="hint" id="hint">Первый запуск — до минуты: разворачиваем базу</div>
+  <script>
+    function setStatus(text) { document.getElementById("status").textContent = text; }
+    function setHint(text) { document.getElementById("hint").textContent = text; }
+  </script>
+</body>
+</html>

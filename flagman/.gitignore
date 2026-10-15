@@ -1,0 +1,10 @@
+node_modules/
+frontend/dist/
+backend/target/
+backend/data/
+*.log
+.DS_Store
+.env
+
+# локальные секреты
+backend/config/

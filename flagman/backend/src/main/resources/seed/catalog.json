@@ -1,0 +1,8237 @@
+{
+ "products": [
+  {
+   "id": "bun",
+   "name": "Булочка для бургера",
+   "unit": "PCS",
+   "category": "Хлеб и тесто",
+   "price": 25,
+   "shelfLifeHours": 72,
+   "packSize": null,
+   "afterOpenHours": null,
+   "lossPct": 0,
+   "alertBeforeHours": null,
+   "leadTimeHours": 24
+  },
+  {
+   "id": "lavash",
+   "name": "Лаваш",
+   "unit": "PCS",
+   "category": "Хлеб и тесто",
+   "price": 30,
+   "shelfLifeHours": 120,
+   "packSize": null,
+   "afterOpenHours": null,
+   "lossPct": 0,
+   "alertBeforeHours": null,
+   "leadTimeHours": 24
+  },
+  {
+   "id": "pita",
+   "name": "Лепёшка для гироса",
+   "unit": "PCS",
+   "category": "Хлеб и тесто",
+   "price": 28,
+   "shelfLifeHours": 120,
+   "packSize": null,
+   "afterOpenHours": null,
+   "lossPct": 0,
+   "alertBeforeHours": null,
+   "leadTimeHours": 24
+  },
+  {
+   "id": "flour",
+   "name": "Мука",
+   "unit": "G",
+   "category": "Бакалея",
+   "price": 55,
+   "shelfLifeHours": 4320,
+   "packSize": null,
+   "afterOpenHours": null,
+   "lossPct": 0,
+   "alertBeforeHours": null,
+   "leadTimeHours": 48
+  },
+  {
+   "id": "rice",
+   "name": "Рис для суши (сухой)",
+   "unit": "G",
+   "category": "Бакалея",
+   "price": 160,
+   "shelfLifeHours": 8760,
+   "packSize": null,
+   "afterOpenHours": null,
+   "lossPct": 0,
+   "alertBeforeHours": null,
+   "leadTimeHours": 48
+  },
+  {
+   "id": "spaghetti",
+   "name": "Спагетти",
+   "unit": "G",
+   "category": "Бакалея",
+   "price": 200,
+   "shelfLifeHours": 8760,
+   "packSize": null,
+   "afterOpenHours": null,
+   "lossPct": 0,
+   "alertBeforeHours": null,
+   "leadTimeHours": 48
+  },
+  {
+   "id": "fettuccine",
+   "name": "Фетучини",
+   "unit": "G",
+   "category": "Бакалея",
+   "price": 260,
+   "shelfLifeHours": 8760,
+   "packSize": null,
+   "afterOpenHours": null,
+   "lossPct": 0,
+   "alertBeforeHours": null,
+   "leadTimeHours": 48
+  },
+  {
+   "id": "udon",
+   "name": "Лапша удон",
+   "unit": "G",
+   "category": "Бакалея",
+   "price": 400,
+   "shelfLifeHours": 4320,
+   "packSize": null,
+   "afterOpenHours": null,
+   "lossPct": 0,
+   "alertBeforeHours": null,
+   "leadTimeHours": 48
+  },
+  {
+   "id": "funchoza",
+   "name": "Фунчоза",
+   "unit": "G",
+   "category": "Бакалея",
+   "price": 450,
+   "shelfLifeHours": 8760,
+   "packSize": null,
+   "afterOpenHours": null,
+   "lossPct": 0,
+   "alertBeforeHours": null,
+   "leadTimeHours": 48
+  },
+  {
+   "id": "tapioca_dry",
+   "name": "Тапиока (шарики, сухая)",
+   "unit": "G",
+   "category": "Бакалея",
+   "price": 600,
+   "shelfLifeHours": 8760,
+   "packSize": null,
+   "afterOpenHours": null,
+   "lossPct": 0,
+   "alertBeforeHours": null,
+   "leadTimeHours": 72
+  },
+  {
+   "id": "nori",
+   "name": "Нори",
+   "unit": "PCS",
+   "category": "Бакалея",
+   "price": 9,
+   "shelfLifeHours": 4320,
+   "packSize": null,
+   "afterOpenHours": null,
+   "lossPct": 0,
+   "alertBeforeHours": null,
+   "leadTimeHours": 72
+  },
+  {
+   "id": "croutons",
+   "name": "Крутоны",
+   "unit": "G",
+   "category": "Бакалея",
+   "price": 600,
+   "shelfLifeHours": 1440,
+   "packSize": null,
+   "afterOpenHours": null,
+   "lossPct": 0,
+   "alertBeforeHours": null,
+   "leadTimeHours": 24
+  },
+  {
+   "id": "sugar",
+   "name": "Сахар",
+   "unit": "G",
+   "category": "Бакалея",
+   "price": 80,
+   "shelfLifeHours": 8760,
+   "packSize": null,
+   "afterOpenHours": null,
+   "lossPct": 0,
+   "alertBeforeHours": null,
+   "leadTimeHours": 48
+  },
+  {
+   "id": "sesame",
+   "name": "Кунжут",
+   "unit": "G",
+   "category": "Бакалея",
+   "price": 500,
+   "shelfLifeHours": 4320,
+   "packSize": null,
+   "afterOpenHours": null,
+   "lossPct": 0,
+   "alertBeforeHours": null,
+   "leadTimeHours": 48
+  },
+  {
+   "id": "spices",
+   "name": "Специи",
+   "unit": "G",
+   "category": "Бакалея",
+   "price": 1500,
+   "shelfLifeHours": 8760,
+   "packSize": null,
+   "afterOpenHours": null,
+   "lossPct": 0,
+   "alertBeforeHours": null,
+   "leadTimeHours": 72
+  },
+  {
+   "id": "yeast",
+   "name": "Дрожжи",
+   "unit": "G",
+   "category": "Бакалея",
+   "price": 900,
+   "shelfLifeHours": 1440,
+   "packSize": null,
+   "afterOpenHours": null,
+   "lossPct": 0,
+   "alertBeforeHours": null,
+   "leadTimeHours": 48
+  },
+  {
+   "id": "olive_oil",
+   "name": "Масло оливковое",
+   "unit": "ML",
+   "category": "Бакалея",
+   "price": 900,
+   "shelfLifeHours": 8760,
+   "packSize": 1000,
+   "afterOpenHours": 1440,
+   "lossPct": 0,
+   "alertBeforeHours": null,
+   "leadTimeHours": 48
+  },
+  {
+   "id": "rice_vinegar",
+   "name": "Рисовый уксус",
+   "unit": "ML",
+   "category": "Бакалея",
+   "price": 300,
+   "shelfLifeHours": 8760,
+   "packSize": 500,
+   "afterOpenHours": 2160,
+   "lossPct": 0,
+   "alertBeforeHours": null,
+   "leadTimeHours": 48
+  },
+  {
+   "id": "olives",
+   "name": "Маслины",
+   "unit": "G",
+   "category": "Бакалея",
+   "price": 700,
+   "shelfLifeHours": 8760,
+   "packSize": null,
+   "afterOpenHours": null,
+   "lossPct": 0,
+   "alertBeforeHours": null,
+   "leadTimeHours": 48
+  },
+  {
+   "id": "pineapple",
+   "name": "Ананас консервированный",
+   "unit": "G",
+   "category": "Бакалея",
+   "price": 350,
+   "shelfLifeHours": 8760,
+   "packSize": null,
+   "afterOpenHours": null,
+   "lossPct": 0,
+   "alertBeforeHours": null,
+   "leadTimeHours": 48
+  },
+  {
+   "id": "corn",
+   "name": "Кукуруза консервированная",
+   "unit": "G",
+   "category": "Бакалея",
+   "price": 300,
+   "shelfLifeHours": 8760,
+   "packSize": null,
+   "afterOpenHours": null,
+   "lossPct": 0,
+   "alertBeforeHours": null,
+   "leadTimeHours": 48
+  },
+  {
+   "id": "patty_pork",
+   "name": "Котлета свиная",
+   "unit": "PCS",
+   "category": "Мясо",
+   "price": 70,
+   "shelfLifeHours": 72,
+   "packSize": null,
+   "afterOpenHours": null,
+   "lossPct": 0,
+   "alertBeforeHours": 18,
+   "leadTimeHours": 24
+  },
+  {
+   "id": "patty_chicken",
+   "name": "Котлета куриная",
+   "unit": "PCS",
+   "category": "Мясо",
+   "price": 60,
+   "shelfLifeHours": 48,
+   "packSize": null,
+   "afterOpenHours": null,
+   "lossPct": 0,
+   "alertBeforeHours": 12,
+   "leadTimeHours": 24
+  },
+  {
+   "id": "patty_beef",
+   "name": "Котлета говяжья",
+   "unit": "PCS",
+   "category": "Мясо",
+   "price": 95,
+   "shelfLifeHours": 72,
+   "packSize": null,
+   "afterOpenHours": null,
+   "lossPct": 0,
+   "alertBeforeHours": 18,
+   "leadTimeHours": 24
+  },
+  {
+   "id": "patty_mixed",
+   "name": "Котлета свино-говяжья",
+   "unit": "PCS",
+   "category": "Мясо",
+   "price": 80,
+   "shelfLifeHours": 72,
+   "packSize": null,
+   "afterOpenHours": null,
+   "lossPct": 0,
+   "alertBeforeHours": 18,
+   "leadTimeHours": 24
+  },
+  {
+   "id": "patty_cheese",
+   "name": "Котлета сырная",
+   "unit": "PCS",
+   "category": "Мясо",
+   "price": 75,
+   "shelfLifeHours": 96,
+   "packSize": null,
+   "afterOpenHours": null,
+   "lossPct": 0,
+   "alertBeforeHours": null,
+   "leadTimeHours": 24
+  },
+  {
+   "id": "schnitzel",
+   "name": "Шницель куриный",
+   "unit": "PCS",
+   "category": "Мясо",
+   "price": 70,
+   "shelfLifeHours": 48,
+   "packSize": null,
+   "afterOpenHours": null,
+   "lossPct": 0,
+   "alertBeforeHours": 12,
+   "leadTimeHours": 24
+  },
+  {
+   "id": "bacon",
+   "name": "Бекон",
+   "unit": "G",
+   "category": "Мясо",
+   "price": 750,
+   "shelfLifeHours": 240,
+   "packSize": null,
+   "afterOpenHours": null,
+   "lossPct": 0,
+   "alertBeforeHours": null,
+   "leadTimeHours": 24
+  },
+  {
+   "id": "chicken",
+   "name": "Куриное филе",
+   "unit": "G",
+   "category": "Мясо",
+   "price": 420,
+   "shelfLifeHours": 48,
+   "packSize": null,
+   "afterOpenHours": null,
+   "lossPct": 0,
+   "alertBeforeHours": 12,
+   "leadTimeHours": 24
+  },
+  {
+   "id": "chicken_smoked",
+   "name": "Курица копчёная",
+   "unit": "G",
+   "category": "Мясо",
+   "price": 650,
+   "shelfLifeHours": 168,
+   "packSize": null,
+   "afterOpenHours": null,
+   "lossPct": 0,
+   "alertBeforeHours": null,
+   "leadTimeHours": 24
+  },
+  {
+   "id": "pork",
+   "name": "Свинина",
+   "unit": "G",
+   "category": "Мясо",
+   "price": 450,
+   "shelfLifeHours": 72,
+   "packSize": null,
+   "afterOpenHours": null,
+   "lossPct": 0,
+   "alertBeforeHours": 18,
+   "leadTimeHours": 24
+  },
+  {
+   "id": "pork_braised",
+   "name": "Томлёная свинина",
+   "unit": "G",
+   "category": "Мясо",
+   "price": 650,
+   "shelfLifeHours": 72,
+   "packSize": null,
+   "afterOpenHours": null,
+   "lossPct": 0,
+   "alertBeforeHours": null,
+   "leadTimeHours": 24
+  },
+  {
+   "id": "ribs",
+   "name": "Свиные рёбра",
+   "unit": "G",
+   "category": "Мясо",
+   "price": 480,
+   "shelfLifeHours": 72,
+   "packSize": null,
+   "afterOpenHours": null,
+   "lossPct": 0,
+   "alertBeforeHours": 18,
+   "leadTimeHours": 24
+  },
+  {
+   "id": "mince",
+   "name": "Фарш свино-говяжий",
+   "unit": "G",
+   "category": "Мясо",
+   "price": 480,
+   "shelfLifeHours": 36,
+   "packSize": null,
+   "afterOpenHours": null,
+   "lossPct": 0,
+   "alertBeforeHours": 10,
+   "leadTimeHours": 24
+  },
+  {
+   "id": "ham",
+   "name": "Ветчина",
+   "unit": "G",
+   "category": "Мясо",
+   "price": 600,
+   "shelfLifeHours": 240,
+   "packSize": null,
+   "afterOpenHours": null,
+   "lossPct": 0,
+   "alertBeforeHours": null,
+   "leadTimeHours": 24
+  },
+  {
+   "id": "pepperoni",
+   "name": "Пепперони",
+   "unit": "G",
+   "category": "Мясо",
+   "price": 900,
+   "shelfLifeHours": 720,
+   "packSize": null,
+   "afterOpenHours": null,
+   "lossPct": 0,
+   "alertBeforeHours": null,
+   "leadTimeHours": 24
+  },
+  {
+   "id": "carbonate",
+   "name": "Карбонат",
+   "unit": "G",
+   "category": "Мясо",
+   "price": 800,
+   "shelfLifeHours": 240,
+   "packSize": null,
+   "afterOpenHours": null,
+   "lossPct": 0,
+   "alertBeforeHours": null,
+   "leadTimeHours": 24
+  },
+  {
+   "id": "meat_assorted",
+   "name": "Мясное ассорти для солянки",
+   "unit": "G",
+   "category": "Мясо",
+   "price": 700,
+   "shelfLifeHours": 72,
+   "packSize": null,
+   "afterOpenHours": null,
+   "lossPct": 0,
+   "alertBeforeHours": null,
+   "leadTimeHours": 24
+  },
+  {
+   "id": "egg",
+   "name": "Яйцо",
+   "unit": "PCS",
+   "category": "Молочное и яйца",
+   "price": 12,
+   "shelfLifeHours": 480,
+   "packSize": null,
+   "afterOpenHours": null,
+   "lossPct": 0,
+   "alertBeforeHours": null,
+   "leadTimeHours": 24
+  },
+  {
+   "id": "salmon",
+   "name": "Лосось",
+   "unit": "G",
+   "category": "Рыба",
+   "price": 1800,
+   "shelfLifeHours": 72,
+   "packSize": null,
+   "afterOpenHours": null,
+   "lossPct": 0,
+   "alertBeforeHours": 12,
+   "leadTimeHours": 24
+  },
+  {
+   "id": "shrimp",
+   "name": "Креветка",
+   "unit": "G",
+   "category": "Рыба",
+   "price": 1100,
+   "shelfLifeHours": 48,
+   "packSize": null,
+   "afterOpenHours": null,
+   "lossPct": 0,
+   "alertBeforeHours": 12,
+   "leadTimeHours": 24
+  },
+  {
+   "id": "seafood_mix",
+   "name": "Морской коктейль",
+   "unit": "G",
+   "category": "Рыба",
+   "price": 650,
+   "shelfLifeHours": 48,
+   "packSize": null,
+   "afterOpenHours": null,
+   "lossPct": 0,
+   "alertBeforeHours": 12,
+   "leadTimeHours": 24
+  },
+  {
+   "id": "mussels",
+   "name": "Мясо мидий",
+   "unit": "G",
+   "category": "Рыба",
+   "price": 700,
+   "shelfLifeHours": 48,
+   "packSize": null,
+   "afterOpenHours": null,
+   "lossPct": 0,
+   "alertBeforeHours": 12,
+   "leadTimeHours": 24
+  },
+  {
+   "id": "crab_sticks",
+   "name": "Краб (имитация)",
+   "unit": "G",
+   "category": "Рыба",
+   "price": 400,
+   "shelfLifeHours": 168,
+   "packSize": null,
+   "afterOpenHours": null,
+   "lossPct": 0,
+   "alertBeforeHours": null,
+   "leadTimeHours": 24
+  },
+  {
+   "id": "masago",
+   "name": "Икра масаго",
+   "unit": "G",
+   "category": "Рыба",
+   "price": 2500,
+   "shelfLifeHours": 720,
+   "packSize": 500,
+   "afterOpenHours": 120,
+   "lossPct": 0,
+   "alertBeforeHours": null,
+   "leadTimeHours": 24
+  },
+  {
+   "id": "gouda",
+   "name": "Сыр гауда",
+   "unit": "G",
+   "category": "Молочное и яйца",
+   "price": 800,
+   "shelfLifeHours": 720,
+   "packSize": 1000,
+   "afterOpenHours": 168,
+   "lossPct": 0,
+   "alertBeforeHours": null,
+   "leadTimeHours": 24
+  },
+  {
+   "id": "cheddar",
+   "name": "Сыр чеддер",
+   "unit": "G",
+   "category": "Молочное и яйца",
+   "price": 900,
+   "shelfLifeHours": 720,
+   "packSize": 1000,
+   "afterOpenHours": 168,
+   "lossPct": 0,
+   "alertBeforeHours": null,
+   "leadTimeHours": 24
+  },
+  {
+   "id": "mozzarella",
+   "name": "Сыр моцарелла",
+   "unit": "G",
+   "category": "Молочное и яйца",
+   "price": 750,
+   "shelfLifeHours": 480,
+   "packSize": 1000,
+   "afterOpenHours": 120,
+   "lossPct": 0,
+   "alertBeforeHours": null,
+   "leadTimeHours": 24
+  },
+  {
+   "id": "parmesan",
+   "name": "Сыр пармезан",
+   "unit": "G",
+   "category": "Молочное и яйца",
+   "price": 1600,
+   "shelfLifeHours": 1440,
+   "packSize": null,
+   "afterOpenHours": null,
+   "lossPct": 0,
+   "alertBeforeHours": null,
+   "leadTimeHours": 24
+  },
+  {
+   "id": "dorblu",
+   "name": "Сыр дорблю",
+   "unit": "G",
+   "category": "Молочное и яйца",
+   "price": 2200,
+   "shelfLifeHours": 720,
+   "packSize": null,
+   "afterOpenHours": null,
+   "lossPct": 0,
+   "alertBeforeHours": null,
+   "leadTimeHours": 24
+  },
+  {
+   "id": "cream_cheese",
+   "name": "Сыр сливочный",
+   "unit": "G",
+   "category": "Молочное и яйца",
+   "price": 900,
+   "shelfLifeHours": 720,
+   "packSize": 1000,
+   "afterOpenHours": 120,
+   "lossPct": 0,
+   "alertBeforeHours": null,
+   "leadTimeHours": 24
+  },
+  {
+   "id": "feta",
+   "name": "Брынза",
+   "unit": "G",
+   "category": "Молочное и яйца",
+   "price": 700,
+   "shelfLifeHours": 336,
+   "packSize": null,
+   "afterOpenHours": null,
+   "lossPct": 0,
+   "alertBeforeHours": null,
+   "leadTimeHours": 24
+  },
+  {
+   "id": "milk",
+   "name": "Молоко",
+   "unit": "ML",
+   "category": "Молочное и яйца",
+   "price": 90,
+   "shelfLifeHours": 168,
+   "packSize": 1000,
+   "afterOpenHours": 48,
+   "lossPct": 0,
+   "alertBeforeHours": null,
+   "leadTimeHours": 24
+  },
+  {
+   "id": "cream",
+   "name": "Сливки 33%",
+   "unit": "ML",
+   "category": "Молочное и яйца",
+   "price": 450,
+   "shelfLifeHours": 240,
+   "packSize": 1000,
+   "afterOpenHours": 72,
+   "lossPct": 0,
+   "alertBeforeHours": null,
+   "leadTimeHours": 24
+  },
+  {
+   "id": "alt_milk",
+   "name": "Молоко растительное",
+   "unit": "ML",
+   "category": "Молочное и яйца",
+   "price": 300,
+   "shelfLifeHours": 1440,
+   "packSize": 1000,
+   "afterOpenHours": 120,
+   "lossPct": 0,
+   "alertBeforeHours": null,
+   "leadTimeHours": 24
+  },
+  {
+   "id": "sour_cream",
+   "name": "Сметана",
+   "unit": "G",
+   "category": "Молочное и яйца",
+   "price": 300,
+   "shelfLifeHours": 240,
+   "packSize": 500,
+   "afterOpenHours": 72,
+   "lossPct": 0,
+   "alertBeforeHours": null,
+   "leadTimeHours": 24
+  },
+  {
+   "id": "ice_cream",
+   "name": "Мороженое пломбир",
+   "unit": "G",
+   "category": "Молочное и яйца",
+   "price": 500,
+   "shelfLifeHours": 2160,
+   "packSize": null,
+   "afterOpenHours": null,
+   "lossPct": 0,
+   "alertBeforeHours": null,
+   "leadTimeHours": 24
+  },
+  {
+   "id": "condensed_milk",
+   "name": "Сгущённое молоко",
+   "unit": "G",
+   "category": "Молочное и яйца",
+   "price": 400,
+   "shelfLifeHours": 4320,
+   "packSize": null,
+   "afterOpenHours": null,
+   "lossPct": 0,
+   "alertBeforeHours": null,
+   "leadTimeHours": 24
+  },
+  {
+   "id": "tvorog",
+   "name": "Творог",
+   "unit": "G",
+   "category": "Молочное и яйца",
+   "price": 450,
+   "shelfLifeHours": 120,
+   "packSize": null,
+   "afterOpenHours": null,
+   "lossPct": 0,
+   "alertBeforeHours": null,
+   "leadTimeHours": 24
+  },
+  {
+   "id": "tomato",
+   "name": "Томаты",
+   "unit": "G",
+   "category": "Овощи и зелень",
+   "price": 250,
+   "shelfLifeHours": 120,
+   "packSize": null,
+   "afterOpenHours": null,
+   "lossPct": 5,
+   "alertBeforeHours": null,
+   "leadTimeHours": 24
+  },
+  {
+   "id": "cucumber",
+   "name": "Огурцы свежие",
+   "unit": "G",
+   "category": "Овощи и зелень",
+   "price": 200,
+   "shelfLifeHours": 144,
+   "packSize": null,
+   "afterOpenHours": null,
+   "lossPct": 5,
+   "alertBeforeHours": null,
+   "leadTimeHours": 24
+  },
+  {
+   "id": "pickles",
+   "name": "Огурцы солёные",
+   "unit": "G",
+   "category": "Овощи и зелень",
+   "price": 300,
+   "shelfLifeHours": 1440,
+   "packSize": null,
+   "afterOpenHours": null,
+   "lossPct": 0,
+   "alertBeforeHours": null,
+   "leadTimeHours": 24
+  },
+  {
+   "id": "onion",
+   "name": "Лук репчатый",
+   "unit": "G",
+   "category": "Овощи и зелень",
+   "price": 60,
+   "shelfLifeHours": 720,
+   "packSize": null,
+   "afterOpenHours": null,
+   "lossPct": 15,
+   "alertBeforeHours": null,
+   "leadTimeHours": 24
+  },
+  {
+   "id": "red_onion",
+   "name": "Лук красный",
+   "unit": "G",
+   "category": "Овощи и зелень",
+   "price": 90,
+   "shelfLifeHours": 720,
+   "packSize": null,
+   "afterOpenHours": null,
+   "lossPct": 15,
+   "alertBeforeHours": null,
+   "leadTimeHours": 24
+  },
+  {
+   "id": "green_onion",
+   "name": "Лук зелёный",
+   "unit": "G",
+   "category": "Овощи и зелень",
+   "price": 600,
+   "shelfLifeHours": 48,
+   "packSize": null,
+   "afterOpenHours": null,
+   "lossPct": 0,
+   "alertBeforeHours": null,
+   "leadTimeHours": 24
+  },
+  {
+   "id": "lettuce",
+   "name": "Лист салата",
+   "unit": "G",
+   "category": "Овощи и зелень",
+   "price": 600,
+   "shelfLifeHours": 72,
+   "packSize": null,
+   "afterOpenHours": null,
+   "lossPct": 10,
+   "alertBeforeHours": null,
+   "leadTimeHours": 24
+  },
+  {
+   "id": "cabbage",
+   "name": "Капуста пекинская",
+   "unit": "G",
+   "category": "Овощи и зелень",
+   "price": 120,
+   "shelfLifeHours": 168,
+   "packSize": null,
+   "afterOpenHours": null,
+   "lossPct": 10,
+   "alertBeforeHours": null,
+   "leadTimeHours": 24
+  },
+  {
+   "id": "carrot_korean",
+   "name": "Морковь по-корейски",
+   "unit": "G",
+   "category": "Овощи и зелень",
+   "price": 300,
+   "shelfLifeHours": 120,
+   "packSize": null,
+   "afterOpenHours": null,
+   "lossPct": 0,
+   "alertBeforeHours": null,
+   "leadTimeHours": 24
+  },
+  {
+   "id": "carrot",
+   "name": "Морковь",
+   "unit": "G",
+   "category": "Овощи и зелень",
+   "price": 60,
+   "shelfLifeHours": 480,
+   "packSize": null,
+   "afterOpenHours": null,
+   "lossPct": 20,
+   "alertBeforeHours": null,
+   "leadTimeHours": 24
+  },
+  {
+   "id": "bell_pepper",
+   "name": "Перец болгарский",
+   "unit": "G",
+   "category": "Овощи и зелень",
+   "price": 350,
+   "shelfLifeHours": 168,
+   "packSize": null,
+   "afterOpenHours": null,
+   "lossPct": 15,
+   "alertBeforeHours": null,
+   "leadTimeHours": 24
+  },
+  {
+   "id": "jalapeno",
+   "name": "Перец халапеньо",
+   "unit": "G",
+   "category": "Овощи и зелень",
+   "price": 900,
+   "shelfLifeHours": 2160,
+   "packSize": null,
+   "afterOpenHours": null,
+   "lossPct": 0,
+   "alertBeforeHours": null,
+   "leadTimeHours": 24
+  },
+  {
+   "id": "mushrooms",
+   "name": "Шампиньоны",
+   "unit": "G",
+   "category": "Овощи и зелень",
+   "price": 350,
+   "shelfLifeHours": 96,
+   "packSize": null,
+   "afterOpenHours": null,
+   "lossPct": 5,
+   "alertBeforeHours": null,
+   "leadTimeHours": 24
+  },
+  {
+   "id": "zucchini",
+   "name": "Кабачок",
+   "unit": "G",
+   "category": "Овощи и зелень",
+   "price": 150,
+   "shelfLifeHours": 168,
+   "packSize": null,
+   "afterOpenHours": null,
+   "lossPct": 10,
+   "alertBeforeHours": null,
+   "leadTimeHours": 24
+  },
+  {
+   "id": "herbs",
+   "name": "Зелень (петрушка, укроп)",
+   "unit": "G",
+   "category": "Овощи и зелень",
+   "price": 800,
+   "shelfLifeHours": 48,
+   "packSize": null,
+   "afterOpenHours": null,
+   "lossPct": 15,
+   "alertBeforeHours": null,
+   "leadTimeHours": 24
+  },
+  {
+   "id": "cilantro",
+   "name": "Кинза",
+   "unit": "G",
+   "category": "Овощи и зелень",
+   "price": 900,
+   "shelfLifeHours": 48,
+   "packSize": null,
+   "afterOpenHours": null,
+   "lossPct": 15,
+   "alertBeforeHours": null,
+   "leadTimeHours": 24
+  },
+  {
+   "id": "basil",
+   "name": "Базилик",
+   "unit": "G",
+   "category": "Овощи и зелень",
+   "price": 1500,
+   "shelfLifeHours": 48,
+   "packSize": null,
+   "afterOpenHours": null,
+   "lossPct": 10,
+   "alertBeforeHours": null,
+   "leadTimeHours": 24
+  },
+  {
+   "id": "garlic",
+   "name": "Чеснок",
+   "unit": "G",
+   "category": "Овощи и зелень",
+   "price": 300,
+   "shelfLifeHours": 1440,
+   "packSize": null,
+   "afterOpenHours": null,
+   "lossPct": 15,
+   "alertBeforeHours": null,
+   "leadTimeHours": 24
+  },
+  {
+   "id": "lemon",
+   "name": "Лимон",
+   "unit": "G",
+   "category": "Овощи и зелень",
+   "price": 250,
+   "shelfLifeHours": 336,
+   "packSize": null,
+   "afterOpenHours": null,
+   "lossPct": 0,
+   "alertBeforeHours": null,
+   "leadTimeHours": 24
+  },
+  {
+   "id": "orange",
+   "name": "Апельсины",
+   "unit": "G",
+   "category": "Овощи и зелень",
+   "price": 180,
+   "shelfLifeHours": 336,
+   "packSize": null,
+   "afterOpenHours": null,
+   "lossPct": 0,
+   "alertBeforeHours": null,
+   "leadTimeHours": 24
+  },
+  {
+   "id": "potato",
+   "name": "Картофель",
+   "unit": "G",
+   "category": "Овощи и зелень",
+   "price": 50,
+   "shelfLifeHours": 720,
+   "packSize": null,
+   "afterOpenHours": null,
+   "lossPct": 25,
+   "alertBeforeHours": null,
+   "leadTimeHours": 24
+  },
+  {
+   "id": "banana",
+   "name": "Банан",
+   "unit": "G",
+   "category": "Овощи и зелень",
+   "price": 150,
+   "shelfLifeHours": 120,
+   "packSize": null,
+   "afterOpenHours": null,
+   "lossPct": 30,
+   "alertBeforeHours": null,
+   "leadTimeHours": 24
+  },
+  {
+   "id": "strawberry",
+   "name": "Клубника",
+   "unit": "G",
+   "category": "Овощи и зелень",
+   "price": 600,
+   "shelfLifeHours": 48,
+   "packSize": null,
+   "afterOpenHours": null,
+   "lossPct": 0,
+   "alertBeforeHours": null,
+   "leadTimeHours": 24
+  },
+  {
+   "id": "raspberry",
+   "name": "Малина (замороженная)",
+   "unit": "G",
+   "category": "Овощи и зелень",
+   "price": 800,
+   "shelfLifeHours": 4320,
+   "packSize": null,
+   "afterOpenHours": null,
+   "lossPct": 0,
+   "alertBeforeHours": null,
+   "leadTimeHours": 24
+  },
+  {
+   "id": "currant_jam",
+   "name": "Конфитюр смородиновый",
+   "unit": "G",
+   "category": "Бакалея",
+   "price": 500,
+   "shelfLifeHours": 4320,
+   "packSize": null,
+   "afterOpenHours": null,
+   "lossPct": 0,
+   "alertBeforeHours": null,
+   "leadTimeHours": 24
+  },
+  {
+   "id": "fries",
+   "name": "Картофель фри (заморозка)",
+   "unit": "G",
+   "category": "Заморозка",
+   "price": 220,
+   "shelfLifeHours": 4320,
+   "packSize": null,
+   "afterOpenHours": null,
+   "lossPct": 0,
+   "alertBeforeHours": null,
+   "leadTimeHours": 48
+  },
+  {
+   "id": "wedges",
+   "name": "Картофель дольки (заморозка)",
+   "unit": "G",
+   "category": "Заморозка",
+   "price": 250,
+   "shelfLifeHours": 4320,
+   "packSize": null,
+   "afterOpenHours": null,
+   "lossPct": 0,
+   "alertBeforeHours": null,
+   "leadTimeHours": 48
+  },
+  {
+   "id": "onion_rings",
+   "name": "Луковые кольца (заморозка)",
+   "unit": "G",
+   "category": "Заморозка",
+   "price": 450,
+   "shelfLifeHours": 4320,
+   "packSize": null,
+   "afterOpenHours": null,
+   "lossPct": 0,
+   "alertBeforeHours": null,
+   "leadTimeHours": 48
+  },
+  {
+   "id": "nuggets",
+   "name": "Наггетсы (заморозка)",
+   "unit": "G",
+   "category": "Заморозка",
+   "price": 550,
+   "shelfLifeHours": 4320,
+   "packSize": null,
+   "afterOpenHours": null,
+   "lossPct": 0,
+   "alertBeforeHours": null,
+   "leadTimeHours": 48
+  },
+  {
+   "id": "wings",
+   "name": "Куриные крылья",
+   "unit": "G",
+   "category": "Мясо",
+   "price": 380,
+   "shelfLifeHours": 48,
+   "packSize": null,
+   "afterOpenHours": null,
+   "lossPct": 0,
+   "alertBeforeHours": 12,
+   "leadTimeHours": 24
+  },
+  {
+   "id": "cheese_sticks",
+   "name": "Сырные палочки (заморозка)",
+   "unit": "G",
+   "category": "Заморозка",
+   "price": 900,
+   "shelfLifeHours": 4320,
+   "packSize": null,
+   "afterOpenHours": null,
+   "lossPct": 0,
+   "alertBeforeHours": null,
+   "leadTimeHours": 48
+  },
+  {
+   "id": "syrniki",
+   "name": "Сырники (полуфабрикат)",
+   "unit": "PCS",
+   "category": "Заморозка",
+   "price": 35,
+   "shelfLifeHours": 1440,
+   "packSize": null,
+   "afterOpenHours": null,
+   "lossPct": 0,
+   "alertBeforeHours": null,
+   "leadTimeHours": 48
+  },
+  {
+   "id": "mayo",
+   "name": "Майонез",
+   "unit": "G",
+   "category": "Соусы",
+   "price": 220,
+   "shelfLifeHours": 2160,
+   "packSize": 1000,
+   "afterOpenHours": 336,
+   "lossPct": 0,
+   "alertBeforeHours": null,
+   "leadTimeHours": 24
+  },
+  {
+   "id": "ketchup",
+   "name": "Кетчуп",
+   "unit": "G",
+   "category": "Соусы",
+   "price": 200,
+   "shelfLifeHours": 4320,
+   "packSize": 1000,
+   "afterOpenHours": 720,
+   "lossPct": 0,
+   "alertBeforeHours": null,
+   "leadTimeHours": 24
+  },
+  {
+   "id": "bbq",
+   "name": "Соус барбекю",
+   "unit": "G",
+   "category": "Соусы",
+   "price": 400,
+   "shelfLifeHours": 4320,
+   "packSize": 1000,
+   "afterOpenHours": 720,
+   "lossPct": 0,
+   "alertBeforeHours": null,
+   "leadTimeHours": 24
+  },
+  {
+   "id": "sweet_chili",
+   "name": "Соус сладкий чили",
+   "unit": "G",
+   "category": "Соусы",
+   "price": 450,
+   "shelfLifeHours": 4320,
+   "packSize": 1000,
+   "afterOpenHours": 720,
+   "lossPct": 0,
+   "alertBeforeHours": null,
+   "leadTimeHours": 24
+  },
+  {
+   "id": "teriyaki",
+   "name": "Соус терияки",
+   "unit": "G",
+   "category": "Соусы",
+   "price": 500,
+   "shelfLifeHours": 4320,
+   "packSize": 1000,
+   "afterOpenHours": 720,
+   "lossPct": 0,
+   "alertBeforeHours": null,
+   "leadTimeHours": 24
+  },
+  {
+   "id": "unagi",
+   "name": "Соус унаги",
+   "unit": "G",
+   "category": "Соусы",
+   "price": 600,
+   "shelfLifeHours": 4320,
+   "packSize": 1000,
+   "afterOpenHours": 720,
+   "lossPct": 0,
+   "alertBeforeHours": null,
+   "leadTimeHours": 24
+  },
+  {
+   "id": "soy",
+   "name": "Соевый соус",
+   "unit": "ML",
+   "category": "Соусы",
+   "price": 250,
+   "shelfLifeHours": 8760,
+   "packSize": 1000,
+   "afterOpenHours": 1440,
+   "lossPct": 0,
+   "alertBeforeHours": null,
+   "leadTimeHours": 24
+  },
+  {
+   "id": "sriracha",
+   "name": "Соус шрирача",
+   "unit": "G",
+   "category": "Соусы",
+   "price": 700,
+   "shelfLifeHours": 4320,
+   "packSize": 500,
+   "afterOpenHours": 720,
+   "lossPct": 0,
+   "alertBeforeHours": null,
+   "leadTimeHours": 24
+  },
+  {
+   "id": "tartar",
+   "name": "Соус тар-тар",
+   "unit": "G",
+   "category": "Соусы",
+   "price": 450,
+   "shelfLifeHours": 2160,
+   "packSize": 1000,
+   "afterOpenHours": 336,
+   "lossPct": 0,
+   "alertBeforeHours": null,
+   "leadTimeHours": 24
+  },
+  {
+   "id": "mustard",
+   "name": "Соус горчичный",
+   "unit": "G",
+   "category": "Соусы",
+   "price": 400,
+   "shelfLifeHours": 4320,
+   "packSize": 1000,
+   "afterOpenHours": 720,
+   "lossPct": 0,
+   "alertBeforeHours": null,
+   "leadTimeHours": 24
+  },
+  {
+   "id": "islands",
+   "name": "Соус «1000 островов»",
+   "unit": "G",
+   "category": "Соусы",
+   "price": 450,
+   "shelfLifeHours": 2160,
+   "packSize": 1000,
+   "afterOpenHours": 336,
+   "lossPct": 0,
+   "alertBeforeHours": null,
+   "leadTimeHours": 24
+  },
+  {
+   "id": "oyster",
+   "name": "Соус устричный",
+   "unit": "G",
+   "category": "Соусы",
+   "price": 600,
+   "shelfLifeHours": 4320,
+   "packSize": 500,
+   "afterOpenHours": 720,
+   "lossPct": 0,
+   "alertBeforeHours": null,
+   "leadTimeHours": 24
+  },
+  {
+   "id": "pesto",
+   "name": "Соус песто",
+   "unit": "G",
+   "category": "Соусы",
+   "price": 1800,
+   "shelfLifeHours": 1440,
+   "packSize": 500,
+   "afterOpenHours": 168,
+   "lossPct": 0,
+   "alertBeforeHours": null,
+   "leadTimeHours": 24
+  },
+  {
+   "id": "tomato_sauce",
+   "name": "Соус томатный",
+   "unit": "G",
+   "category": "Соусы",
+   "price": 250,
+   "shelfLifeHours": 4320,
+   "packSize": 1000,
+   "afterOpenHours": 168,
+   "lossPct": 0,
+   "alertBeforeHours": null,
+   "leadTimeHours": 24
+  },
+  {
+   "id": "spicy_sauce",
+   "name": "Соус «Спайс»",
+   "unit": "G",
+   "category": "Соусы",
+   "price": 500,
+   "shelfLifeHours": 2160,
+   "packSize": 1000,
+   "afterOpenHours": 336,
+   "lossPct": 0,
+   "alertBeforeHours": null,
+   "leadTimeHours": 24
+  },
+  {
+   "id": "sesame_sauce",
+   "name": "Кунжутный соус",
+   "unit": "G",
+   "category": "Соусы",
+   "price": 700,
+   "shelfLifeHours": 2160,
+   "packSize": 500,
+   "afterOpenHours": 336,
+   "lossPct": 0,
+   "alertBeforeHours": null,
+   "leadTimeHours": 24
+  },
+  {
+   "id": "honey_mustard",
+   "name": "Соус медово-горчичный",
+   "unit": "G",
+   "category": "Соусы",
+   "price": 500,
+   "shelfLifeHours": 2160,
+   "packSize": 1000,
+   "afterOpenHours": 336,
+   "lossPct": 0,
+   "alertBeforeHours": null,
+   "leadTimeHours": 24
+  },
+  {
+   "id": "tomyam_paste",
+   "name": "Паста том ям",
+   "unit": "G",
+   "category": "Соусы",
+   "price": 1500,
+   "shelfLifeHours": 4320,
+   "packSize": null,
+   "afterOpenHours": null,
+   "lossPct": 0,
+   "alertBeforeHours": null,
+   "leadTimeHours": 24
+  },
+  {
+   "id": "coconut_milk",
+   "name": "Кокосовое молоко",
+   "unit": "ML",
+   "category": "Бакалея",
+   "price": 400,
+   "shelfLifeHours": 8760,
+   "packSize": 400,
+   "afterOpenHours": 72,
+   "lossPct": 0,
+   "alertBeforeHours": null,
+   "leadTimeHours": 24
+  },
+  {
+   "id": "coffee",
+   "name": "Кофе в зёрнах",
+   "unit": "G",
+   "category": "Напитки",
+   "price": 2000,
+   "shelfLifeHours": 4320,
+   "packSize": null,
+   "afterOpenHours": null,
+   "lossPct": 0,
+   "alertBeforeHours": null,
+   "leadTimeHours": 48
+  },
+  {
+   "id": "tea",
+   "name": "Чай листовой",
+   "unit": "G",
+   "category": "Напитки",
+   "price": 1500,
+   "shelfLifeHours": 8760,
+   "packSize": null,
+   "afterOpenHours": null,
+   "lossPct": 0,
+   "alertBeforeHours": null,
+   "leadTimeHours": 48
+  },
+  {
+   "id": "matcha",
+   "name": "Матча",
+   "unit": "G",
+   "category": "Напитки",
+   "price": 6000,
+   "shelfLifeHours": 4320,
+   "packSize": null,
+   "afterOpenHours": null,
+   "lossPct": 0,
+   "alertBeforeHours": null,
+   "leadTimeHours": 72
+  },
+  {
+   "id": "cocoa",
+   "name": "Какао",
+   "unit": "G",
+   "category": "Напитки",
+   "price": 900,
+   "shelfLifeHours": 8760,
+   "packSize": null,
+   "afterOpenHours": null,
+   "lossPct": 0,
+   "alertBeforeHours": null,
+   "leadTimeHours": 48
+  },
+  {
+   "id": "syrup",
+   "name": "Сироп (ассорти)",
+   "unit": "ML",
+   "category": "Напитки",
+   "price": 600,
+   "shelfLifeHours": 8760,
+   "packSize": 1000,
+   "afterOpenHours": 720,
+   "lossPct": 0,
+   "alertBeforeHours": null,
+   "leadTimeHours": 24
+  },
+  {
+   "id": "puree",
+   "name": "Фруктовое пюре (ассорти)",
+   "unit": "G",
+   "category": "Напитки",
+   "price": 700,
+   "shelfLifeHours": 2880,
+   "packSize": 1000,
+   "afterOpenHours": 120,
+   "lossPct": 0,
+   "alertBeforeHours": null,
+   "leadTimeHours": 24
+  },
+  {
+   "id": "juice_balls",
+   "name": "Джус-болы",
+   "unit": "G",
+   "category": "Напитки",
+   "price": 900,
+   "shelfLifeHours": 4320,
+   "packSize": 1000,
+   "afterOpenHours": 336,
+   "lossPct": 0,
+   "alertBeforeHours": null,
+   "leadTimeHours": 24
+  },
+  {
+   "id": "marshmallow",
+   "name": "Маршмеллоу",
+   "unit": "G",
+   "category": "Напитки",
+   "price": 800,
+   "shelfLifeHours": 4320,
+   "packSize": null,
+   "afterOpenHours": null,
+   "lossPct": 0,
+   "alertBeforeHours": null,
+   "leadTimeHours": 24
+  },
+  {
+   "id": "coconut_flakes",
+   "name": "Кокосовая стружка",
+   "unit": "G",
+   "category": "Напитки",
+   "price": 700,
+   "shelfLifeHours": 4320,
+   "packSize": null,
+   "afterOpenHours": null,
+   "lossPct": 0,
+   "alertBeforeHours": null,
+   "leadTimeHours": 24
+  },
+  {
+   "id": "popcorn",
+   "name": "Попкорн",
+   "unit": "G",
+   "category": "Напитки",
+   "price": 600,
+   "shelfLifeHours": 2160,
+   "packSize": null,
+   "afterOpenHours": null,
+   "lossPct": 0,
+   "alertBeforeHours": null,
+   "leadTimeHours": 24
+  },
+  {
+   "id": "tonic",
+   "name": "Тоник",
+   "unit": "ML",
+   "category": "Напитки",
+   "price": 200,
+   "shelfLifeHours": 8760,
+   "packSize": 1000,
+   "afterOpenHours": 48,
+   "lossPct": 0,
+   "alertBeforeHours": null,
+   "leadTimeHours": 24
+  },
+  {
+   "id": "lemonade_base",
+   "name": "Газированная вода",
+   "unit": "ML",
+   "category": "Напитки",
+   "price": 60,
+   "shelfLifeHours": 8760,
+   "packSize": 1000,
+   "afterOpenHours": 48,
+   "lossPct": 0,
+   "alertBeforeHours": null,
+   "leadTimeHours": 24
+  },
+  {
+   "id": "ice",
+   "name": "Лёд",
+   "unit": "G",
+   "category": "Напитки",
+   "price": 20,
+   "shelfLifeHours": 8760,
+   "packSize": null,
+   "afterOpenHours": null,
+   "lossPct": 0,
+   "alertBeforeHours": null,
+   "leadTimeHours": 24
+  },
+  {
+   "id": "cherry",
+   "name": "Вишня (замороженная)",
+   "unit": "G",
+   "category": "Напитки",
+   "price": 500,
+   "shelfLifeHours": 4320,
+   "packSize": null,
+   "afterOpenHours": null,
+   "lossPct": 0,
+   "alertBeforeHours": null,
+   "leadTimeHours": 24
+  },
+  {
+   "id": "anchan",
+   "name": "Чай анчан",
+   "unit": "G",
+   "category": "Напитки",
+   "price": 3000,
+   "shelfLifeHours": 8760,
+   "packSize": null,
+   "afterOpenHours": null,
+   "lossPct": 0,
+   "alertBeforeHours": null,
+   "leadTimeHours": 72
+  },
+  {
+   "id": "rice_sushi",
+   "name": "Рис для роллов",
+   "unit": "G",
+   "category": "Заготовки",
+   "price": 0,
+   "shelfLifeHours": 6,
+   "kind": "SEMI",
+   "alertBeforeHours": null,
+   "leadTimeHours": null
+  },
+  {
+   "id": "tapioca_cooked",
+   "name": "Тапиока варёная",
+   "unit": "G",
+   "category": "Заготовки",
+   "price": 0,
+   "shelfLifeHours": 4,
+   "kind": "SEMI",
+   "alertBeforeHours": null,
+   "leadTimeHours": null
+  },
+  {
+   "id": "dough_pizza",
+   "name": "Тесто для пиццы",
+   "unit": "G",
+   "category": "Заготовки",
+   "price": 0,
+   "shelfLifeHours": 48,
+   "kind": "SEMI",
+   "alertBeforeHours": null,
+   "leadTimeHours": null
+  },
+  {
+   "id": "sauce_signature",
+   "name": "Соус «Фирменный»",
+   "unit": "G",
+   "category": "Заготовки",
+   "price": 0,
+   "shelfLifeHours": 72,
+   "kind": "SEMI",
+   "alertBeforeHours": null,
+   "leadTimeHours": null
+  },
+  {
+   "id": "sauce_caesar",
+   "name": "Соус «Цезарь»",
+   "unit": "G",
+   "category": "Заготовки",
+   "price": 0,
+   "shelfLifeHours": 72,
+   "kind": "SEMI",
+   "alertBeforeHours": null,
+   "leadTimeHours": null
+  },
+  {
+   "id": "sauce_cheese",
+   "name": "Сырный соус",
+   "unit": "G",
+   "category": "Заготовки",
+   "price": 0,
+   "shelfLifeHours": 48,
+   "kind": "SEMI",
+   "alertBeforeHours": null,
+   "leadTimeHours": null
+  },
+  {
+   "id": "sauce_garlic",
+   "name": "Чесночный соус",
+   "unit": "G",
+   "category": "Заготовки",
+   "price": 0,
+   "shelfLifeHours": 72,
+   "kind": "SEMI",
+   "alertBeforeHours": null,
+   "leadTimeHours": null
+  },
+  {
+   "id": "bolognese",
+   "name": "Соус «Болоньезе»",
+   "unit": "G",
+   "category": "Заготовки",
+   "price": 0,
+   "shelfLifeHours": 48,
+   "kind": "SEMI",
+   "alertBeforeHours": null,
+   "leadTimeHours": null
+  },
+  {
+   "id": "crab_mix",
+   "name": "Крабовый замес",
+   "unit": "G",
+   "category": "Заготовки",
+   "price": 0,
+   "shelfLifeHours": 24,
+   "kind": "SEMI",
+   "alertBeforeHours": null,
+   "leadTimeHours": null
+  }
+ ],
+ "semi": [
+  {
+   "productId": "rice_sushi",
+   "yieldQty": 1000,
+   "lines": [
+    {
+     "productId": "rice",
+     "net": 420
+    },
+    {
+     "productId": "rice_vinegar",
+     "net": 40
+    },
+    {
+     "productId": "sugar",
+     "net": 20
+    }
+   ]
+  },
+  {
+   "productId": "tapioca_cooked",
+   "yieldQty": 1000,
+   "lines": [
+    {
+     "productId": "tapioca_dry",
+     "net": 350
+    },
+    {
+     "productId": "sugar",
+     "net": 120
+    }
+   ]
+  },
+  {
+   "productId": "dough_pizza",
+   "yieldQty": 1000,
+   "lines": [
+    {
+     "productId": "flour",
+     "net": 600
+    },
+    {
+     "productId": "yeast",
+     "net": 8
+    },
+    {
+     "productId": "olive_oil",
+     "net": 30
+    },
+    {
+     "productId": "sugar",
+     "net": 10
+    }
+   ]
+  },
+  {
+   "productId": "sauce_signature",
+   "yieldQty": 1000,
+   "lines": [
+    {
+     "productId": "mayo",
+     "net": 600
+    },
+    {
+     "productId": "ketchup",
+     "net": 200
+    },
+    {
+     "productId": "pickles",
+     "net": 120
+    },
+    {
+     "productId": "garlic",
+     "net": 20
+    },
+    {
+     "productId": "spices",
+     "net": 5
+    }
+   ]
+  },
+  {
+   "productId": "sauce_caesar",
+   "yieldQty": 1000,
+   "lines": [
+    {
+     "productId": "mayo",
+     "net": 650
+    },
+    {
+     "productId": "parmesan",
+     "net": 120
+    },
+    {
+     "productId": "garlic",
+     "net": 30
+    },
+    {
+     "productId": "mustard",
+     "net": 40
+    }
+   ]
+  },
+  {
+   "productId": "sauce_cheese",
+   "yieldQty": 1000,
+   "lines": [
+    {
+     "productId": "cream",
+     "net": 600
+    },
+    {
+     "productId": "cheddar",
+     "net": 350
+    },
+    {
+     "productId": "gouda",
+     "net": 100
+    }
+   ]
+  },
+  {
+   "productId": "sauce_garlic",
+   "yieldQty": 1000,
+   "lines": [
+    {
+     "productId": "mayo",
+     "net": 850
+    },
+    {
+     "productId": "garlic",
+     "net": 60
+    },
+    {
+     "productId": "herbs",
+     "net": 20
+    }
+   ]
+  },
+  {
+   "productId": "bolognese",
+   "yieldQty": 1000,
+   "lines": [
+    {
+     "productId": "mince",
+     "net": 500
+    },
+    {
+     "productId": "tomato_sauce",
+     "net": 400
+    },
+    {
+     "productId": "onion",
+     "net": 120
+    },
+    {
+     "productId": "garlic",
+     "net": 15
+    },
+    {
+     "productId": "spices",
+     "net": 5
+    }
+   ]
+  },
+  {
+   "productId": "crab_mix",
+   "yieldQty": 1000,
+   "lines": [
+    {
+     "productId": "crab_sticks",
+     "net": 620
+    },
+    {
+     "productId": "mayo",
+     "net": 300
+    },
+    {
+     "productId": "masago",
+     "net": 60
+    }
+   ]
+  }
+ ],
+ "dishes": [
+  {
+   "id": "b1",
+   "name": "Мамин",
+   "category": "Бургеры",
+   "description": "Свиная котлета, бекон, сыр гауда, сыр чеддер, луковые кольца, томаты, солёные огурцы, соус «Дабл-бургер», соус «Спайс»",
+   "sort": 1,
+   "variants": [
+    {
+     "id": "b1",
+     "label": null,
+     "name": "Мамин",
+     "priceKop": 48000,
+     "lines": [
+      {
+       "productId": "patty_pork",
+       "net": 1
+      },
+      {
+       "productId": "bacon",
+       "net": 30
+      },
+      {
+       "productId": "gouda",
+       "net": 20
+      },
+      {
+       "productId": "cheddar",
+       "net": 20
+      },
+      {
+       "productId": "onion_rings",
+       "net": 40
+      },
+      {
+       "productId": "tomato",
+       "net": 30
+      },
+      {
+       "productId": "pickles",
+       "net": 15
+      },
+      {
+       "productId": "sauce_signature",
+       "net": 25
+      },
+      {
+       "productId": "spicy_sauce",
+       "net": 15
+      },
+      {
+       "productId": "bun",
+       "net": 1
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b2",
+   "name": "Мясоед",
+   "category": "Бургеры",
+   "description": "Свиная котлета, бекон, соус болоньезе, сыр гауда, томаты, солёные огурцы, лук, лист салата",
+   "sort": 2,
+   "variants": [
+    {
+     "id": "b2",
+     "label": null,
+     "name": "Мясоед",
+     "priceKop": 46000,
+     "lines": [
+      {
+       "productId": "patty_pork",
+       "net": 1
+      },
+      {
+       "productId": "bacon",
+       "net": 30
+      },
+      {
+       "productId": "bolognese",
+       "net": 40
+      },
+      {
+       "productId": "gouda",
+       "net": 20
+      },
+      {
+       "productId": "tomato",
+       "net": 30
+      },
+      {
+       "productId": "pickles",
+       "net": 15
+      },
+      {
+       "productId": "onion",
+       "net": 15
+      },
+      {
+       "productId": "lettuce",
+       "net": 15
+      },
+      {
+       "productId": "bun",
+       "net": 1
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b3",
+   "name": "С куриным шницелем",
+   "category": "Бургеры",
+   "description": "Шницель куриный, томаты, огурцы солёные, лук красный, соус «Тар-тар», соус «Дабл-бургер»",
+   "sort": 3,
+   "variants": [
+    {
+     "id": "b3",
+     "label": null,
+     "name": "С куриным шницелем",
+     "priceKop": 41000,
+     "lines": [
+      {
+       "productId": "schnitzel",
+       "net": 1
+      },
+      {
+       "productId": "tomato",
+       "net": 30
+      },
+      {
+       "productId": "pickles",
+       "net": 15
+      },
+      {
+       "productId": "red_onion",
+       "net": 15
+      },
+      {
+       "productId": "tartar",
+       "net": 25
+      },
+      {
+       "productId": "sauce_signature",
+       "net": 25
+      },
+      {
+       "productId": "bun",
+       "net": 1
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b4",
+   "name": "Чизбургер",
+   "category": "Бургеры",
+   "description": "Котлета свиная или куриная, сыр гауда, томаты, огурец солёный, лист салата, соус фирменный, соус «1000 островов»",
+   "sort": 4,
+   "variants": [
+    {
+     "id": "b4",
+     "label": null,
+     "name": "Чизбургер",
+     "priceKop": 36000,
+     "lines": [
+      {
+       "productId": "patty_chicken",
+       "net": 1
+      },
+      {
+       "productId": "gouda",
+       "net": 20
+      },
+      {
+       "productId": "tomato",
+       "net": 30
+      },
+      {
+       "productId": "pickles",
+       "net": 15
+      },
+      {
+       "productId": "lettuce",
+       "net": 15
+      },
+      {
+       "productId": "sauce_signature",
+       "net": 25
+      },
+      {
+       "productId": "islands",
+       "net": 25
+      },
+      {
+       "productId": "bun",
+       "net": 1
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b5",
+   "name": "Гриль-бекон",
+   "category": "Бургеры",
+   "description": "Котлета свиная, бекон, сыр гауда, томаты, огурцы солёные, лук, соус «Гриль»",
+   "sort": 5,
+   "variants": [
+    {
+     "id": "b5",
+     "label": null,
+     "name": "Гриль-бекон",
+     "priceKop": 42000,
+     "lines": [
+      {
+       "productId": "patty_pork",
+       "net": 1
+      },
+      {
+       "productId": "bacon",
+       "net": 30
+      },
+      {
+       "productId": "gouda",
+       "net": 20
+      },
+      {
+       "productId": "tomato",
+       "net": 30
+      },
+      {
+       "productId": "pickles",
+       "net": 15
+      },
+      {
+       "productId": "onion",
+       "net": 15
+      },
+      {
+       "productId": "bbq",
+       "net": 25
+      },
+      {
+       "productId": "bun",
+       "net": 1
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b6",
+   "name": "Тёщин",
+   "category": "Бургеры",
+   "description": "Котлета св.-говяжья, томлёная свинина, бекон, сыр гауда, томаты, лист салата, лук, соус горчичный, соус «Барбекю»",
+   "sort": 6,
+   "variants": [
+    {
+     "id": "b6",
+     "label": null,
+     "name": "Тёщин",
+     "priceKop": 48000,
+     "lines": [
+      {
+       "productId": "patty_mixed",
+       "net": 1
+      },
+      {
+       "productId": "pork_braised",
+       "net": 70
+      },
+      {
+       "productId": "bacon",
+       "net": 30
+      },
+      {
+       "productId": "gouda",
+       "net": 20
+      },
+      {
+       "productId": "tomato",
+       "net": 30
+      },
+      {
+       "productId": "lettuce",
+       "net": 15
+      },
+      {
+       "productId": "onion",
+       "net": 15
+      },
+      {
+       "productId": "mustard",
+       "net": 25
+      },
+      {
+       "productId": "bbq",
+       "net": 25
+      },
+      {
+       "productId": "bun",
+       "net": 1
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b7",
+   "name": "Русский",
+   "category": "Бургеры",
+   "description": "Котлета свиная, бекон, сыр гауда, шампиньоны, картофель-фри, томаты, огурцы солёные, лист салата, лук, соус фирменный, соус «Цезарь»",
+   "sort": 7,
+   "variants": [
+    {
+     "id": "b7",
+     "label": null,
+     "name": "Русский",
+     "priceKop": 46000,
+     "lines": [
+      {
+       "productId": "patty_pork",
+       "net": 1
+      },
+      {
+       "productId": "bacon",
+       "net": 30
+      },
+      {
+       "productId": "gouda",
+       "net": 20
+      },
+      {
+       "productId": "mushrooms",
+       "net": 30
+      },
+      {
+       "productId": "fries",
+       "net": 40
+      },
+      {
+       "productId": "tomato",
+       "net": 30
+      },
+      {
+       "productId": "pickles",
+       "net": 15
+      },
+      {
+       "productId": "lettuce",
+       "net": 15
+      },
+      {
+       "productId": "onion",
+       "net": 15
+      },
+      {
+       "productId": "sauce_signature",
+       "net": 25
+      },
+      {
+       "productId": "sauce_caesar",
+       "net": 25
+      },
+      {
+       "productId": "bun",
+       "net": 1
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b8",
+   "name": "Сырный",
+   "category": "Бургеры",
+   "description": "Котлета свиная, котлета сырная, сыр гауда, томаты, огурцы солёные, лист салата, соус «Сладкий чили»",
+   "sort": 8,
+   "variants": [
+    {
+     "id": "b8",
+     "label": null,
+     "name": "Сырный",
+     "priceKop": 47000,
+     "lines": [
+      {
+       "productId": "patty_pork",
+       "net": 1
+      },
+      {
+       "productId": "patty_cheese",
+       "net": 1
+      },
+      {
+       "productId": "gouda",
+       "net": 20
+      },
+      {
+       "productId": "tomato",
+       "net": 30
+      },
+      {
+       "productId": "pickles",
+       "net": 15
+      },
+      {
+       "productId": "lettuce",
+       "net": 15
+      },
+      {
+       "productId": "sweet_chili",
+       "net": 25
+      },
+      {
+       "productId": "bun",
+       "net": 1
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b9",
+   "name": "Кавабанга",
+   "category": "Бургеры",
+   "description": "Котлета свиная, сыр гауда, томаты, лук жареный, лук свежий, перец халапеньо, соус «Барбекю», соус «Шрирача»",
+   "sort": 9,
+   "variants": [
+    {
+     "id": "b9",
+     "label": null,
+     "name": "Кавабанга",
+     "priceKop": 43000,
+     "lines": [
+      {
+       "productId": "patty_pork",
+       "net": 1
+      },
+      {
+       "productId": "gouda",
+       "net": 20
+      },
+      {
+       "productId": "tomato",
+       "net": 30
+      },
+      {
+       "productId": "onion",
+       "net": 30
+      },
+      {
+       "productId": "jalapeno",
+       "net": 15
+      },
+      {
+       "productId": "bbq",
+       "net": 25
+      },
+      {
+       "productId": "sriracha",
+       "net": 15
+      },
+      {
+       "productId": "bun",
+       "net": 1
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b10",
+   "name": "Смородина с дорблю",
+   "category": "Бургеры",
+   "description": "Котлета свиная, сыр гауда, сыр моцарелла, сыр дорблю, смородиновый конфитюр, томаты, огурцы солёные, сырный соус",
+   "sort": 10,
+   "variants": [
+    {
+     "id": "b10",
+     "label": null,
+     "name": "Смородина с дорблю",
+     "priceKop": 45000,
+     "lines": [
+      {
+       "productId": "patty_pork",
+       "net": 1
+      },
+      {
+       "productId": "gouda",
+       "net": 20
+      },
+      {
+       "productId": "mozzarella",
+       "net": 30
+      },
+      {
+       "productId": "dorblu",
+       "net": 20
+      },
+      {
+       "productId": "currant_jam",
+       "net": 25
+      },
+      {
+       "productId": "tomato",
+       "net": 30
+      },
+      {
+       "productId": "pickles",
+       "net": 15
+      },
+      {
+       "productId": "sauce_cheese",
+       "net": 25
+      },
+      {
+       "productId": "bun",
+       "net": 1
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b11",
+   "name": "Сытый батя с двойной котлетой",
+   "category": "Бургеры",
+   "description": "2 котлеты свиные, бекон, сыр гауда, томаты, огурцы солёные, лист салата, лук, соус «Фирменный»",
+   "sort": 11,
+   "variants": [
+    {
+     "id": "b11",
+     "label": null,
+     "name": "Сытый батя с двойной котлетой",
+     "priceKop": 54000,
+     "lines": [
+      {
+       "productId": "patty_pork",
+       "net": 2
+      },
+      {
+       "productId": "bacon",
+       "net": 30
+      },
+      {
+       "productId": "gouda",
+       "net": 20
+      },
+      {
+       "productId": "tomato",
+       "net": 30
+      },
+      {
+       "productId": "pickles",
+       "net": 15
+      },
+      {
+       "productId": "lettuce",
+       "net": 15
+      },
+      {
+       "productId": "onion",
+       "net": 15
+      },
+      {
+       "productId": "sauce_signature",
+       "net": 25
+      },
+      {
+       "productId": "bun",
+       "net": 1
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b12",
+   "name": "Жиробас с тройной котлетой",
+   "category": "Бургеры",
+   "description": "3 свиные котлеты, бекон, сыр, томаты, лук свежий, огурцы солёные, лист салата, соус фирменный, соус «1000 островов»",
+   "sort": 12,
+   "variants": [
+    {
+     "id": "b12",
+     "label": null,
+     "name": "Жиробас с тройной котлетой",
+     "priceKop": 69000,
+     "lines": [
+      {
+       "productId": "patty_pork",
+       "net": 3
+      },
+      {
+       "productId": "bacon",
+       "net": 30
+      },
+      {
+       "productId": "gouda",
+       "net": 20
+      },
+      {
+       "productId": "tomato",
+       "net": 30
+      },
+      {
+       "productId": "onion",
+       "net": 15
+      },
+      {
+       "productId": "pickles",
+       "net": 15
+      },
+      {
+       "productId": "lettuce",
+       "net": 15
+      },
+      {
+       "productId": "sauce_signature",
+       "net": 25
+      },
+      {
+       "productId": "islands",
+       "net": 25
+      },
+      {
+       "productId": "bun",
+       "net": 1
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b13",
+   "name": "Цыпа",
+   "category": "Бургеры",
+   "description": "Куриная котлета, сыр гауда, томаты, огурец свежий, лист салата, лук, соус «Цезарь»",
+   "sort": 13,
+   "variants": [
+    {
+     "id": "b13",
+     "label": null,
+     "name": "Цыпа",
+     "priceKop": 38000,
+     "lines": [
+      {
+       "productId": "patty_chicken",
+       "net": 1
+      },
+      {
+       "productId": "gouda",
+       "net": 20
+      },
+      {
+       "productId": "tomato",
+       "net": 30
+      },
+      {
+       "productId": "cucumber",
+       "net": 30
+      },
+      {
+       "productId": "lettuce",
+       "net": 15
+      },
+      {
+       "productId": "onion",
+       "net": 15
+      },
+      {
+       "productId": "sauce_caesar",
+       "net": 25
+      },
+      {
+       "productId": "bun",
+       "net": 1
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b14",
+   "name": "Чикен-бекон",
+   "category": "Бургеры",
+   "description": "Куриная котлета, бекон, сыр гауда, сыр чеддер, томаты, огурцы солёные, соус «Дабл-бургер»",
+   "sort": 14,
+   "variants": [
+    {
+     "id": "b14",
+     "label": null,
+     "name": "Чикен-бекон",
+     "priceKop": 44000,
+     "lines": [
+      {
+       "productId": "patty_chicken",
+       "net": 1
+      },
+      {
+       "productId": "bacon",
+       "net": 30
+      },
+      {
+       "productId": "gouda",
+       "net": 20
+      },
+      {
+       "productId": "cheddar",
+       "net": 20
+      },
+      {
+       "productId": "tomato",
+       "net": 30
+      },
+      {
+       "productId": "pickles",
+       "net": 15
+      },
+      {
+       "productId": "sauce_signature",
+       "net": 25
+      },
+      {
+       "productId": "bun",
+       "net": 1
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b15",
+   "name": "Охота мяса",
+   "category": "Бургеры",
+   "description": "Котлета говяжья, сыр чеддер, бекон, огурцы солёные, помидор, перец халапеньо, красный лук, соус «Цезарь», кетчуп",
+   "sort": 15,
+   "variants": [
+    {
+     "id": "b15",
+     "label": null,
+     "name": "Охота мяса",
+     "priceKop": 47000,
+     "lines": [
+      {
+       "productId": "patty_beef",
+       "net": 1
+      },
+      {
+       "productId": "cheddar",
+       "net": 20
+      },
+      {
+       "productId": "bacon",
+       "net": 30
+      },
+      {
+       "productId": "pickles",
+       "net": 15
+      },
+      {
+       "productId": "tomato",
+       "net": 30
+      },
+      {
+       "productId": "jalapeno",
+       "net": 15
+      },
+      {
+       "productId": "red_onion",
+       "net": 15
+      },
+      {
+       "productId": "sauce_caesar",
+       "net": 25
+      },
+      {
+       "productId": "ketchup",
+       "net": 25
+      },
+      {
+       "productId": "bun",
+       "net": 1
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b16",
+   "name": "С креветками",
+   "category": "Бургеры",
+   "description": "Креветки, смесь сыров, огурцы солёные, помидор, кабачок, соус сладкий чили",
+   "sort": 16,
+   "variants": [
+    {
+     "id": "b16",
+     "label": null,
+     "name": "С креветками",
+     "priceKop": 49000,
+     "lines": [
+      {
+       "productId": "shrimp",
+       "net": 60
+      },
+      {
+       "productId": "mozzarella",
+       "net": 30
+      },
+      {
+       "productId": "pickles",
+       "net": 15
+      },
+      {
+       "productId": "tomato",
+       "net": 30
+      },
+      {
+       "productId": "zucchini",
+       "net": 30
+      },
+      {
+       "productId": "sweet_chili",
+       "net": 25
+      },
+      {
+       "productId": "bun",
+       "net": 1
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "nb1",
+   "name": "Шаурма с курицей",
+   "category": "Шаурма и гирос",
+   "description": "Курица, томаты, огурцы, морковь по-корейски, лук, капуста пекинская, соус фирменный",
+   "sort": 17,
+   "variants": [
+    {
+     "id": "nb1-1",
+     "label": "Маленькая",
+     "name": "Шаурма с курицей Маленькая",
+     "priceKop": 32000,
+     "lines": [
+      {
+       "productId": "chicken",
+       "net": 110
+      },
+      {
+       "productId": "tomato",
+       "net": 35
+      },
+      {
+       "productId": "cucumber",
+       "net": 35
+      },
+      {
+       "productId": "carrot_korean",
+       "net": 35
+      },
+      {
+       "productId": "onion",
+       "net": 15
+      },
+      {
+       "productId": "cabbage",
+       "net": 35
+      },
+      {
+       "productId": "sauce_signature",
+       "net": 35
+      },
+      {
+       "productId": "lavash",
+       "net": 1
+      }
+     ]
+    },
+    {
+     "id": "nb1-2",
+     "label": "Большая",
+     "name": "Шаурма с курицей Большая",
+     "priceKop": 41000,
+     "lines": [
+      {
+       "productId": "chicken",
+       "net": 176
+      },
+      {
+       "productId": "tomato",
+       "net": 56
+      },
+      {
+       "productId": "cucumber",
+       "net": 56
+      },
+      {
+       "productId": "carrot_korean",
+       "net": 56
+      },
+      {
+       "productId": "onion",
+       "net": 24
+      },
+      {
+       "productId": "cabbage",
+       "net": 56
+      },
+      {
+       "productId": "sauce_signature",
+       "net": 56
+      },
+      {
+       "productId": "lavash",
+       "net": 1
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "nb2",
+   "name": "Шаурма с рёберным мясом",
+   "category": "Шаурма и гирос",
+   "description": "Св. рёбра, огурцы сол., капуста, лук, халапеньо, фирменный соус",
+   "sort": 18,
+   "variants": [
+    {
+     "id": "nb2-1",
+     "label": "Маленькая",
+     "name": "Шаурма с рёберным мясом Маленькая",
+     "priceKop": 33000,
+     "lines": [
+      {
+       "productId": "ribs",
+       "net": 110
+      },
+      {
+       "productId": "pickles",
+       "net": 15
+      },
+      {
+       "productId": "cabbage",
+       "net": 35
+      },
+      {
+       "productId": "onion",
+       "net": 15
+      },
+      {
+       "productId": "jalapeno",
+       "net": 15
+      },
+      {
+       "productId": "sauce_signature",
+       "net": 35
+      },
+      {
+       "productId": "lavash",
+       "net": 1
+      }
+     ]
+    },
+    {
+     "id": "nb2-2",
+     "label": "Большая",
+     "name": "Шаурма с рёберным мясом Большая",
+     "priceKop": 42000,
+     "lines": [
+      {
+       "productId": "ribs",
+       "net": 176
+      },
+      {
+       "productId": "pickles",
+       "net": 24
+      },
+      {
+       "productId": "cabbage",
+       "net": 56
+      },
+      {
+       "productId": "onion",
+       "net": 24
+      },
+      {
+       "productId": "jalapeno",
+       "net": 24
+      },
+      {
+       "productId": "sauce_signature",
+       "net": 56
+      },
+      {
+       "productId": "lavash",
+       "net": 1
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "nb3",
+   "name": "Шаурма со свининой",
+   "category": "Шаурма и гирос",
+   "description": "Свинина, томаты, огурцы сол., капуста, морковь, лук, соус «Барбекю», соус «Цезарь»",
+   "sort": 19,
+   "variants": [
+    {
+     "id": "nb3-1",
+     "label": "Маленькая",
+     "name": "Шаурма со свининой Маленькая",
+     "priceKop": 32000,
+     "lines": [
+      {
+       "productId": "pork",
+       "net": 110
+      },
+      {
+       "productId": "tomato",
+       "net": 35
+      },
+      {
+       "productId": "pickles",
+       "net": 15
+      },
+      {
+       "productId": "cabbage",
+       "net": 35
+      },
+      {
+       "productId": "carrot_korean",
+       "net": 35
+      },
+      {
+       "productId": "onion",
+       "net": 15
+      },
+      {
+       "productId": "bbq",
+       "net": 35
+      },
+      {
+       "productId": "sauce_caesar",
+       "net": 35
+      },
+      {
+       "productId": "lavash",
+       "net": 1
+      }
+     ]
+    },
+    {
+     "id": "nb3-2",
+     "label": "Большая",
+     "name": "Шаурма со свининой Большая",
+     "priceKop": 41000,
+     "lines": [
+      {
+       "productId": "pork",
+       "net": 176
+      },
+      {
+       "productId": "tomato",
+       "net": 56
+      },
+      {
+       "productId": "pickles",
+       "net": 24
+      },
+      {
+       "productId": "cabbage",
+       "net": 56
+      },
+      {
+       "productId": "carrot_korean",
+       "net": 56
+      },
+      {
+       "productId": "onion",
+       "net": 24
+      },
+      {
+       "productId": "bbq",
+       "net": 56
+      },
+      {
+       "productId": "sauce_caesar",
+       "net": 56
+      },
+      {
+       "productId": "lavash",
+       "net": 1
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "nb4",
+   "name": "Гирос в лепёшке",
+   "category": "Шаурма и гирос",
+   "description": "Курица, томаты, огурцы, картофель фри, лук, соус",
+   "sort": 20,
+   "variants": [
+    {
+     "id": "nb4",
+     "label": null,
+     "name": "Гирос в лепёшке",
+     "priceKop": 42000,
+     "lines": [
+      {
+       "productId": "chicken",
+       "net": 110
+      },
+      {
+       "productId": "tomato",
+       "net": 35
+      },
+      {
+       "productId": "cucumber",
+       "net": 35
+      },
+      {
+       "productId": "fries",
+       "net": 60
+      },
+      {
+       "productId": "onion",
+       "net": 15
+      },
+      {
+       "productId": "pita",
+       "net": 1
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "nb5",
+   "name": "Гирос на тарелке",
+   "category": "Шаурма и гирос",
+   "description": "Курица, томаты, огурцы, картофель фри, лук, соус",
+   "sort": 21,
+   "variants": [
+    {
+     "id": "nb5",
+     "label": null,
+     "name": "Гирос на тарелке",
+     "priceKop": 42000,
+     "lines": [
+      {
+       "productId": "chicken",
+       "net": 110
+      },
+      {
+       "productId": "tomato",
+       "net": 35
+      },
+      {
+       "productId": "cucumber",
+       "net": 35
+      },
+      {
+       "productId": "fries",
+       "net": 60
+      },
+      {
+       "productId": "onion",
+       "net": 15
+      },
+      {
+       "productId": "pita",
+       "net": 1
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "sn1",
+   "name": "Картофель фри",
+   "category": "Закуски",
+   "description": "Классический картофель фри",
+   "sort": 22,
+   "variants": [
+    {
+     "id": "sn1",
+     "label": null,
+     "name": "Картофель фри",
+     "priceKop": 18500,
+     "lines": [
+      {
+       "productId": "fries",
+       "net": 140
+      },
+      {
+       "productId": "spices",
+       "net": 2
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "sn2",
+   "name": "Картофель по-деревенски",
+   "category": "Закуски",
+   "description": "Картофельные дольки с приправами",
+   "sort": 23,
+   "variants": [
+    {
+     "id": "sn2",
+     "label": null,
+     "name": "Картофель по-деревенски",
+     "priceKop": 18500,
+     "lines": [
+      {
+       "productId": "wedges",
+       "net": 140
+      },
+      {
+       "productId": "spices",
+       "net": 2
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "sn3",
+   "name": "Дольки с фаршем и барбекю",
+   "category": "Закуски",
+   "description": "Картофельные дольки с мясным фаршем и соусом барбекю",
+   "sort": 24,
+   "variants": [
+    {
+     "id": "sn3",
+     "label": null,
+     "name": "Дольки с фаршем и барбекю",
+     "priceKop": 37000,
+     "lines": [
+      {
+       "productId": "wedges",
+       "net": 200
+      },
+      {
+       "productId": "mince",
+       "net": 80
+      },
+      {
+       "productId": "bbq",
+       "net": 40
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "sn4",
+   "name": "Сырные палочки",
+   "category": "Закуски",
+   "description": "Сырные палочки с соусом из смородины",
+   "sort": 25,
+   "variants": [
+    {
+     "id": "sn4",
+     "label": null,
+     "name": "Сырные палочки",
+     "priceKop": 33000,
+     "lines": [
+      {
+       "productId": "cheese_sticks",
+       "net": 150
+      },
+      {
+       "productId": "currant_jam",
+       "net": 30
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "sn5",
+   "name": "Наггетсы куриные",
+   "category": "Закуски",
+   "description": "Хрустящие куриные наггетсы",
+   "sort": 26,
+   "variants": [
+    {
+     "id": "sn5",
+     "label": null,
+     "name": "Наггетсы куриные",
+     "priceKop": 29000,
+     "lines": [
+      {
+       "productId": "nuggets",
+       "net": 150
+      },
+      {
+       "productId": "ketchup",
+       "net": 30
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "sn6",
+   "name": "Куриные крылышки",
+   "category": "Закуски",
+   "description": "Сочные куриные крылышки",
+   "sort": 27,
+   "variants": [
+    {
+     "id": "sn6",
+     "label": null,
+     "name": "Куриные крылышки",
+     "priceKop": 38000,
+     "lines": [
+      {
+       "productId": "wings",
+       "net": 220
+      },
+      {
+       "productId": "bbq",
+       "net": 30
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "sn7",
+   "name": "Луковые кольца",
+   "category": "Закуски",
+   "description": "Хрустящие луковые кольца в кляре",
+   "sort": 28,
+   "variants": [
+    {
+     "id": "sn7",
+     "label": null,
+     "name": "Луковые кольца",
+     "priceKop": 27000,
+     "lines": [
+      {
+       "productId": "onion_rings",
+       "net": 170
+      },
+      {
+       "productId": "sauce_garlic",
+       "net": 30
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "sal1",
+   "name": "Цезарь с курицей",
+   "category": "Салаты",
+   "description": "Куриное филе, томаты, лист салата, сыр пармезан, соус цезарь, крутоны",
+   "sort": 29,
+   "variants": [
+    {
+     "id": "sal1",
+     "label": null,
+     "name": "Цезарь с курицей",
+     "priceKop": 39000,
+     "lines": [
+      {
+       "productId": "chicken",
+       "net": 80
+      },
+      {
+       "productId": "tomato",
+       "net": 55
+      },
+      {
+       "productId": "lettuce",
+       "net": 50
+      },
+      {
+       "productId": "parmesan",
+       "net": 20
+      },
+      {
+       "productId": "sauce_caesar",
+       "net": 30
+      },
+      {
+       "productId": "croutons",
+       "net": 15
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "sal2",
+   "name": "Цезарь с лососем/креветкой",
+   "category": "Салаты",
+   "description": "Лосось, томаты, лист салата, сыр пармезан, соус цезарь, крутоны",
+   "sort": 30,
+   "variants": [
+    {
+     "id": "sal2-1",
+     "label": "С лососем",
+     "name": "Цезарь с лососем",
+     "priceKop": 44000,
+     "lines": [
+      {
+       "productId": "tomato",
+       "net": 55
+      },
+      {
+       "productId": "lettuce",
+       "net": 50
+      },
+      {
+       "productId": "parmesan",
+       "net": 20
+      },
+      {
+       "productId": "sauce_caesar",
+       "net": 30
+      },
+      {
+       "productId": "croutons",
+       "net": 15
+      },
+      {
+       "productId": "salmon",
+       "net": 70
+      }
+     ]
+    },
+    {
+     "id": "sal2-2",
+     "label": "С креветкой",
+     "name": "Цезарь с креветкой",
+     "priceKop": 44000,
+     "lines": [
+      {
+       "productId": "tomato",
+       "net": 55
+      },
+      {
+       "productId": "lettuce",
+       "net": 50
+      },
+      {
+       "productId": "parmesan",
+       "net": 20
+      },
+      {
+       "productId": "sauce_caesar",
+       "net": 30
+      },
+      {
+       "productId": "croutons",
+       "net": 15
+      },
+      {
+       "productId": "shrimp",
+       "net": 70
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "sal3",
+   "name": "Овощной",
+   "category": "Салаты",
+   "description": "Томаты, огурцы, лист салата, зелень, лук репчатый, масло/сметана, специи",
+   "sort": 31,
+   "variants": [
+    {
+     "id": "sal3",
+     "label": null,
+     "name": "Овощной",
+     "priceKop": 33000,
+     "lines": [
+      {
+       "productId": "tomato",
+       "net": 55
+      },
+      {
+       "productId": "cucumber",
+       "net": 55
+      },
+      {
+       "productId": "lettuce",
+       "net": 50
+      },
+      {
+       "productId": "herbs",
+       "net": 5
+      },
+      {
+       "productId": "onion",
+       "net": 15
+      },
+      {
+       "productId": "olive_oil",
+       "net": 10
+      },
+      {
+       "productId": "sour_cream",
+       "net": 30
+      },
+      {
+       "productId": "spices",
+       "net": 2
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "sal4",
+   "name": "Мужской",
+   "category": "Салаты",
+   "description": "Куриное филе, шампиньоны жареные, картофельные дольки, томаты, лист салата, соус, специи",
+   "sort": 32,
+   "variants": [
+    {
+     "id": "sal4",
+     "label": null,
+     "name": "Мужской",
+     "priceKop": 37000,
+     "lines": [
+      {
+       "productId": "chicken",
+       "net": 80
+      },
+      {
+       "productId": "mushrooms",
+       "net": 55
+      },
+      {
+       "productId": "wedges",
+       "net": 60
+      },
+      {
+       "productId": "tomato",
+       "net": 55
+      },
+      {
+       "productId": "lettuce",
+       "net": 50
+      },
+      {
+       "productId": "spices",
+       "net": 2
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "sal5",
+   "name": "Греческий",
+   "category": "Салаты",
+   "description": "Томаты, огурцы, брынза, маслины, лук репчатый, масло оливковое",
+   "sort": 33,
+   "variants": [
+    {
+     "id": "sal5",
+     "label": null,
+     "name": "Греческий",
+     "priceKop": 36000,
+     "lines": [
+      {
+       "productId": "tomato",
+       "net": 55
+      },
+      {
+       "productId": "cucumber",
+       "net": 55
+      },
+      {
+       "productId": "feta",
+       "net": 35
+      },
+      {
+       "productId": "olives",
+       "net": 15
+      },
+      {
+       "productId": "onion",
+       "net": 15
+      },
+      {
+       "productId": "olive_oil",
+       "net": 10
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "sp1",
+   "name": "Том Ям",
+   "category": "Супы",
+   "description": "Острый тайский суп 340/600 г",
+   "sort": 34,
+   "variants": [
+    {
+     "id": "sp1-1",
+     "label": "340 г",
+     "name": "Том Ям 340 г",
+     "priceKop": 44000,
+     "lines": [
+      {
+       "productId": "shrimp",
+       "net": 60
+      },
+      {
+       "productId": "mushrooms",
+       "net": 40
+      },
+      {
+       "productId": "coconut_milk",
+       "net": 120
+      },
+      {
+       "productId": "tomyam_paste",
+       "net": 20
+      },
+      {
+       "productId": "tomato",
+       "net": 30
+      },
+      {
+       "productId": "cilantro",
+       "net": 3
+      },
+      {
+       "productId": "lemon",
+       "net": 10
+      }
+     ]
+    },
+    {
+     "id": "sp1-2",
+     "label": "600 г",
+     "name": "Том Ям 600 г",
+     "priceKop": 56000,
+     "lines": [
+      {
+       "productId": "shrimp",
+       "net": 105
+      },
+      {
+       "productId": "mushrooms",
+       "net": 70
+      },
+      {
+       "productId": "coconut_milk",
+       "net": 210
+      },
+      {
+       "productId": "tomyam_paste",
+       "net": 35
+      },
+      {
+       "productId": "tomato",
+       "net": 53
+      },
+      {
+       "productId": "cilantro",
+       "net": 3
+      },
+      {
+       "productId": "lemon",
+       "net": 18
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "sp2",
+   "name": "Солянка",
+   "category": "Супы",
+   "description": "Наваристая солянка со сборным мясом",
+   "sort": 35,
+   "variants": [
+    {
+     "id": "sp2",
+     "label": null,
+     "name": "Солянка",
+     "priceKop": 35000,
+     "lines": [
+      {
+       "productId": "meat_assorted",
+       "net": 90
+      },
+      {
+       "productId": "pickles",
+       "net": 40
+      },
+      {
+       "productId": "olives",
+       "net": 15
+      },
+      {
+       "productId": "tomato_sauce",
+       "net": 30
+      },
+      {
+       "productId": "lemon",
+       "net": 10
+      },
+      {
+       "productId": "sour_cream",
+       "net": 20
+      },
+      {
+       "productId": "onion",
+       "net": 20
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "sp3",
+   "name": "Крем-суп из шампиньонов",
+   "category": "Супы",
+   "description": "Нежный крем-суп из шампиньонов",
+   "sort": 36,
+   "variants": [
+    {
+     "id": "sp3",
+     "label": null,
+     "name": "Крем-суп из шампиньонов",
+     "priceKop": 34000,
+     "lines": [
+      {
+       "productId": "mushrooms",
+       "net": 150
+      },
+      {
+       "productId": "cream",
+       "net": 100
+      },
+      {
+       "productId": "onion",
+       "net": 30
+      },
+      {
+       "productId": "croutons",
+       "net": 10
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "pz1",
+   "name": "Болоньезе",
+   "category": "Пицца",
+   "description": "Соус «Болоньезе», смесь сыров, томаты, базилик, соус барбекю",
+   "sort": 37,
+   "variants": [
+    {
+     "id": "pz1-30",
+     "label": "30 см",
+     "name": "Болоньезе 30 см",
+     "priceKop": 68000,
+     "lines": [
+      {
+       "productId": "bolognese",
+       "net": 70
+      },
+      {
+       "productId": "mozzarella",
+       "net": 150
+      },
+      {
+       "productId": "tomato",
+       "net": 40
+      },
+      {
+       "productId": "basil",
+       "net": 3
+      },
+      {
+       "productId": "bbq",
+       "net": 50
+      },
+      {
+       "productId": "dough_pizza",
+       "net": 280
+      },
+      {
+       "productId": "tomato_sauce",
+       "net": 40
+      }
+     ]
+    },
+    {
+     "id": "pz1-40",
+     "label": "40 см",
+     "name": "Болоньезе 40 см",
+     "priceKop": 99000,
+     "lines": [
+      {
+       "productId": "bolognese",
+       "net": 123
+      },
+      {
+       "productId": "mozzarella",
+       "net": 263
+      },
+      {
+       "productId": "tomato",
+       "net": 70
+      },
+      {
+       "productId": "basil",
+       "net": 3
+      },
+      {
+       "productId": "bbq",
+       "net": 88
+      },
+      {
+       "productId": "dough_pizza",
+       "net": 490
+      },
+      {
+       "productId": "tomato_sauce",
+       "net": 70
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "pz2",
+   "name": "Фондю на корочке",
+   "category": "Пицца",
+   "description": "Пармезан, моцарелла, дорблю, чеддер, сливочный соус",
+   "sort": 38,
+   "variants": [
+    {
+     "id": "pz2-30",
+     "label": "30 см",
+     "name": "Фондю на корочке 30 см",
+     "priceKop": 71000,
+     "lines": [
+      {
+       "productId": "parmesan",
+       "net": 30
+      },
+      {
+       "productId": "mozzarella",
+       "net": 150
+      },
+      {
+       "productId": "dorblu",
+       "net": 30
+      },
+      {
+       "productId": "cheddar",
+       "net": 30
+      },
+      {
+       "productId": "sauce_cheese",
+       "net": 50
+      },
+      {
+       "productId": "dough_pizza",
+       "net": 280
+      },
+      {
+       "productId": "tomato_sauce",
+       "net": 40
+      }
+     ]
+    },
+    {
+     "id": "pz2-40",
+     "label": "40 см",
+     "name": "Фондю на корочке 40 см",
+     "priceKop": 99000,
+     "lines": [
+      {
+       "productId": "parmesan",
+       "net": 53
+      },
+      {
+       "productId": "mozzarella",
+       "net": 263
+      },
+      {
+       "productId": "dorblu",
+       "net": 53
+      },
+      {
+       "productId": "cheddar",
+       "net": 53
+      },
+      {
+       "productId": "sauce_cheese",
+       "net": 88
+      },
+      {
+       "productId": "dough_pizza",
+       "net": 490
+      },
+      {
+       "productId": "tomato_sauce",
+       "net": 70
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "pz3",
+   "name": "Сливочный цыплёнок",
+   "category": "Пицца",
+   "description": "Курица, сливочный соус, моцарелла, томаты",
+   "sort": 39,
+   "variants": [
+    {
+     "id": "pz3-30",
+     "label": "30 см",
+     "name": "Сливочный цыплёнок 30 см",
+     "priceKop": 65000,
+     "lines": [
+      {
+       "productId": "chicken",
+       "net": 70
+      },
+      {
+       "productId": "sauce_cheese",
+       "net": 50
+      },
+      {
+       "productId": "mozzarella",
+       "net": 150
+      },
+      {
+       "productId": "tomato",
+       "net": 40
+      },
+      {
+       "productId": "dough_pizza",
+       "net": 280
+      },
+      {
+       "productId": "tomato_sauce",
+       "net": 40
+      }
+     ]
+    },
+    {
+     "id": "pz3-40",
+     "label": "40 см",
+     "name": "Сливочный цыплёнок 40 см",
+     "priceKop": 93000,
+     "lines": [
+      {
+       "productId": "chicken",
+       "net": 123
+      },
+      {
+       "productId": "sauce_cheese",
+       "net": 88
+      },
+      {
+       "productId": "mozzarella",
+       "net": 263
+      },
+      {
+       "productId": "tomato",
+       "net": 70
+      },
+      {
+       "productId": "dough_pizza",
+       "net": 490
+      },
+      {
+       "productId": "tomato_sauce",
+       "net": 70
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "pz4",
+   "name": "Мясная",
+   "category": "Пицца",
+   "description": "Фарш св.-говяжий, бекон, соус фирменный, «Барбекю», сыр моцарелла, сыр гауда, томаты, перец халапеньо",
+   "sort": 40,
+   "variants": [
+    {
+     "id": "pz4-30",
+     "label": "30 см",
+     "name": "Мясная 30 см",
+     "priceKop": 69000,
+     "lines": [
+      {
+       "productId": "bacon",
+       "net": 40
+      },
+      {
+       "productId": "sauce_signature",
+       "net": 50
+      },
+      {
+       "productId": "bbq",
+       "net": 50
+      },
+      {
+       "productId": "mozzarella",
+       "net": 150
+      },
+      {
+       "productId": "gouda",
+       "net": 30
+      },
+      {
+       "productId": "tomato",
+       "net": 40
+      },
+      {
+       "productId": "jalapeno",
+       "net": 15
+      },
+      {
+       "productId": "dough_pizza",
+       "net": 280
+      },
+      {
+       "productId": "tomato_sauce",
+       "net": 40
+      }
+     ]
+    },
+    {
+     "id": "pz4-40",
+     "label": "40 см",
+     "name": "Мясная 40 см",
+     "priceKop": 99000,
+     "lines": [
+      {
+       "productId": "bacon",
+       "net": 70
+      },
+      {
+       "productId": "sauce_signature",
+       "net": 88
+      },
+      {
+       "productId": "bbq",
+       "net": 88
+      },
+      {
+       "productId": "mozzarella",
+       "net": 263
+      },
+      {
+       "productId": "gouda",
+       "net": 53
+      },
+      {
+       "productId": "tomato",
+       "net": 70
+      },
+      {
+       "productId": "jalapeno",
+       "net": 27
+      },
+      {
+       "productId": "dough_pizza",
+       "net": 490
+      },
+      {
+       "productId": "tomato_sauce",
+       "net": 70
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "pz5",
+   "name": "По-деревенски",
+   "category": "Пицца",
+   "description": "Фарш св.-говяжий, бекон, фирменный соус, моцарелла, болгарский перец, солёные огурцы, красный лук",
+   "sort": 41,
+   "variants": [
+    {
+     "id": "pz5-30",
+     "label": "30 см",
+     "name": "По-деревенски 30 см",
+     "priceKop": 68000,
+     "lines": [
+      {
+       "productId": "bacon",
+       "net": 40
+      },
+      {
+       "productId": "sauce_signature",
+       "net": 50
+      },
+      {
+       "productId": "mozzarella",
+       "net": 150
+      },
+      {
+       "productId": "bell_pepper",
+       "net": 40
+      },
+      {
+       "productId": "pickles",
+       "net": 15
+      },
+      {
+       "productId": "red_onion",
+       "net": 15
+      },
+      {
+       "productId": "dough_pizza",
+       "net": 280
+      },
+      {
+       "productId": "tomato_sauce",
+       "net": 40
+      }
+     ]
+    },
+    {
+     "id": "pz5-40",
+     "label": "40 см",
+     "name": "По-деревенски 40 см",
+     "priceKop": 99000,
+     "lines": [
+      {
+       "productId": "bacon",
+       "net": 70
+      },
+      {
+       "productId": "sauce_signature",
+       "net": 88
+      },
+      {
+       "productId": "mozzarella",
+       "net": 263
+      },
+      {
+       "productId": "bell_pepper",
+       "net": 70
+      },
+      {
+       "productId": "pickles",
+       "net": 27
+      },
+      {
+       "productId": "red_onion",
+       "net": 27
+      },
+      {
+       "productId": "dough_pizza",
+       "net": 490
+      },
+      {
+       "productId": "tomato_sauce",
+       "net": 70
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "pz6",
+   "name": "Курица с беконом",
+   "category": "Пицца",
+   "description": "Курица, бекон, фирменный соус, горчичный соус, соус «Цезарь», моцарелла, томаты",
+   "sort": 42,
+   "variants": [
+    {
+     "id": "pz6-30",
+     "label": "30 см",
+     "name": "Курица с беконом 30 см",
+     "priceKop": 68000,
+     "lines": [
+      {
+       "productId": "chicken",
+       "net": 70
+      },
+      {
+       "productId": "bacon",
+       "net": 40
+      },
+      {
+       "productId": "sauce_signature",
+       "net": 50
+      },
+      {
+       "productId": "mustard",
+       "net": 50
+      },
+      {
+       "productId": "sauce_caesar",
+       "net": 50
+      },
+      {
+       "productId": "mozzarella",
+       "net": 150
+      },
+      {
+       "productId": "tomato",
+       "net": 40
+      },
+      {
+       "productId": "dough_pizza",
+       "net": 280
+      },
+      {
+       "productId": "tomato_sauce",
+       "net": 40
+      }
+     ]
+    },
+    {
+     "id": "pz6-40",
+     "label": "40 см",
+     "name": "Курица с беконом 40 см",
+     "priceKop": 99000,
+     "lines": [
+      {
+       "productId": "chicken",
+       "net": 123
+      },
+      {
+       "productId": "bacon",
+       "net": 70
+      },
+      {
+       "productId": "sauce_signature",
+       "net": 88
+      },
+      {
+       "productId": "mustard",
+       "net": 88
+      },
+      {
+       "productId": "sauce_caesar",
+       "net": 88
+      },
+      {
+       "productId": "mozzarella",
+       "net": 263
+      },
+      {
+       "productId": "tomato",
+       "net": 70
+      },
+      {
+       "productId": "dough_pizza",
+       "net": 490
+      },
+      {
+       "productId": "tomato_sauce",
+       "net": 70
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "pz7",
+   "name": "Ветчина-томаты",
+   "category": "Пицца",
+   "description": "Ветчина, фирменный соус, моцарелла, томаты, шампиньоны",
+   "sort": 43,
+   "variants": [
+    {
+     "id": "pz7-30",
+     "label": "30 см",
+     "name": "Ветчина-томаты 30 см",
+     "priceKop": 68000,
+     "lines": [
+      {
+       "productId": "ham",
+       "net": 70
+      },
+      {
+       "productId": "sauce_signature",
+       "net": 50
+      },
+      {
+       "productId": "mozzarella",
+       "net": 150
+      },
+      {
+       "productId": "tomato",
+       "net": 40
+      },
+      {
+       "productId": "mushrooms",
+       "net": 40
+      },
+      {
+       "productId": "dough_pizza",
+       "net": 280
+      },
+      {
+       "productId": "tomato_sauce",
+       "net": 40
+      }
+     ]
+    },
+    {
+     "id": "pz7-40",
+     "label": "40 см",
+     "name": "Ветчина-томаты 40 см",
+     "priceKop": 99000,
+     "lines": [
+      {
+       "productId": "ham",
+       "net": 123
+      },
+      {
+       "productId": "sauce_signature",
+       "net": 88
+      },
+      {
+       "productId": "mozzarella",
+       "net": 263
+      },
+      {
+       "productId": "tomato",
+       "net": 70
+      },
+      {
+       "productId": "mushrooms",
+       "net": 70
+      },
+      {
+       "productId": "dough_pizza",
+       "net": 490
+      },
+      {
+       "productId": "tomato_sauce",
+       "net": 70
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "pz8",
+   "name": "4 сезона",
+   "category": "Пицца",
+   "description": "Пепперони, томатный соус, ветчина, сыр моцарелла, сыр дорблю, томаты, шампиньоны, болгарский перец",
+   "sort": 44,
+   "variants": [
+    {
+     "id": "pz8-30",
+     "label": "30 см",
+     "name": "4 сезона 30 см",
+     "priceKop": 68000,
+     "lines": [
+      {
+       "productId": "pepperoni",
+       "net": 70
+      },
+      {
+       "productId": "tomato_sauce",
+       "net": 70
+      },
+      {
+       "productId": "ham",
+       "net": 70
+      },
+      {
+       "productId": "mozzarella",
+       "net": 150
+      },
+      {
+       "productId": "dorblu",
+       "net": 30
+      },
+      {
+       "productId": "tomato",
+       "net": 40
+      },
+      {
+       "productId": "mushrooms",
+       "net": 40
+      },
+      {
+       "productId": "bell_pepper",
+       "net": 40
+      },
+      {
+       "productId": "dough_pizza",
+       "net": 280
+      }
+     ]
+    },
+    {
+     "id": "pz8-40",
+     "label": "40 см",
+     "name": "4 сезона 40 см",
+     "priceKop": 99000,
+     "lines": [
+      {
+       "productId": "pepperoni",
+       "net": 123
+      },
+      {
+       "productId": "tomato_sauce",
+       "net": 123
+      },
+      {
+       "productId": "ham",
+       "net": 123
+      },
+      {
+       "productId": "mozzarella",
+       "net": 263
+      },
+      {
+       "productId": "dorblu",
+       "net": 53
+      },
+      {
+       "productId": "tomato",
+       "net": 70
+      },
+      {
+       "productId": "mushrooms",
+       "net": 70
+      },
+      {
+       "productId": "bell_pepper",
+       "net": 70
+      },
+      {
+       "productId": "dough_pizza",
+       "net": 490
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "pz9",
+   "name": "Фермерская",
+   "category": "Пицца",
+   "description": "Курица копчёная, сыр моцарелла, шампиньоны, томаты, соус «Фирменный»",
+   "sort": 45,
+   "variants": [
+    {
+     "id": "pz9-30",
+     "label": "30 см",
+     "name": "Фермерская 30 см",
+     "priceKop": 72000,
+     "lines": [
+      {
+       "productId": "chicken_smoked",
+       "net": 70
+      },
+      {
+       "productId": "mozzarella",
+       "net": 150
+      },
+      {
+       "productId": "mushrooms",
+       "net": 40
+      },
+      {
+       "productId": "tomato",
+       "net": 40
+      },
+      {
+       "productId": "sauce_signature",
+       "net": 50
+      },
+      {
+       "productId": "dough_pizza",
+       "net": 280
+      },
+      {
+       "productId": "tomato_sauce",
+       "net": 40
+      }
+     ]
+    },
+    {
+     "id": "pz9-40",
+     "label": "40 см",
+     "name": "Фермерская 40 см",
+     "priceKop": 105000,
+     "lines": [
+      {
+       "productId": "chicken_smoked",
+       "net": 123
+      },
+      {
+       "productId": "mozzarella",
+       "net": 263
+      },
+      {
+       "productId": "mushrooms",
+       "net": 70
+      },
+      {
+       "productId": "tomato",
+       "net": 70
+      },
+      {
+       "productId": "sauce_signature",
+       "net": 88
+      },
+      {
+       "productId": "dough_pizza",
+       "net": 490
+      },
+      {
+       "productId": "tomato_sauce",
+       "net": 70
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "pz10",
+   "name": "Гавайская",
+   "category": "Пицца",
+   "description": "Курица копчёная, фирменный соус, «Сладкий чили», сыр моцарелла, ананас консервированный, томаты",
+   "sort": 46,
+   "variants": [
+    {
+     "id": "pz10-30",
+     "label": "30 см",
+     "name": "Гавайская 30 см",
+     "priceKop": 68000,
+     "lines": [
+      {
+       "productId": "chicken_smoked",
+       "net": 70
+      },
+      {
+       "productId": "sauce_signature",
+       "net": 50
+      },
+      {
+       "productId": "sweet_chili",
+       "net": 50
+      },
+      {
+       "productId": "mozzarella",
+       "net": 150
+      },
+      {
+       "productId": "pineapple",
+       "net": 40
+      },
+      {
+       "productId": "tomato",
+       "net": 40
+      },
+      {
+       "productId": "dough_pizza",
+       "net": 280
+      },
+      {
+       "productId": "tomato_sauce",
+       "net": 40
+      }
+     ]
+    },
+    {
+     "id": "pz10-40",
+     "label": "40 см",
+     "name": "Гавайская 40 см",
+     "priceKop": 99000,
+     "lines": [
+      {
+       "productId": "chicken_smoked",
+       "net": 123
+      },
+      {
+       "productId": "sauce_signature",
+       "net": 88
+      },
+      {
+       "productId": "sweet_chili",
+       "net": 88
+      },
+      {
+       "productId": "mozzarella",
+       "net": 263
+      },
+      {
+       "productId": "pineapple",
+       "net": 70
+      },
+      {
+       "productId": "tomato",
+       "net": 70
+      },
+      {
+       "productId": "dough_pizza",
+       "net": 490
+      },
+      {
+       "productId": "tomato_sauce",
+       "net": 70
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "pz11",
+   "name": "Карбонара",
+   "category": "Пицца",
+   "description": "Курица, бекон, сливочный соус, моцарелла, шампиньоны, красный лук",
+   "sort": 47,
+   "variants": [
+    {
+     "id": "pz11-30",
+     "label": "30 см",
+     "name": "Карбонара 30 см",
+     "priceKop": 68000,
+     "lines": [
+      {
+       "productId": "chicken",
+       "net": 70
+      },
+      {
+       "productId": "bacon",
+       "net": 40
+      },
+      {
+       "productId": "sauce_cheese",
+       "net": 50
+      },
+      {
+       "productId": "mozzarella",
+       "net": 150
+      },
+      {
+       "productId": "mushrooms",
+       "net": 40
+      },
+      {
+       "productId": "red_onion",
+       "net": 15
+      },
+      {
+       "productId": "dough_pizza",
+       "net": 280
+      },
+      {
+       "productId": "tomato_sauce",
+       "net": 40
+      }
+     ]
+    },
+    {
+     "id": "pz11-40",
+     "label": "40 см",
+     "name": "Карбонара 40 см",
+     "priceKop": 99000,
+     "lines": [
+      {
+       "productId": "chicken",
+       "net": 123
+      },
+      {
+       "productId": "bacon",
+       "net": 70
+      },
+      {
+       "productId": "sauce_cheese",
+       "net": 88
+      },
+      {
+       "productId": "mozzarella",
+       "net": 263
+      },
+      {
+       "productId": "mushrooms",
+       "net": 70
+      },
+      {
+       "productId": "red_onion",
+       "net": 27
+      },
+      {
+       "productId": "dough_pizza",
+       "net": 490
+      },
+      {
+       "productId": "tomato_sauce",
+       "net": 70
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "pz12",
+   "name": "Пепперони",
+   "category": "Пицца",
+   "description": "Колбаса пепперони, сыр моцарелла, шампиньоны, прованские травы, томатный соус",
+   "sort": 48,
+   "variants": [
+    {
+     "id": "pz12-30",
+     "label": "30 см",
+     "name": "Пепперони 30 см",
+     "priceKop": 69000,
+     "lines": [
+      {
+       "productId": "pepperoni",
+       "net": 70
+      },
+      {
+       "productId": "mozzarella",
+       "net": 150
+      },
+      {
+       "productId": "mushrooms",
+       "net": 40
+      },
+      {
+       "productId": "herbs",
+       "net": 3
+      },
+      {
+       "productId": "tomato_sauce",
+       "net": 70
+      },
+      {
+       "productId": "dough_pizza",
+       "net": 280
+      }
+     ]
+    },
+    {
+     "id": "pz12-40",
+     "label": "40 см",
+     "name": "Пепперони 40 см",
+     "priceKop": 99000,
+     "lines": [
+      {
+       "productId": "pepperoni",
+       "net": 123
+      },
+      {
+       "productId": "mozzarella",
+       "net": 263
+      },
+      {
+       "productId": "mushrooms",
+       "net": 70
+      },
+      {
+       "productId": "herbs",
+       "net": 3
+      },
+      {
+       "productId": "tomato_sauce",
+       "net": 123
+      },
+      {
+       "productId": "dough_pizza",
+       "net": 490
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "pz13",
+   "name": "С морепродуктами",
+   "category": "Пицца",
+   "description": "Морепродукты, сыр моцарелла, томаты, маслины, фирменный соус, соус «Тар-тар»",
+   "sort": 49,
+   "variants": [
+    {
+     "id": "pz13-30",
+     "label": "30 см",
+     "name": "С морепродуктами 30 см",
+     "priceKop": 75000,
+     "lines": [
+      {
+       "productId": "seafood_mix",
+       "net": 70
+      },
+      {
+       "productId": "mozzarella",
+       "net": 150
+      },
+      {
+       "productId": "tomato",
+       "net": 40
+      },
+      {
+       "productId": "olives",
+       "net": 15
+      },
+      {
+       "productId": "sauce_signature",
+       "net": 50
+      },
+      {
+       "productId": "tartar",
+       "net": 50
+      },
+      {
+       "productId": "dough_pizza",
+       "net": 280
+      },
+      {
+       "productId": "tomato_sauce",
+       "net": 40
+      }
+     ]
+    },
+    {
+     "id": "pz13-40",
+     "label": "40 см",
+     "name": "С морепродуктами 40 см",
+     "priceKop": 105000,
+     "lines": [
+      {
+       "productId": "seafood_mix",
+       "net": 123
+      },
+      {
+       "productId": "mozzarella",
+       "net": 263
+      },
+      {
+       "productId": "tomato",
+       "net": 70
+      },
+      {
+       "productId": "olives",
+       "net": 27
+      },
+      {
+       "productId": "sauce_signature",
+       "net": 88
+      },
+      {
+       "productId": "tartar",
+       "net": 88
+      },
+      {
+       "productId": "dough_pizza",
+       "net": 490
+      },
+      {
+       "productId": "tomato_sauce",
+       "net": 70
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "pz14",
+   "name": "Лосось дор блю",
+   "category": "Пицца",
+   "description": "Лосось, томаты, моцарелла, дор-блю, соус «Тар-тар»",
+   "sort": 50,
+   "variants": [
+    {
+     "id": "pz14-30",
+     "label": "30 см",
+     "name": "Лосось дор блю 30 см",
+     "priceKop": 87000,
+     "lines": [
+      {
+       "productId": "salmon",
+       "net": 70
+      },
+      {
+       "productId": "tomato",
+       "net": 40
+      },
+      {
+       "productId": "mozzarella",
+       "net": 150
+      },
+      {
+       "productId": "dorblu",
+       "net": 30
+      },
+      {
+       "productId": "tartar",
+       "net": 50
+      },
+      {
+       "productId": "dough_pizza",
+       "net": 280
+      },
+      {
+       "productId": "tomato_sauce",
+       "net": 40
+      }
+     ]
+    },
+    {
+     "id": "pz14-40",
+     "label": "40 см",
+     "name": "Лосось дор блю 40 см",
+     "priceKop": 109000,
+     "lines": [
+      {
+       "productId": "salmon",
+       "net": 123
+      },
+      {
+       "productId": "tomato",
+       "net": 70
+      },
+      {
+       "productId": "mozzarella",
+       "net": 263
+      },
+      {
+       "productId": "dorblu",
+       "net": 53
+      },
+      {
+       "productId": "tartar",
+       "net": 88
+      },
+      {
+       "productId": "dough_pizza",
+       "net": 490
+      },
+      {
+       "productId": "tomato_sauce",
+       "net": 70
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "pz15",
+   "name": "Римская — Мясное ассорти",
+   "category": "Пицца",
+   "description": "Карбонат, ветчина, бекон, моцарелла, пармезан, базилик",
+   "sort": 51,
+   "variants": [
+    {
+     "id": "pz15",
+     "label": null,
+     "name": "Римская — Мясное ассорти",
+     "priceKop": 59000,
+     "lines": [
+      {
+       "productId": "carbonate",
+       "net": 70
+      },
+      {
+       "productId": "ham",
+       "net": 70
+      },
+      {
+       "productId": "bacon",
+       "net": 40
+      },
+      {
+       "productId": "mozzarella",
+       "net": 150
+      },
+      {
+       "productId": "parmesan",
+       "net": 30
+      },
+      {
+       "productId": "basil",
+       "net": 3
+      },
+      {
+       "productId": "dough_pizza",
+       "net": 280
+      },
+      {
+       "productId": "tomato_sauce",
+       "net": 40
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "pz16",
+   "name": "Римская — Морская",
+   "category": "Пицца",
+   "description": "Лосось, креветка тигровая, моцарелла, соус песто, зелень",
+   "sort": 52,
+   "variants": [
+    {
+     "id": "pz16",
+     "label": null,
+     "name": "Римская — Морская",
+     "priceKop": 59000,
+     "lines": [
+      {
+       "productId": "salmon",
+       "net": 70
+      },
+      {
+       "productId": "shrimp",
+       "net": 70
+      },
+      {
+       "productId": "mozzarella",
+       "net": 150
+      },
+      {
+       "productId": "pesto",
+       "net": 20
+      },
+      {
+       "productId": "herbs",
+       "net": 3
+      },
+      {
+       "productId": "dough_pizza",
+       "net": 280
+      },
+      {
+       "productId": "tomato_sauce",
+       "net": 40
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "pz17",
+   "name": "Римская — Ветчина-грибы",
+   "category": "Пицца",
+   "description": "Ветчина, бекон, шампиньоны, моцарелла, пармезан, базилик",
+   "sort": 53,
+   "variants": [
+    {
+     "id": "pz17",
+     "label": null,
+     "name": "Римская — Ветчина-грибы",
+     "priceKop": 59000,
+     "lines": [
+      {
+       "productId": "ham",
+       "net": 70
+      },
+      {
+       "productId": "bacon",
+       "net": 40
+      },
+      {
+       "productId": "mushrooms",
+       "net": 40
+      },
+      {
+       "productId": "mozzarella",
+       "net": 150
+      },
+      {
+       "productId": "parmesan",
+       "net": 30
+      },
+      {
+       "productId": "basil",
+       "net": 3
+      },
+      {
+       "productId": "dough_pizza",
+       "net": 280
+      },
+      {
+       "productId": "tomato_sauce",
+       "net": 40
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "rc1",
+   "name": "Ролл Креветка",
+   "category": "Холодные роллы",
+   "description": "Рис, креветка",
+   "sort": 54,
+   "variants": [
+    {
+     "id": "rc1",
+     "label": null,
+     "name": "Ролл Креветка",
+     "priceKop": 29000,
+     "lines": [
+      {
+       "productId": "rice_sushi",
+       "net": 120
+      },
+      {
+       "productId": "shrimp",
+       "net": 40
+      },
+      {
+       "productId": "nori",
+       "net": 1
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "rc2",
+   "name": "Ролл Лосось",
+   "category": "Холодные роллы",
+   "description": "Рис, лосось",
+   "sort": 55,
+   "variants": [
+    {
+     "id": "rc2",
+     "label": null,
+     "name": "Ролл Лосось",
+     "priceKop": 31000,
+     "lines": [
+      {
+       "productId": "rice_sushi",
+       "net": 120
+      },
+      {
+       "productId": "salmon",
+       "net": 40
+      },
+      {
+       "productId": "nori",
+       "net": 1
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "rc3",
+   "name": "Ролл Огурец",
+   "category": "Холодные роллы",
+   "description": "Рис, огурец, кунжут",
+   "sort": 56,
+   "variants": [
+    {
+     "id": "rc3",
+     "label": null,
+     "name": "Ролл Огурец",
+     "priceKop": 16000,
+     "lines": [
+      {
+       "productId": "rice_sushi",
+       "net": 120
+      },
+      {
+       "productId": "cucumber",
+       "net": 20
+      },
+      {
+       "productId": "sesame",
+       "net": 3
+      },
+      {
+       "productId": "nori",
+       "net": 1
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "rc4",
+   "name": "Калифорния с крабом",
+   "category": "Холодные роллы",
+   "description": "Рис, крабовый замес, огурец, икра масаго",
+   "sort": 57,
+   "variants": [
+    {
+     "id": "rc4",
+     "label": null,
+     "name": "Калифорния с крабом",
+     "priceKop": 35000,
+     "lines": [
+      {
+       "productId": "rice_sushi",
+       "net": 120
+      },
+      {
+       "productId": "crab_mix",
+       "net": 40
+      },
+      {
+       "productId": "cucumber",
+       "net": 20
+      },
+      {
+       "productId": "masago",
+       "net": 10
+      },
+      {
+       "productId": "nori",
+       "net": 1
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "rc5",
+   "name": "Калифорния с креветкой",
+   "category": "Холодные роллы",
+   "description": "Рис, креветка, огурец, крабовый замес, икра масаго",
+   "sort": 58,
+   "variants": [
+    {
+     "id": "rc5",
+     "label": null,
+     "name": "Калифорния с креветкой",
+     "priceKop": 42000,
+     "lines": [
+      {
+       "productId": "rice_sushi",
+       "net": 120
+      },
+      {
+       "productId": "shrimp",
+       "net": 40
+      },
+      {
+       "productId": "cucumber",
+       "net": 20
+      },
+      {
+       "productId": "crab_mix",
+       "net": 40
+      },
+      {
+       "productId": "masago",
+       "net": 10
+      },
+      {
+       "productId": "nori",
+       "net": 1
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "rc6",
+   "name": "Калифорния с лососем",
+   "category": "Холодные роллы",
+   "description": "Рис, лосось, огурец, крабовый замес, икра масаго",
+   "sort": 59,
+   "variants": [
+    {
+     "id": "rc6",
+     "label": null,
+     "name": "Калифорния с лососем",
+     "priceKop": 43000,
+     "lines": [
+      {
+       "productId": "rice_sushi",
+       "net": 120
+      },
+      {
+       "productId": "salmon",
+       "net": 40
+      },
+      {
+       "productId": "cucumber",
+       "net": 20
+      },
+      {
+       "productId": "crab_mix",
+       "net": 40
+      },
+      {
+       "productId": "masago",
+       "net": 10
+      },
+      {
+       "productId": "nori",
+       "net": 1
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "rc7",
+   "name": "Флорида",
+   "category": "Холодные роллы",
+   "description": "Рис, лосось, огурец, сливочный сыр, икра масаго, соус «Терияки»",
+   "sort": 60,
+   "variants": [
+    {
+     "id": "rc7",
+     "label": null,
+     "name": "Флорида",
+     "priceKop": 43000,
+     "lines": [
+      {
+       "productId": "rice_sushi",
+       "net": 120
+      },
+      {
+       "productId": "salmon",
+       "net": 40
+      },
+      {
+       "productId": "cucumber",
+       "net": 20
+      },
+      {
+       "productId": "cream_cheese",
+       "net": 35
+      },
+      {
+       "productId": "masago",
+       "net": 10
+      },
+      {
+       "productId": "teriyaki",
+       "net": 10
+      },
+      {
+       "productId": "nori",
+       "net": 1
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "rc8",
+   "name": "Эби с креветкой",
+   "category": "Холодные роллы",
+   "description": "Рис, креветка, огурец, сливочный сыр, спайс соус",
+   "sort": 61,
+   "variants": [
+    {
+     "id": "rc8",
+     "label": null,
+     "name": "Эби с креветкой",
+     "priceKop": 42000,
+     "lines": [
+      {
+       "productId": "rice_sushi",
+       "net": 120
+      },
+      {
+       "productId": "shrimp",
+       "net": 40
+      },
+      {
+       "productId": "cucumber",
+       "net": 20
+      },
+      {
+       "productId": "cream_cheese",
+       "net": 35
+      },
+      {
+       "productId": "spicy_sauce",
+       "net": 10
+      },
+      {
+       "productId": "nori",
+       "net": 1
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "rc9",
+   "name": "Филадельфия",
+   "category": "Холодные роллы",
+   "description": "Рис, лосось, огурец, сливочный сыр",
+   "sort": 62,
+   "variants": [
+    {
+     "id": "rc9",
+     "label": null,
+     "name": "Филадельфия",
+     "priceKop": 43000,
+     "lines": [
+      {
+       "productId": "rice_sushi",
+       "net": 120
+      },
+      {
+       "productId": "salmon",
+       "net": 40
+      },
+      {
+       "productId": "cucumber",
+       "net": 20
+      },
+      {
+       "productId": "cream_cheese",
+       "net": 35
+      },
+      {
+       "productId": "nori",
+       "net": 1
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "rc10",
+   "name": "Сырники",
+   "category": "Холодные роллы",
+   "description": "Сметана, сгущённое молоко, клубничный соус",
+   "sort": 63,
+   "variants": [
+    {
+     "id": "rc10",
+     "label": null,
+     "name": "Сырники",
+     "priceKop": 34000,
+     "lines": [
+      {
+       "productId": "syrniki",
+       "net": 3
+      },
+      {
+       "productId": "sour_cream",
+       "net": 30
+      },
+      {
+       "productId": "condensed_milk",
+       "net": 20
+      },
+      {
+       "productId": "strawberry",
+       "net": 20
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "rh1",
+   "name": "Цезарь",
+   "category": "Запечённые роллы",
+   "description": "Рис, курица копчёная, томаты, чесночный соус, салат, соус «Цезарь»",
+   "sort": 64,
+   "variants": [
+    {
+     "id": "rh1",
+     "label": null,
+     "name": "Цезарь",
+     "priceKop": 33000,
+     "lines": [
+      {
+       "productId": "rice_sushi",
+       "net": 130
+      },
+      {
+       "productId": "chicken_smoked",
+       "net": 40
+      },
+      {
+       "productId": "tomato",
+       "net": 20
+      },
+      {
+       "productId": "sauce_garlic",
+       "net": 20
+      },
+      {
+       "productId": "lettuce",
+       "net": 10
+      },
+      {
+       "productId": "sauce_caesar",
+       "net": 20
+      },
+      {
+       "productId": "nori",
+       "net": 1
+      },
+      {
+       "productId": "mozzarella",
+       "net": 20
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "rh2",
+   "name": "Акита",
+   "category": "Запечённые роллы",
+   "description": "Рис, мясо мидий, креветка, огурец, унаги соус, сливочный сыр, сырный соус",
+   "sort": 65,
+   "variants": [
+    {
+     "id": "rh2",
+     "label": null,
+     "name": "Акита",
+     "priceKop": 37000,
+     "lines": [
+      {
+       "productId": "rice_sushi",
+       "net": 130
+      },
+      {
+       "productId": "mussels",
+       "net": 40
+      },
+      {
+       "productId": "shrimp",
+       "net": 40
+      },
+      {
+       "productId": "cucumber",
+       "net": 20
+      },
+      {
+       "productId": "unagi",
+       "net": 10
+      },
+      {
+       "productId": "cream_cheese",
+       "net": 35
+      },
+      {
+       "productId": "sauce_cheese",
+       "net": 20
+      },
+      {
+       "productId": "nori",
+       "net": 1
+      },
+      {
+       "productId": "mozzarella",
+       "net": 20
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "rh3",
+   "name": "Калифорния гриль с креветкой",
+   "category": "Запечённые роллы",
+   "description": "Рис, креветка, огурец, икра масаго, крабовый замес, чесночный соус",
+   "sort": 66,
+   "variants": [
+    {
+     "id": "rh3",
+     "label": null,
+     "name": "Калифорния гриль с креветкой",
+     "priceKop": 43000,
+     "lines": [
+      {
+       "productId": "rice_sushi",
+       "net": 130
+      },
+      {
+       "productId": "shrimp",
+       "net": 40
+      },
+      {
+       "productId": "cucumber",
+       "net": 20
+      },
+      {
+       "productId": "masago",
+       "net": 10
+      },
+      {
+       "productId": "crab_mix",
+       "net": 40
+      },
+      {
+       "productId": "sauce_garlic",
+       "net": 20
+      },
+      {
+       "productId": "nori",
+       "net": 1
+      },
+      {
+       "productId": "mozzarella",
+       "net": 20
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "rh4",
+   "name": "Калифорния гриль с лососем",
+   "category": "Запечённые роллы",
+   "description": "Рис, лосось, огурец, икра масаго, крабовый замес, чесночный соус",
+   "sort": 67,
+   "variants": [
+    {
+     "id": "rh4",
+     "label": null,
+     "name": "Калифорния гриль с лососем",
+     "priceKop": 43000,
+     "lines": [
+      {
+       "productId": "rice_sushi",
+       "net": 130
+      },
+      {
+       "productId": "salmon",
+       "net": 40
+      },
+      {
+       "productId": "cucumber",
+       "net": 20
+      },
+      {
+       "productId": "masago",
+       "net": 10
+      },
+      {
+       "productId": "crab_mix",
+       "net": 40
+      },
+      {
+       "productId": "sauce_garlic",
+       "net": 20
+      },
+      {
+       "productId": "nori",
+       "net": 1
+      },
+      {
+       "productId": "mozzarella",
+       "net": 20
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "rh5",
+   "name": "Терияки с лососем гриль",
+   "category": "Запечённые роллы",
+   "description": "Рис, лосось, огурец, сливочный сыр, болгарский перец, чесночный соус, терияки",
+   "sort": 68,
+   "variants": [
+    {
+     "id": "rh5",
+     "label": null,
+     "name": "Терияки с лососем гриль",
+     "priceKop": 42000,
+     "lines": [
+      {
+       "productId": "rice_sushi",
+       "net": 130
+      },
+      {
+       "productId": "salmon",
+       "net": 40
+      },
+      {
+       "productId": "cucumber",
+       "net": 20
+      },
+      {
+       "productId": "cream_cheese",
+       "net": 35
+      },
+      {
+       "productId": "bell_pepper",
+       "net": 20
+      },
+      {
+       "productId": "sauce_garlic",
+       "net": 20
+      },
+      {
+       "productId": "teriyaki",
+       "net": 10
+      },
+      {
+       "productId": "nori",
+       "net": 1
+      },
+      {
+       "productId": "mozzarella",
+       "net": 20
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "rh6",
+   "name": "Унаги гриль",
+   "category": "Запечённые роллы",
+   "description": "Рис, краб (имитация), огурец, спайс соус, унаги соус, сырный соус, икра масаго",
+   "sort": 69,
+   "variants": [
+    {
+     "id": "rh6",
+     "label": null,
+     "name": "Унаги гриль",
+     "priceKop": 41000,
+     "lines": [
+      {
+       "productId": "rice_sushi",
+       "net": 130
+      },
+      {
+       "productId": "crab_sticks",
+       "net": 40
+      },
+      {
+       "productId": "cucumber",
+       "net": 20
+      },
+      {
+       "productId": "spicy_sauce",
+       "net": 10
+      },
+      {
+       "productId": "unagi",
+       "net": 10
+      },
+      {
+       "productId": "sauce_cheese",
+       "net": 20
+      },
+      {
+       "productId": "masago",
+       "net": 10
+      },
+      {
+       "productId": "nori",
+       "net": 1
+      },
+      {
+       "productId": "mozzarella",
+       "net": 20
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "rh7",
+   "name": "Филадельфия гриль",
+   "category": "Запечённые роллы",
+   "description": "Рис, лосось, огурец, сливочный сыр, чесночный соус",
+   "sort": 70,
+   "variants": [
+    {
+     "id": "rh7",
+     "label": null,
+     "name": "Филадельфия гриль",
+     "priceKop": 43000,
+     "lines": [
+      {
+       "productId": "rice_sushi",
+       "net": 130
+      },
+      {
+       "productId": "salmon",
+       "net": 40
+      },
+      {
+       "productId": "cucumber",
+       "net": 20
+      },
+      {
+       "productId": "cream_cheese",
+       "net": 35
+      },
+      {
+       "productId": "sauce_garlic",
+       "net": 20
+      },
+      {
+       "productId": "nori",
+       "net": 1
+      },
+      {
+       "productId": "mozzarella",
+       "net": 20
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "rh8",
+   "name": "Харасуми",
+   "category": "Запечённые роллы",
+   "description": "Рис, краб (имитация), креветка, сливочный сыр, сырный соус",
+   "sort": 71,
+   "variants": [
+    {
+     "id": "rh8",
+     "label": null,
+     "name": "Харасуми",
+     "priceKop": 39000,
+     "lines": [
+      {
+       "productId": "rice_sushi",
+       "net": 130
+      },
+      {
+       "productId": "crab_sticks",
+       "net": 40
+      },
+      {
+       "productId": "shrimp",
+       "net": 40
+      },
+      {
+       "productId": "cream_cheese",
+       "net": 35
+      },
+      {
+       "productId": "sauce_cheese",
+       "net": 20
+      },
+      {
+       "productId": "nori",
+       "net": 1
+      },
+      {
+       "productId": "mozzarella",
+       "net": 20
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "rh9",
+   "name": "Чикен бекон гриль",
+   "category": "Запечённые роллы",
+   "description": "Рис, копчёная курица, бекон, сливочный сыр, огурец, унаги",
+   "sort": 72,
+   "variants": [
+    {
+     "id": "rh9",
+     "label": null,
+     "name": "Чикен бекон гриль",
+     "priceKop": 36000,
+     "lines": [
+      {
+       "productId": "rice_sushi",
+       "net": 130
+      },
+      {
+       "productId": "chicken_smoked",
+       "net": 40
+      },
+      {
+       "productId": "bacon",
+       "net": 20
+      },
+      {
+       "productId": "cream_cheese",
+       "net": 35
+      },
+      {
+       "productId": "cucumber",
+       "net": 20
+      },
+      {
+       "productId": "unagi",
+       "net": 10
+      },
+      {
+       "productId": "nori",
+       "net": 1
+      },
+      {
+       "productId": "mozzarella",
+       "net": 20
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "rh10",
+   "name": "Чикен гриль",
+   "category": "Запечённые роллы",
+   "description": "Рис, курица копчёная, болгарский перец, салат, огурец, сливочный сыр, чесночный соус",
+   "sort": 73,
+   "variants": [
+    {
+     "id": "rh10",
+     "label": null,
+     "name": "Чикен гриль",
+     "priceKop": 38000,
+     "lines": [
+      {
+       "productId": "rice_sushi",
+       "net": 130
+      },
+      {
+       "productId": "chicken_smoked",
+       "net": 40
+      },
+      {
+       "productId": "bell_pepper",
+       "net": 20
+      },
+      {
+       "productId": "lettuce",
+       "net": 10
+      },
+      {
+       "productId": "cucumber",
+       "net": 20
+      },
+      {
+       "productId": "cream_cheese",
+       "net": 35
+      },
+      {
+       "productId": "sauce_garlic",
+       "net": 20
+      },
+      {
+       "productId": "nori",
+       "net": 1
+      },
+      {
+       "productId": "mozzarella",
+       "net": 20
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "rh11",
+   "name": "Мураками",
+   "category": "Запечённые роллы",
+   "description": "Рис, креветка, огурец, сливочный сыр",
+   "sort": 74,
+   "variants": [
+    {
+     "id": "rh11",
+     "label": null,
+     "name": "Мураками",
+     "priceKop": 38000,
+     "lines": [
+      {
+       "productId": "rice_sushi",
+       "net": 130
+      },
+      {
+       "productId": "shrimp",
+       "net": 40
+      },
+      {
+       "productId": "cucumber",
+       "net": 20
+      },
+      {
+       "productId": "cream_cheese",
+       "net": 35
+      },
+      {
+       "productId": "nori",
+       "net": 1
+      },
+      {
+       "productId": "mozzarella",
+       "net": 20
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "rh12",
+   "name": "Шанхай",
+   "category": "Запечённые роллы",
+   "description": "Рис, краб (имитация), огурец, унаги соус, соус «Спайс», кунжутный соус, зелёный лук",
+   "sort": 75,
+   "variants": [
+    {
+     "id": "rh12",
+     "label": null,
+     "name": "Шанхай",
+     "priceKop": 38000,
+     "lines": [
+      {
+       "productId": "rice_sushi",
+       "net": 130
+      },
+      {
+       "productId": "crab_sticks",
+       "net": 40
+      },
+      {
+       "productId": "cucumber",
+       "net": 20
+      },
+      {
+       "productId": "unagi",
+       "net": 10
+      },
+      {
+       "productId": "spicy_sauce",
+       "net": 10
+      },
+      {
+       "productId": "sesame_sauce",
+       "net": 20
+      },
+      {
+       "productId": "green_onion",
+       "net": 3
+      },
+      {
+       "productId": "nori",
+       "net": 1
+      },
+      {
+       "productId": "mozzarella",
+       "net": 20
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "st1",
+   "name": "Сет Запечённый",
+   "category": "Сеты",
+   "description": "Калифорния гриль с лососем, Харасуми, Терияки с лососем гриль, Чикен бекон гриль",
+   "sort": 76,
+   "variants": [
+    {
+     "id": "st1",
+     "name": "Сет Запечённый",
+     "label": null,
+     "priceKop": 146000,
+     "isSet": true,
+     "lines": []
+    }
+   ]
+  },
+  {
+   "id": "st2",
+   "name": "Сет На двоих",
+   "category": "Сеты",
+   "description": "Шанхай, Терияки с лососем гриль, Калифорния с крабом, Ролл Креветка",
+   "sort": 77,
+   "variants": [
+    {
+     "id": "st2",
+     "name": "Сет На двоих",
+     "label": null,
+     "priceKop": 126000,
+     "isSet": true,
+     "lines": []
+    }
+   ]
+  },
+  {
+   "id": "st3",
+   "name": "Сет На троих",
+   "category": "Сеты",
+   "description": "Чикен бекон гриль, Калифорния с крабом, Ролл Лосось, Эби с креветкой, Унаги гриль",
+   "sort": 78,
+   "variants": [
+    {
+     "id": "st3",
+     "name": "Сет На троих",
+     "label": null,
+     "priceKop": 171000,
+     "isSet": true,
+     "lines": []
+    }
+   ]
+  },
+  {
+   "id": "st4",
+   "name": "Сет Большой",
+   "category": "Сеты",
+   "description": "Акита, Калифорния с лососем, Мураками, Флорида, Эби с креветкой, Ролл Огурец, Харасуми, Чикен гриль",
+   "sort": 79,
+   "variants": [
+    {
+     "id": "st4",
+     "name": "Сет Большой",
+     "label": null,
+     "priceKop": 269000,
+     "isSet": true,
+     "lines": []
+    }
+   ]
+  },
+  {
+   "id": "mn1",
+   "name": "Паста Карбонара",
+   "category": "Горячее",
+   "description": "Спагетти, бекон, пармезан, сливки",
+   "sort": 80,
+   "variants": [
+    {
+     "id": "mn1",
+     "label": null,
+     "name": "Паста Карбонара",
+     "priceKop": 36000,
+     "lines": [
+      {
+       "productId": "spaghetti",
+       "net": 100
+      },
+      {
+       "productId": "bacon",
+       "net": 50
+      },
+      {
+       "productId": "parmesan",
+       "net": 25
+      },
+      {
+       "productId": "cream",
+       "net": 80
+      },
+      {
+       "productId": "egg",
+       "net": 1
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "mn2",
+   "name": "Паста с морепродуктами",
+   "category": "Горячее",
+   "description": "Спагетти, морской коктейль, пармезан, сливки",
+   "sort": 81,
+   "variants": [
+    {
+     "id": "mn2",
+     "label": null,
+     "name": "Паста с морепродуктами",
+     "priceKop": 41000,
+     "lines": [
+      {
+       "productId": "spaghetti",
+       "net": 100
+      },
+      {
+       "productId": "seafood_mix",
+       "net": 110
+      },
+      {
+       "productId": "parmesan",
+       "net": 25
+      },
+      {
+       "productId": "cream",
+       "net": 80
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "mn3",
+   "name": "Паста Болоньезе",
+   "category": "Горячее",
+   "description": "Фетучини, соус «Болоньезе», пармезан",
+   "sort": 82,
+   "variants": [
+    {
+     "id": "mn3",
+     "label": null,
+     "name": "Паста Болоньезе",
+     "priceKop": 37000,
+     "lines": [
+      {
+       "productId": "fettuccine",
+       "net": 100
+      },
+      {
+       "productId": "bolognese",
+       "net": 120
+      },
+      {
+       "productId": "parmesan",
+       "net": 25
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "mn4",
+   "name": "Рис с морепродуктами",
+   "category": "Горячее",
+   "description": "Рис, морской коктейль, яйцо, кабачок, болгарский перец, морковь, лук, кинза, кунжут, соевый соус, соус «Терияки», соус «Шрирача»",
+   "sort": 83,
+   "variants": [
+    {
+     "id": "mn4",
+     "label": null,
+     "name": "Рис с морепродуктами",
+     "priceKop": 42000,
+     "lines": [
+      {
+       "productId": "rice_sushi",
+       "net": 200
+      },
+      {
+       "productId": "seafood_mix",
+       "net": 110
+      },
+      {
+       "productId": "egg",
+       "net": 1
+      },
+      {
+       "productId": "zucchini",
+       "net": 30
+      },
+      {
+       "productId": "bell_pepper",
+       "net": 25
+      },
+      {
+       "productId": "carrot",
+       "net": 20
+      },
+      {
+       "productId": "onion",
+       "net": 15
+      },
+      {
+       "productId": "cilantro",
+       "net": 3
+      },
+      {
+       "productId": "sesame",
+       "net": 3
+      },
+      {
+       "productId": "soy",
+       "net": 15
+      },
+      {
+       "productId": "teriyaki",
+       "net": 15
+      },
+      {
+       "productId": "sriracha",
+       "net": 5
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "mn5",
+   "name": "Поке с креветками/лососем",
+   "category": "Горячее",
+   "description": "Рис, креветки/лосось, кукуруза, томаты, огурцы, икра масаго, водоросли нори, чесночный соус, соус «Терияки»",
+   "sort": 84,
+   "variants": [
+    {
+     "id": "mn5-1",
+     "label": "С креветками",
+     "name": "Поке с креветками",
+     "priceKop": 45000,
+     "lines": [
+      {
+       "productId": "rice_sushi",
+       "net": 180
+      },
+      {
+       "productId": "corn",
+       "net": 30
+      },
+      {
+       "productId": "tomato",
+       "net": 30
+      },
+      {
+       "productId": "cucumber",
+       "net": 30
+      },
+      {
+       "productId": "masago",
+       "net": 10
+      },
+      {
+       "productId": "nori",
+       "net": 1
+      },
+      {
+       "productId": "sauce_garlic",
+       "net": 25
+      },
+      {
+       "productId": "teriyaki",
+       "net": 15
+      },
+      {
+       "productId": "shrimp",
+       "net": 80
+      }
+     ]
+    },
+    {
+     "id": "mn5-2",
+     "label": "С лососем",
+     "name": "Поке с лососем",
+     "priceKop": 45000,
+     "lines": [
+      {
+       "productId": "rice_sushi",
+       "net": 180
+      },
+      {
+       "productId": "corn",
+       "net": 30
+      },
+      {
+       "productId": "tomato",
+       "net": 30
+      },
+      {
+       "productId": "cucumber",
+       "net": 30
+      },
+      {
+       "productId": "masago",
+       "net": 10
+      },
+      {
+       "productId": "nori",
+       "net": 1
+      },
+      {
+       "productId": "sauce_garlic",
+       "net": 25
+      },
+      {
+       "productId": "teriyaki",
+       "net": 15
+      },
+      {
+       "productId": "salmon",
+       "net": 80
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "mn6",
+   "name": "Поке с цыпленком",
+   "category": "Горячее",
+   "description": "Рис, цыплёнок, кукуруза, томаты, огурцы, икра масаго, нори, чесночный соус, соус «Терияки»",
+   "sort": 85,
+   "variants": [
+    {
+     "id": "mn6",
+     "label": null,
+     "name": "Поке с цыпленком",
+     "priceKop": 39000,
+     "lines": [
+      {
+       "productId": "rice_sushi",
+       "net": 180
+      },
+      {
+       "productId": "chicken",
+       "net": 100
+      },
+      {
+       "productId": "corn",
+       "net": 30
+      },
+      {
+       "productId": "tomato",
+       "net": 30
+      },
+      {
+       "productId": "cucumber",
+       "net": 30
+      },
+      {
+       "productId": "masago",
+       "net": 10
+      },
+      {
+       "productId": "nori",
+       "net": 1
+      },
+      {
+       "productId": "sauce_garlic",
+       "net": 25
+      },
+      {
+       "productId": "teriyaki",
+       "net": 15
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "mn7",
+   "name": "Фунчоза/Удон с курицей",
+   "category": "Горячее",
+   "description": "Курица, кабачок, морковь, пекинская капуста, лук, кунжут, кинза, устричный соус, соус «Шрирача»",
+   "sort": 86,
+   "variants": [
+    {
+     "id": "mn7-1",
+     "label": "Фунчоза",
+     "name": "Фунчоза с курицей",
+     "priceKop": 37000,
+     "lines": [
+      {
+       "productId": "chicken",
+       "net": 120
+      },
+      {
+       "productId": "zucchini",
+       "net": 35
+      },
+      {
+       "productId": "carrot_korean",
+       "net": 35
+      },
+      {
+       "productId": "cabbage",
+       "net": 35
+      },
+      {
+       "productId": "onion",
+       "net": 15
+      },
+      {
+       "productId": "sesame",
+       "net": 3
+      },
+      {
+       "productId": "cilantro",
+       "net": 3
+      },
+      {
+       "productId": "oyster",
+       "net": 15
+      },
+      {
+       "productId": "sriracha",
+       "net": 15
+      },
+      {
+       "productId": "funchoza",
+       "net": 90
+      }
+     ]
+    },
+    {
+     "id": "mn7-2",
+     "label": "Удон",
+     "name": "Удон с курицей",
+     "priceKop": 37000,
+     "lines": [
+      {
+       "productId": "chicken",
+       "net": 120
+      },
+      {
+       "productId": "zucchini",
+       "net": 35
+      },
+      {
+       "productId": "carrot_korean",
+       "net": 35
+      },
+      {
+       "productId": "cabbage",
+       "net": 35
+      },
+      {
+       "productId": "onion",
+       "net": 15
+      },
+      {
+       "productId": "sesame",
+       "net": 3
+      },
+      {
+       "productId": "cilantro",
+       "net": 3
+      },
+      {
+       "productId": "oyster",
+       "net": 15
+      },
+      {
+       "productId": "sriracha",
+       "net": 15
+      },
+      {
+       "productId": "udon",
+       "net": 90
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "mn8",
+   "name": "Фунчоза/Удон с морепродуктами",
+   "category": "Горячее",
+   "description": "Морской коктейль, кабачок, морковь, пекинская капуста, кинза, лук, кунжут, сливки, устричный соус",
+   "sort": 87,
+   "variants": [
+    {
+     "id": "mn8-1",
+     "label": "Фунчоза",
+     "name": "Фунчоза с морепродуктами",
+     "priceKop": 43000,
+     "lines": [
+      {
+       "productId": "seafood_mix",
+       "net": 110
+      },
+      {
+       "productId": "zucchini",
+       "net": 35
+      },
+      {
+       "productId": "carrot_korean",
+       "net": 35
+      },
+      {
+       "productId": "cabbage",
+       "net": 35
+      },
+      {
+       "productId": "cilantro",
+       "net": 3
+      },
+      {
+       "productId": "onion",
+       "net": 15
+      },
+      {
+       "productId": "sesame",
+       "net": 3
+      },
+      {
+       "productId": "cream",
+       "net": 80
+      },
+      {
+       "productId": "oyster",
+       "net": 15
+      },
+      {
+       "productId": "funchoza",
+       "net": 90
+      }
+     ]
+    },
+    {
+     "id": "mn8-2",
+     "label": "Удон",
+     "name": "Удон с морепродуктами",
+     "priceKop": 43000,
+     "lines": [
+      {
+       "productId": "seafood_mix",
+       "net": 110
+      },
+      {
+       "productId": "zucchini",
+       "net": 35
+      },
+      {
+       "productId": "carrot_korean",
+       "net": 35
+      },
+      {
+       "productId": "cabbage",
+       "net": 35
+      },
+      {
+       "productId": "cilantro",
+       "net": 3
+      },
+      {
+       "productId": "onion",
+       "net": 15
+      },
+      {
+       "productId": "sesame",
+       "net": 3
+      },
+      {
+       "productId": "cream",
+       "net": 80
+      },
+      {
+       "productId": "oyster",
+       "net": 15
+      },
+      {
+       "productId": "udon",
+       "net": 90
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "mn9",
+   "name": "Рёбра барбекю",
+   "category": "Горячее",
+   "description": "Свиные рёбра, огурцы солёные, халапеньо, красный лук, сладкий чили/медово-горчичный соус",
+   "sort": 88,
+   "variants": [
+    {
+     "id": "mn9",
+     "label": null,
+     "name": "Рёбра барбекю",
+     "priceKop": 56000,
+     "lines": [
+      {
+       "productId": "ribs",
+       "net": 350
+      },
+      {
+       "productId": "pickles",
+       "net": 30
+      },
+      {
+       "productId": "jalapeno",
+       "net": 10
+      },
+      {
+       "productId": "red_onion",
+       "net": 20
+      },
+      {
+       "productId": "sweet_chili",
+       "net": 40
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "mn10",
+   "name": "Бифштекс с яйцом и картофель по-деревенски",
+   "category": "Горячее",
+   "description": "Котлета св.-говяжья, картофель по-домашнему, жареное яйцо, соус «Цезарь», зелень",
+   "sort": 89,
+   "variants": [
+    {
+     "id": "mn10",
+     "label": null,
+     "name": "Бифштекс с яйцом и картофель по-деревенски",
+     "priceKop": 39000,
+     "lines": [
+      {
+       "productId": "patty_mixed",
+       "net": 1
+      },
+      {
+       "productId": "wedges",
+       "net": 150
+      },
+      {
+       "productId": "egg",
+       "net": 1
+      },
+      {
+       "productId": "sauce_caesar",
+       "net": 30
+      },
+      {
+       "productId": "herbs",
+       "net": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "dr1",
+   "name": "Айс Латте Малина Розмарин",
+   "category": "Напитки",
+   "description": "Нежный сливочный латте с ароматом розмарина и пюре малины",
+   "sort": 90,
+   "variants": [
+    {
+     "id": "dr1",
+     "label": null,
+     "name": "Айс Латте Малина Розмарин",
+     "priceKop": 36000,
+     "lines": [
+      {
+       "productId": "milk",
+       "net": 220
+      },
+      {
+       "productId": "coffee",
+       "net": 18
+      },
+      {
+       "productId": "raspberry",
+       "net": 30
+      },
+      {
+       "productId": "syrup",
+       "net": 20
+      },
+      {
+       "productId": "ice",
+       "net": 120
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "dr2",
+   "name": "Айс Ти Жасмин-Маракуйя",
+   "category": "Напитки",
+   "description": "Освежающий холодный чай со сливочным кремом и пюре маракуйи",
+   "sort": 91,
+   "variants": [
+    {
+     "id": "dr2",
+     "label": null,
+     "name": "Айс Ти Жасмин-Маракуйя",
+     "priceKop": 36000,
+     "lines": [
+      {
+       "productId": "tea",
+       "net": 5
+      },
+      {
+       "productId": "cream",
+       "net": 40
+      },
+      {
+       "productId": "puree",
+       "net": 30
+      },
+      {
+       "productId": "syrup",
+       "net": 15
+      },
+      {
+       "productId": "ice",
+       "net": 150
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "dr3",
+   "name": "Айс Латте с шоколадом и тапиокой",
+   "category": "Напитки",
+   "description": "С сырной пенкой и попкорном",
+   "sort": 92,
+   "variants": [
+    {
+     "id": "dr3",
+     "label": null,
+     "name": "Айс Латте с шоколадом и тапиокой",
+     "priceKop": 36000,
+     "lines": [
+      {
+       "productId": "milk",
+       "net": 200
+      },
+      {
+       "productId": "coffee",
+       "net": 18
+      },
+      {
+       "productId": "cocoa",
+       "net": 15
+      },
+      {
+       "productId": "tapioca_cooked",
+       "net": 60
+      },
+      {
+       "productId": "cream_cheese",
+       "net": 20
+      },
+      {
+       "productId": "popcorn",
+       "net": 5
+      },
+      {
+       "productId": "ice",
+       "net": 100
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "dr4",
+   "name": "Айс Какао Банан-Кокос",
+   "category": "Напитки",
+   "description": "Тропический какао с бананом и кокосовой стружкой",
+   "sort": 93,
+   "variants": [
+    {
+     "id": "dr4",
+     "label": null,
+     "name": "Айс Какао Банан-Кокос",
+     "priceKop": 36000,
+     "lines": [
+      {
+       "productId": "milk",
+       "net": 220
+      },
+      {
+       "productId": "cocoa",
+       "net": 20
+      },
+      {
+       "productId": "banana",
+       "net": 60
+      },
+      {
+       "productId": "coconut_flakes",
+       "net": 5
+      },
+      {
+       "productId": "ice",
+       "net": 100
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "dr5",
+   "name": "Айс Матча Латте с тапиокой",
+   "category": "Напитки",
+   "description": "С сырной пенкой и клубникой",
+   "sort": 94,
+   "variants": [
+    {
+     "id": "dr5",
+     "label": null,
+     "name": "Айс Матча Латте с тапиокой",
+     "priceKop": 36000,
+     "lines": [
+      {
+       "productId": "milk",
+       "net": 220
+      },
+      {
+       "productId": "matcha",
+       "net": 4
+      },
+      {
+       "productId": "tapioca_cooked",
+       "net": 60
+      },
+      {
+       "productId": "cream_cheese",
+       "net": 20
+      },
+      {
+       "productId": "strawberry",
+       "net": 20
+      },
+      {
+       "productId": "ice",
+       "net": 100
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "dr6",
+   "name": "Айс Крем Латте с карамелью и тапиокой",
+   "category": "Напитки",
+   "description": "С сиропом мелассы и маршмеллоу",
+   "sort": 95,
+   "variants": [
+    {
+     "id": "dr6",
+     "label": null,
+     "name": "Айс Крем Латте с карамелью и тапиокой",
+     "priceKop": 36000,
+     "lines": [
+      {
+       "productId": "milk",
+       "net": 200
+      },
+      {
+       "productId": "coffee",
+       "net": 18
+      },
+      {
+       "productId": "cream",
+       "net": 40
+      },
+      {
+       "productId": "syrup",
+       "net": 25
+      },
+      {
+       "productId": "tapioca_cooked",
+       "net": 60
+      },
+      {
+       "productId": "marshmallow",
+       "net": 10
+      },
+      {
+       "productId": "ice",
+       "net": 100
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "dr7",
+   "name": "Клубника Юзу",
+   "category": "Напитки",
+   "description": "Лимонад с клубничным сиропом и азиатским цитрусом",
+   "sort": 96,
+   "variants": [
+    {
+     "id": "dr7",
+     "label": null,
+     "name": "Клубника Юзу",
+     "priceKop": 25000,
+     "lines": [
+      {
+       "productId": "lemonade_base",
+       "net": 250
+      },
+      {
+       "productId": "syrup",
+       "net": 30
+      },
+      {
+       "productId": "lemon",
+       "net": 15
+      },
+      {
+       "productId": "ice",
+       "net": 120
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "dr8",
+   "name": "Ягодный Айс Ти",
+   "category": "Напитки",
+   "description": "На жасминовом чае с черничными джус болами и сиропом клубники",
+   "sort": 97,
+   "variants": [
+    {
+     "id": "dr8",
+     "label": null,
+     "name": "Ягодный Айс Ти",
+     "priceKop": 25000,
+     "lines": [
+      {
+       "productId": "tea",
+       "net": 5
+      },
+      {
+       "productId": "juice_balls",
+       "net": 40
+      },
+      {
+       "productId": "syrup",
+       "net": 25
+      },
+      {
+       "productId": "ice",
+       "net": 150
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "dr9",
+   "name": "Тоник Маракуйя Юзу",
+   "category": "Напитки",
+   "description": "С кусочками азиатских цитрусов",
+   "sort": 98,
+   "variants": [
+    {
+     "id": "dr9",
+     "label": null,
+     "name": "Тоник Маракуйя Юзу",
+     "priceKop": 25000,
+     "lines": [
+      {
+       "productId": "tonic",
+       "net": 200
+      },
+      {
+       "productId": "puree",
+       "net": 40
+      },
+      {
+       "productId": "lemon",
+       "net": 15
+      },
+      {
+       "productId": "ice",
+       "net": 120
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "dr10",
+   "name": "Лимонад Клубника-Банан-Анчан",
+   "category": "Напитки",
+   "description": "Освежающий фруктовый лимонад",
+   "sort": 99,
+   "variants": [
+    {
+     "id": "dr10",
+     "label": null,
+     "name": "Лимонад Клубника-Банан-Анчан",
+     "priceKop": 25000,
+     "lines": [
+      {
+       "productId": "lemonade_base",
+       "net": 220
+      },
+      {
+       "productId": "strawberry",
+       "net": 30
+      },
+      {
+       "productId": "banana",
+       "net": 30
+      },
+      {
+       "productId": "anchan",
+       "net": 2
+      },
+      {
+       "productId": "syrup",
+       "net": 20
+      },
+      {
+       "productId": "ice",
+       "net": 120
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "dr11",
+   "name": "Эспрессо",
+   "category": "Напитки",
+   "description": "Классический эспрессо",
+   "sort": 100,
+   "variants": [
+    {
+     "id": "dr11-1",
+     "label": "40 мл",
+     "name": "Эспрессо 40 мл",
+     "priceKop": 9000,
+     "lines": [
+      {
+       "productId": "coffee",
+       "net": 9
+      }
+     ]
+    },
+    {
+     "id": "dr11-2",
+     "label": "80 мл",
+     "name": "Эспрессо 80 мл",
+     "priceKop": 16000,
+     "lines": [
+      {
+       "productId": "coffee",
+       "net": 18
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "dr12",
+   "name": "Американо",
+   "category": "Напитки",
+   "description": "Американо",
+   "sort": 101,
+   "variants": [
+    {
+     "id": "dr12-1",
+     "label": "200 мл",
+     "name": "Американо 200 мл",
+     "priceKop": 11000,
+     "lines": [
+      {
+       "productId": "coffee",
+       "net": 9
+      }
+     ]
+    },
+    {
+     "id": "dr12-2",
+     "label": "300 мл",
+     "name": "Американо 300 мл",
+     "priceKop": 16000,
+     "lines": [
+      {
+       "productId": "coffee",
+       "net": 13
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "dr13",
+   "name": "Капучино",
+   "category": "Напитки",
+   "description": "Нежный капучино",
+   "sort": 102,
+   "variants": [
+    {
+     "id": "dr13-1",
+     "label": "200 мл",
+     "name": "Капучино 200 мл",
+     "priceKop": 16000,
+     "lines": [
+      {
+       "productId": "coffee",
+       "net": 9
+      },
+      {
+       "productId": "milk",
+       "net": 150
+      }
+     ]
+    },
+    {
+     "id": "dr13-2",
+     "label": "300 мл",
+     "name": "Капучино 300 мл",
+     "priceKop": 18000,
+     "lines": [
+      {
+       "productId": "coffee",
+       "net": 13
+      },
+      {
+       "productId": "milk",
+       "net": 210
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "dr14",
+   "name": "Капучино на альтернативном молоке",
+   "category": "Напитки",
+   "description": "Кокос, миндаль",
+   "sort": 103,
+   "variants": [
+    {
+     "id": "dr14-1",
+     "label": "200 мл",
+     "name": "Капучино на альтернативном молоке 200 мл",
+     "priceKop": 20000,
+     "lines": [
+      {
+       "productId": "coffee",
+       "net": 9
+      },
+      {
+       "productId": "alt_milk",
+       "net": 150
+      }
+     ]
+    },
+    {
+     "id": "dr14-2",
+     "label": "300 мл",
+     "name": "Капучино на альтернативном молоке 300 мл",
+     "priceKop": 22000,
+     "lines": [
+      {
+       "productId": "coffee",
+       "net": 13
+      },
+      {
+       "productId": "alt_milk",
+       "net": 210
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "dr15",
+   "name": "Айс Капучино",
+   "category": "Напитки",
+   "description": "Айс Капучино / на альтернативном молоке",
+   "sort": 104,
+   "variants": [
+    {
+     "id": "dr15-1",
+     "label": "Классический",
+     "name": "Айс Капучино Классический",
+     "priceKop": 20000,
+     "lines": [
+      {
+       "productId": "coffee",
+       "net": 18
+      },
+      {
+       "productId": "milk",
+       "net": 180
+      },
+      {
+       "productId": "ice",
+       "net": 100
+      }
+     ]
+    },
+    {
+     "id": "dr15-2",
+     "label": "На альт. молоке",
+     "name": "Айс Капучино На альт. молоке",
+     "priceKop": 23000,
+     "lines": [
+      {
+       "productId": "coffee",
+       "net": 18
+      },
+      {
+       "productId": "ice",
+       "net": 100
+      },
+      {
+       "productId": "alt_milk",
+       "net": 180
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "dr16",
+   "name": "Флэт Уайт",
+   "category": "Напитки",
+   "description": "Флэт Уайт / на альтернативном молоке",
+   "sort": 105,
+   "variants": [
+    {
+     "id": "dr16-1",
+     "label": "Классический",
+     "name": "Флэт Уайт Классический",
+     "priceKop": 20000,
+     "lines": [
+      {
+       "productId": "coffee",
+       "net": 18
+      },
+      {
+       "productId": "milk",
+       "net": 120
+      }
+     ]
+    },
+    {
+     "id": "dr16-2",
+     "label": "На альт. молоке",
+     "name": "Флэт Уайт На альт. молоке",
+     "priceKop": 22000,
+     "lines": [
+      {
+       "productId": "coffee",
+       "net": 18
+      },
+      {
+       "productId": "alt_milk",
+       "net": 120
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "dr17",
+   "name": "Латте",
+   "category": "Напитки",
+   "description": "Латте / на альтернативном молоке",
+   "sort": 106,
+   "variants": [
+    {
+     "id": "dr17-1",
+     "label": "Классический",
+     "name": "Латте Классический",
+     "priceKop": 18000,
+     "lines": [
+      {
+       "productId": "coffee",
+       "net": 9
+      },
+      {
+       "productId": "milk",
+       "net": 250
+      }
+     ]
+    },
+    {
+     "id": "dr17-2",
+     "label": "На альт. молоке",
+     "name": "Латте На альт. молоке",
+     "priceKop": 21000,
+     "lines": [
+      {
+       "productId": "coffee",
+       "net": 9
+      },
+      {
+       "productId": "alt_milk",
+       "net": 250
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "dr18",
+   "name": "Раф",
+   "category": "Напитки",
+   "description": "Раф-кофе",
+   "sort": 107,
+   "variants": [
+    {
+     "id": "dr18",
+     "label": null,
+     "name": "Раф",
+     "priceKop": 22000,
+     "lines": [
+      {
+       "productId": "coffee",
+       "net": 18
+      },
+      {
+       "productId": "cream",
+       "net": 100
+      },
+      {
+       "productId": "syrup",
+       "net": 15
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "dr19",
+   "name": "Какао с маршмеллоу",
+   "category": "Напитки",
+   "description": "Горячее какао с маршмеллоу",
+   "sort": 108,
+   "variants": [
+    {
+     "id": "dr19",
+     "label": null,
+     "name": "Какао с маршмеллоу",
+     "priceKop": 19000,
+     "lines": [
+      {
+       "productId": "milk",
+       "net": 250
+      },
+      {
+       "productId": "cocoa",
+       "net": 25
+      },
+      {
+       "productId": "marshmallow",
+       "net": 15
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "dr20",
+   "name": "Чай",
+   "category": "Напитки",
+   "description": "Чёрный, зелёный или фруктовый",
+   "sort": 109,
+   "variants": [
+    {
+     "id": "dr20-1",
+     "label": "250 мл",
+     "name": "Чай 250 мл",
+     "priceKop": 9000,
+     "lines": [
+      {
+       "productId": "tea",
+       "net": 4
+      }
+     ]
+    },
+    {
+     "id": "dr20-2",
+     "label": "800 мл",
+     "name": "Чай 800 мл",
+     "priceKop": 28000,
+     "lines": [
+      {
+       "productId": "tea",
+       "net": 12
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "dr21",
+   "name": "Чай Персик-Анчан",
+   "category": "Напитки",
+   "description": "Чай с персиком и анчаном",
+   "sort": 110,
+   "variants": [
+    {
+     "id": "dr21-1",
+     "label": "300 мл",
+     "name": "Чай Персик-Анчан 300 мл",
+     "priceKop": 19000,
+     "lines": [
+      {
+       "productId": "tea",
+       "net": 6
+      },
+      {
+       "productId": "puree",
+       "net": 56
+      },
+      {
+       "productId": "anchan",
+       "net": 2
+      },
+      {
+       "productId": "syrup",
+       "net": 21
+      }
+     ]
+    },
+    {
+     "id": "dr21-2",
+     "label": "800 мл",
+     "name": "Чай Персик-Анчан 800 мл",
+     "priceKop": 36000,
+     "lines": [
+      {
+       "productId": "tea",
+       "net": 12
+      },
+      {
+       "productId": "puree",
+       "net": 120
+      },
+      {
+       "productId": "anchan",
+       "net": 2
+      },
+      {
+       "productId": "syrup",
+       "net": 45
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "dr22",
+   "name": "Чай Манго-Клубника",
+   "category": "Напитки",
+   "description": "Чай с манго и клубникой",
+   "sort": 111,
+   "variants": [
+    {
+     "id": "dr22-1",
+     "label": "300 мл",
+     "name": "Чай Манго-Клубника 300 мл",
+     "priceKop": 19000,
+     "lines": [
+      {
+       "productId": "tea",
+       "net": 6
+      },
+      {
+       "productId": "puree",
+       "net": 56
+      },
+      {
+       "productId": "syrup",
+       "net": 21
+      }
+     ]
+    },
+    {
+     "id": "dr22-2",
+     "label": "800 мл",
+     "name": "Чай Манго-Клубника 800 мл",
+     "priceKop": 36000,
+     "lines": [
+      {
+       "productId": "tea",
+       "net": 12
+      },
+      {
+       "productId": "puree",
+       "net": 120
+      },
+      {
+       "productId": "syrup",
+       "net": 45
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "dr23",
+   "name": "Чай Облепиховый",
+   "category": "Напитки",
+   "description": "Облепиховый чай",
+   "sort": 112,
+   "variants": [
+    {
+     "id": "dr23-1",
+     "label": "300 мл",
+     "name": "Чай Облепиховый 300 мл",
+     "priceKop": 19000,
+     "lines": [
+      {
+       "productId": "tea",
+       "net": 3
+      },
+      {
+       "productId": "puree",
+       "net": 70
+      },
+      {
+       "productId": "syrup",
+       "net": 21
+      }
+     ]
+    },
+    {
+     "id": "dr23-2",
+     "label": "800 мл",
+     "name": "Чай Облепиховый 800 мл",
+     "priceKop": 36000,
+     "lines": [
+      {
+       "productId": "tea",
+       "net": 3
+      },
+      {
+       "productId": "puree",
+       "net": 150
+      },
+      {
+       "productId": "syrup",
+       "net": 45
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "dr24",
+   "name": "Фрозен Манго-Клубника",
+   "category": "Напитки",
+   "description": "Фрозен-напиток с манго и клубникой",
+   "sort": 113,
+   "variants": [
+    {
+     "id": "dr24",
+     "label": null,
+     "name": "Фрозен Манго-Клубника",
+     "priceKop": 29000,
+     "lines": [
+      {
+       "productId": "puree",
+       "net": 80
+      },
+      {
+       "productId": "strawberry",
+       "net": 40
+      },
+      {
+       "productId": "syrup",
+       "net": 20
+      },
+      {
+       "productId": "ice",
+       "net": 200
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "dr25",
+   "name": "Милкшейк Классический",
+   "category": "Напитки",
+   "description": "Классический молочный коктейль",
+   "sort": 114,
+   "variants": [
+    {
+     "id": "dr25",
+     "label": null,
+     "name": "Милкшейк Классический",
+     "priceKop": 28000,
+     "lines": [
+      {
+       "productId": "milk",
+       "net": 200
+      },
+      {
+       "productId": "ice_cream",
+       "net": 120
+      },
+      {
+       "productId": "syrup",
+       "net": 10
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "dr26",
+   "name": "Милкшейк Шоколадный",
+   "category": "Напитки",
+   "description": "Шоколадный молочный коктейль",
+   "sort": 115,
+   "variants": [
+    {
+     "id": "dr26",
+     "label": null,
+     "name": "Милкшейк Шоколадный",
+     "priceKop": 33000,
+     "lines": [
+      {
+       "productId": "milk",
+       "net": 200
+      },
+      {
+       "productId": "ice_cream",
+       "net": 120
+      },
+      {
+       "productId": "cocoa",
+       "net": 20
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "dr27",
+   "name": "Милкшейк Малиновый",
+   "category": "Напитки",
+   "description": "Малиновый молочный коктейль",
+   "sort": 116,
+   "variants": [
+    {
+     "id": "dr27",
+     "label": null,
+     "name": "Милкшейк Малиновый",
+     "priceKop": 33000,
+     "lines": [
+      {
+       "productId": "milk",
+       "net": 200
+      },
+      {
+       "productId": "ice_cream",
+       "net": 120
+      },
+      {
+       "productId": "raspberry",
+       "net": 40
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "dr28",
+   "name": "Бамбл Вишня-Тапиока",
+   "category": "Напитки",
+   "description": "Вишнёвый напиток с тапиокой",
+   "sort": 117,
+   "variants": [
+    {
+     "id": "dr28",
+     "label": null,
+     "name": "Бамбл Вишня-Тапиока",
+     "priceKop": 33000,
+     "lines": [
+      {
+       "productId": "cherry",
+       "net": 60
+      },
+      {
+       "productId": "tapioca_cooked",
+       "net": 60
+      },
+      {
+       "productId": "syrup",
+       "net": 25
+      },
+      {
+       "productId": "lemonade_base",
+       "net": 200
+      },
+      {
+       "productId": "ice",
+       "net": 100
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "dr40",
+   "name": "Клубничный фруктовый чай",
+   "category": "Напитки",
+   "description": "Освежающий фруктовый чай с клубникой на льду",
+   "sort": 118,
+   "variants": [
+    {
+     "id": "dr40",
+     "label": null,
+     "name": "Клубничный фруктовый чай",
+     "priceKop": 29000,
+     "lines": [
+      {
+       "productId": "tea",
+       "net": 5
+      },
+      {
+       "productId": "strawberry",
+       "net": 40
+      },
+      {
+       "productId": "syrup",
+       "net": 15
+      },
+      {
+       "productId": "ice",
+       "net": 120
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "dr41",
+   "name": "Вишнёвый боба-чай",
+   "category": "Напитки",
+   "description": "Боба-чай с вишнёвым сиропом и тапиокой",
+   "sort": 119,
+   "variants": [
+    {
+     "id": "dr41",
+     "label": null,
+     "name": "Вишнёвый боба-чай",
+     "priceKop": 32000,
+     "lines": [
+      {
+       "productId": "tea",
+       "net": 5
+      },
+      {
+       "productId": "cherry",
+       "net": 40
+      },
+      {
+       "productId": "tapioca_cooked",
+       "net": 50
+      },
+      {
+       "productId": "syrup",
+       "net": 20
+      },
+      {
+       "productId": "milk",
+       "net": 100
+      },
+      {
+       "productId": "ice",
+       "net": 100
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "dr42",
+   "name": "Апельсиновый фреш",
+   "category": "Напитки",
+   "description": "Свежий апельсиновый напиток со льдом",
+   "sort": 120,
+   "variants": [
+    {
+     "id": "dr42",
+     "label": null,
+     "name": "Апельсиновый фреш",
+     "priceKop": 28000,
+     "lines": [
+      {
+       "productId": "orange",
+       "net": 350
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "dr43",
+   "name": "Грейпфрутовый цитрусовый чай",
+   "category": "Напитки",
+   "description": "Чай с грейпфрутом и цитрусовым соком на льду",
+   "sort": 121,
+   "variants": [
+    {
+     "id": "dr43",
+     "label": null,
+     "name": "Грейпфрутовый цитрусовый чай",
+     "priceKop": 29000,
+     "lines": [
+      {
+       "productId": "tea",
+       "net": 5
+      },
+      {
+       "productId": "orange",
+       "net": 120
+      },
+      {
+       "productId": "lemon",
+       "net": 15
+      },
+      {
+       "productId": "syrup",
+       "net": 10
+      },
+      {
+       "productId": "ice",
+       "net": 120
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "dr44",
+   "name": "Ягодный фиолетовый чай",
+   "category": "Напитки",
+   "description": "Фиолетовый чай со свежими ягодами",
+   "sort": 122,
+   "variants": [
+    {
+     "id": "dr44",
+     "label": null,
+     "name": "Ягодный фиолетовый чай",
+     "priceKop": 31000,
+     "lines": [
+      {
+       "productId": "tea",
+       "net": 5
+      },
+      {
+       "productId": "raspberry",
+       "net": 40
+      },
+      {
+       "productId": "anchan",
+       "net": 2
+      },
+      {
+       "productId": "syrup",
+       "net": 15
+      },
+      {
+       "productId": "ice",
+       "net": 120
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "dr45",
+   "name": "Латте с розовой пенкой",
+   "category": "Напитки",
+   "description": "Нежный латте с воздушной розовой пенкой",
+   "sort": 123,
+   "variants": [
+    {
+     "id": "dr45",
+     "label": null,
+     "name": "Латте с розовой пенкой",
+     "priceKop": 34000,
+     "lines": [
+      {
+       "productId": "coffee",
+       "net": 18
+      },
+      {
+       "productId": "milk",
+       "net": 200
+      },
+      {
+       "productId": "cream",
+       "net": 40
+      },
+      {
+       "productId": "syrup",
+       "net": 10
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "dr46",
+   "name": "Персиковый молочный чай",
+   "category": "Напитки",
+   "description": "Молочный чай с персиковым сиропом",
+   "sort": 124,
+   "variants": [
+    {
+     "id": "dr46",
+     "label": null,
+     "name": "Персиковый молочный чай",
+     "priceKop": 30000,
+     "lines": [
+      {
+       "productId": "tea",
+       "net": 5
+      },
+      {
+       "productId": "milk",
+       "net": 150
+      },
+      {
+       "productId": "puree",
+       "net": 30
+      },
+      {
+       "productId": "syrup",
+       "net": 20
+      },
+      {
+       "productId": "ice",
+       "net": 100
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "dr47",
+   "name": "Шоколадный боба-чай",
+   "category": "Напитки",
+   "description": "Насыщенный шоколадный напиток с тапиокой",
+   "sort": 125,
+   "variants": [
+    {
+     "id": "dr47",
+     "label": null,
+     "name": "Шоколадный боба-чай",
+     "priceKop": 33000,
+     "lines": [
+      {
+       "productId": "cocoa",
+       "net": 25
+      },
+      {
+       "productId": "milk",
+       "net": 200
+      },
+      {
+       "productId": "tapioca_cooked",
+       "net": 50
+      },
+      {
+       "productId": "ice",
+       "net": 100
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "dr48",
+   "name": "Шоколадный фраппе с мороженым",
+   "category": "Напитки",
+   "description": "Охлаждающий шоколадный фраппе со сливочным мороженым",
+   "sort": 126,
+   "variants": [
+    {
+     "id": "dr48",
+     "label": null,
+     "name": "Шоколадный фраппе с мороженым",
+     "priceKop": 36000,
+     "lines": [
+      {
+       "productId": "coffee",
+       "net": 18
+      },
+      {
+       "productId": "milk",
+       "net": 150
+      },
+      {
+       "productId": "ice_cream",
+       "net": 100
+      },
+      {
+       "productId": "cocoa",
+       "net": 15
+      },
+      {
+       "productId": "ice",
+       "net": 100
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "dr49",
+   "name": "Тирамису фраппе десерт",
+   "category": "Напитки",
+   "description": "Десертный фраппе со вкусом тирамису",
+   "sort": 127,
+   "variants": [
+    {
+     "id": "dr49",
+     "label": null,
+     "name": "Тирамису фраппе десерт",
+     "priceKop": 38000,
+     "lines": [
+      {
+       "productId": "coffee",
+       "net": 18
+      },
+      {
+       "productId": "milk",
+       "net": 150
+      },
+      {
+       "productId": "ice_cream",
+       "net": 80
+      },
+      {
+       "productId": "cream_cheese",
+       "net": 30
+      },
+      {
+       "productId": "cocoa",
+       "net": 10
+      },
+      {
+       "productId": "ice",
+       "net": 100
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "dr50",
+   "name": "Слоистый матча-боба чай",
+   "category": "Напитки",
+   "description": "Матча с молочным слоем и тапиокой",
+   "sort": 128,
+   "variants": [
+    {
+     "id": "dr50",
+     "label": null,
+     "name": "Слоистый матча-боба чай",
+     "priceKop": 35000,
+     "lines": [
+      {
+       "productId": "matcha",
+       "net": 4
+      },
+      {
+       "productId": "milk",
+       "net": 200
+      },
+      {
+       "productId": "tapioca_cooked",
+       "net": 50
+      },
+      {
+       "productId": "ice",
+       "net": 100
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "dr51",
+   "name": "Карамельный боба латте",
+   "category": "Напитки",
+   "description": "Сладкий карамельный латте с тапиокой",
+   "sort": 129,
+   "variants": [
+    {
+     "id": "dr51",
+     "label": null,
+     "name": "Карамельный боба латте",
+     "priceKop": 34000,
+     "lines": [
+      {
+       "productId": "coffee",
+       "net": 18
+      },
+      {
+       "productId": "milk",
+       "net": 200
+      },
+      {
+       "productId": "tapioca_cooked",
+       "net": 50
+      },
+      {
+       "productId": "syrup",
+       "net": 20
+      },
+      {
+       "productId": "ice",
+       "net": 100
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "sets": [
+  {
+   "variantId": "st1",
+   "items": [
+    {
+     "variantId": "rh4",
+     "qty": 1
+    },
+    {
+     "variantId": "rh8",
+     "qty": 1
+    },
+    {
+     "variantId": "rh5",
+     "qty": 1
+    },
+    {
+     "variantId": "rh9",
+     "qty": 1
+    }
+   ]
+  },
+  {
+   "variantId": "st2",
+   "items": [
+    {
+     "variantId": "rh12",
+     "qty": 1
+    },
+    {
+     "variantId": "rh5",
+     "qty": 1
+    },
+    {
+     "variantId": "rc4",
+     "qty": 1
+    },
+    {
+     "variantId": "rc1",
+     "qty": 1
+    }
+   ]
+  },
+  {
+   "variantId": "st3",
+   "items": [
+    {
+     "variantId": "rh9",
+     "qty": 1
+    },
+    {
+     "variantId": "rc4",
+     "qty": 1
+    },
+    {
+     "variantId": "rc2",
+     "qty": 1
+    },
+    {
+     "variantId": "rc8",
+     "qty": 1
+    },
+    {
+     "variantId": "rh6",
+     "qty": 1
+    }
+   ]
+  },
+  {
+   "variantId": "st4",
+   "items": [
+    {
+     "variantId": "rh2",
+     "qty": 1
+    },
+    {
+     "variantId": "rc6",
+     "qty": 1
+    },
+    {
+     "variantId": "rh11",
+     "qty": 1
+    },
+    {
+     "variantId": "rc7",
+     "qty": 1
+    },
+    {
+     "variantId": "rc8",
+     "qty": 1
+    },
+    {
+     "variantId": "rc3",
+     "qty": 1
+    },
+    {
+     "variantId": "rh8",
+     "qty": 1
+    },
+    {
+     "variantId": "rh10",
+     "qty": 1
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Долгое нажатие на иконку → «Адрес сервера»: сменить склад без переустановки (новый VPS) -->
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut
+        android:shortcutId="server"
+        android:enabled="true"
+        android:icon="@drawable/ic_shortcut_server"
+        android:shortcutShortLabel="@string/server_short"
+        android:shortcutLongLabel="@string/server_title">
+        <intent
+            android:action="ru.sphere.flagman.SERVER"
+            android:targetPackage="ru.sphere.flagman"
+            android:targetClass="ru.sphere.flagman.MainActivity" />
+    </shortcut>
+</shortcuts>

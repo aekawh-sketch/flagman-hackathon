@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/page">
+
+    <WebView
+        android:id="@+id/web"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ProgressBar
+        android:id="@+id/progress"
+        style="@android:style/Widget.Material.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_gravity="top"
+        android:indeterminate="false"
+        android:max="100"
+        android:progressTint="@color/teal"
+        android:visibility="gone" />
+
+    <!-- Нет связи: склад не ответил — повторить или сменить адрес (сервер переехал) -->
+    <LinearLayout
+        android:id="@+id/offline"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/page"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="32dp"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_marginBottom="20dp"
+            android:contentDescription="@null"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/offline_title"
+            android:textColor="#18181B"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="@string/offline_text"
+            android:textColor="#52525B"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/offline_url"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:fontFamily="monospace"
+            android:textColor="#71717A"
+            android:textSize="13sp" />
+
+        <Button
+            android:id="@+id/retry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="@color/teal"
+            android:minWidth="200dp"
+            android:text="@string/retry"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/change_server"
+            style="@android:style/Widget.Material.Button.Borderless.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="200dp"
+            android:text="@string/server_short" />
+    </LinearLayout>
+</FrameLayout>

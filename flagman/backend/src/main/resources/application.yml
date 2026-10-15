@@ -1,0 +1,67 @@
+spring:
+  application:
+    name: stock
+  datasource:
+    url: ${DB_URL:jdbc:postgresql://localhost:5432/flagman}
+    username: ${DB_USER:${USER}}
+    password: ${DB_PASSWORD:}
+    hikari:
+      maximum-pool-size: ${DB_POOL:20}
+  flyway:
+    locations: classpath:db/migration
+    clean-disabled: ${FLYWAY_CLEAN_DISABLED:false}   # сброс демо-данных; в проде — true
+  servlet:
+    multipart:
+      # Фото заявок, возвратов и накладных: лимита «5 МБ» нет — до 10 фото по 100 МБ (потолок от случайного видео).
+      max-file-size: 100MB
+      max-request-size: 1100MB
+  threads:
+    virtual:
+      enabled: true
+
+server:
+  port: ${PORT:8080}
+  servlet:
+    session:
+      timeout: 12h
+      cookie:
+        http-only: true
+        same-site: strict
+
+stock:
+  demo-mode: ${DEMO_MODE:true}            # демо-часы и генератор доступны только в демо (ТЗ 6.2)
+  seed: ${SEED:true}                      # залить демо-данные при пустой базе
+  uploads-dir: ${UPLOADS_DIR:./data/uploads}
+  cors-origins: ${CORS_ORIGINS:http://localhost:5173}
+  site-api-key: ${SITE_API_KEY:}           # ключ сайта ресторана (демо); значение — в config/application.yml, не в git
+  supplier-api-key: ${SUPPLIER_API_KEY:}   # ключ демо-портала поставщика (../supplier); там же, не в git
+  # Платформа (ТЗ 16.9): внешняя админка или CRM — ключ X-Platform-Key, уведомление о новых заявках на предприятие
+  platform-api-key: ${PLATFORM_API_KEY:}
+  platform-webhook-url: ${PLATFORM_WEBHOOK_URL:}
+  platform-admins: ${PLATFORM_ADMINS:}
+  # Коробочная версия (../desktop, DesktopConfig): папка собранного интерфейса и выход, когда оболочка закрылась
+  web-dir: ${WEB_DIR:}
+  exit-on-stdin-close: ${EXIT_ON_STDIN_CLOSE:false}
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui
+    # Две версии документации в штатном списке Swagger UI; язык выбирает сервер по ?lang=
+    urls:
+      - name: Русский
+        url: /v3/api-docs?lang=ru
+      - name: English
+        url: /v3/api-docs?lang=en
+    urls-primary-name: Русский
+  api-docs:
+    path: /v3/api-docs
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
+
+logging:
+  level:
+    ru.sphere.stock: INFO

@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="ru" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<script>
+  /* Открыто двойным щелчком (file://)? Браузер блокирует JS-модули — показываем инструкцию */
+  if (location.protocol === 'file:') document.addEventListener('DOMContentLoaded', function () {
+    var p = decodeURIComponent(location.pathname).split(String.fromCharCode(92)).join('/');
+    var i = p.toLowerCase().lastIndexOf('/frontend/');
+    var url = 'http://localhost:8080/' + (i >= 0 ? p.slice(i + 10) : 'index.html');
+    document.body.innerHTML = '<div style="position:fixed;inset:0;z-index:99999;display:grid;place-items:center;background:#14110F;color:#F6EFE6;font:16px/1.6 Inter,system-ui,sans-serif;padding:24px">' +
+      '<div style="max-width:560px;text-align:center">' +
+      '<div style="font:700 44px/1.1 Manrope,Inter,sans-serif;letter-spacing:.2em;color:#E2603F">ИСТОК</div>' +
+      '<h1 style="font:700 26px/1.3 Manrope,Inter,sans-serif;margin:22px 0 10px">Откройте сайт через локальный сервер</h1>' +
+      '<p style="color:rgba(246,239,230,.7)">Страница открыта как файл, поэтому браузер заблокировал JavaScript: анимации, меню, корзина и панель не работают.</p>' +
+      '<ol style="text-align:left;margin:22px auto;max-width:440px;color:rgba(246,239,230,.85)">' +
+      '<li>Закройте эту вкладку.</li><li>В папке проекта дважды щёлкните <b>start.bat</b>.</li><li>Браузер сам откроет сайт по адресу <b>localhost:8080</b>.</li></ol>' +
+      '<a href="' + url + '" style="display:inline-block;margin-top:6px;padding:14px 26px;border-radius:999px;background:#C94E2F;color:#fff;font-weight:700;text-decoration:none">Сервер уже запущен — открыть</a>' +
+      '</div></div>';
+  });
+</script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ИСТОК — бургеры, пицца и роллы с доставкой</title>
+<meta name="description" content="ИСТОК — бургеры, пицца и роллы. Всё начинается со вкуса. Доставка за 40–60 минут.">
+<meta name="theme-color" content="#14110F">
+<link rel="icon" href="shared/img/favicon.svg" type="image/svg+xml">
+<script>
+  /* Тема до первой отрисовки — без «вспышки» */
+  (function () {
+    try {
+      var t = localStorage.getItem('istok_theme');
+      if (!t) t = matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+      document.documentElement.dataset.theme = t;
+      if (matchMedia('(prefers-reduced-motion: reduce)').matches) document.documentElement.classList.add('no-motion');
+    } catch (e) {}
+  })();
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://images.unsplash.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="shared/css/tokens.css">
+<link rel="stylesheet" href="shared/css/base.css">
+<link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body>
+
+<!-- ═══ Прелоадер ═══ -->
+<div class="preloader" id="preloader" aria-hidden="true">
+  <div class="preloader-inner">
+    <div data-logo="mark"></div>
+    <div class="preloader-word"><span>И</span><span>С</span><span>Т</span><span>О</span><span>К</span></div>
+    <div class="preloader-sub">Продукт и мастерство</div>
+  </div>
+  <div class="preloader-count" id="preCount">0</div>
+  <div class="preloader-bar" id="preBar"></div>
+</div>
+
+<div class="bg-pattern" id="bgPattern" aria-hidden="true"></div>
+<div class="bg-vignette" aria-hidden="true"></div>
+<div class="grain" aria-hidden="true"></div>
+
+<!-- ═══ Шапка ═══ -->
+<header class="header" id="header">
+  <div class="container header-inner">
+    <a href="#top" class="logo-link" data-scroll aria-label="ИСТОК — на главную"><span data-logo="lockup" data-logo-sub="Продукт и мастерство"></span></a>
+    <nav class="nav" aria-label="Разделы">
+      <a href="#hot" data-scroll>Хиты дня</a>
+      <a href="#menu" data-scroll>Меню</a>
+      <a href="#story" data-scroll>О свежести</a>
+      <a href="#contacts" data-scroll>Контакты</a>
+    </nav>
+    <div class="header-spacer"></div>
+    <button class="loc-btn" id="locBtn" type="button" aria-label="Сменить город"></button>
+    <button class="track-btn" id="trackBtn" type="button" aria-label="Статус заказа"><span class="pulse"></span><span id="trackBtnLabel">Ваш заказ</span></button>
+    <span id="themeSlot"></span>
+    <button class="cart-btn" id="cartBtn" type="button" aria-label="Открыть корзину" data-magnetic>
+      <span id="cartIco"></span><span class="cart-label">Корзина</span><span class="cart-count" id="cartCount">0</span>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ═══ HERO ═══ -->
+  <section class="hero" id="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-sun" aria-hidden="true"></div>
+
+    <figure class="hero-float hf-1" data-depth="0.6"><img src="photos/hero-burger-cut.webp" alt="" loading="eager" decoding="async"></figure>
+    <figure class="hero-float hf-2" data-depth="1.1"><img src="photos/hero-pizza.webp" alt="" loading="eager" decoding="async"></figure>
+    <figure class="hero-float hf-3" data-depth="0.9"><img src="photos/hero-roll.webp" alt="" loading="eager" decoding="async"></figure>
+    <figure class="hero-float hf-4" data-depth="0.4"><img src="photos/hero-shake.webp" alt="" loading="eager" decoding="async"></figure>
+
+    <div class="container hero-content">
+      <div class="hero-eyebrow reveal"><span class="live" id="heroLive">Готовим</span><span id="heroEyebrow">Доставка за 40–60 минут</span></div>
+      <h1 class="hero-title" aria-label="ИСТОК"><span class="ch">И</span><span class="ch">С</span><span class="ch">Т</span><span class="ch">О</span><span class="ch">К</span></h1>
+      <p class="hero-tagline reveal">Всё начинается <em>со вкуса</em></p>
+      <p class="hero-sub reveal">Бургеры, пицца из печи, роллы и авторские напитки — из продуктов, у которых мы знаем каждую партию.</p>
+      <div class="hero-ctas reveal">
+        <a href="#menu" class="btn btn--primary btn--lg" data-scroll data-magnetic>Смотреть меню <span class="i-arrow"></span></a>
+        <a href="#hot" class="btn btn--ghost btn--lg" data-scroll data-magnetic id="heroHotBtn">Хиты дня</a>
+      </div>
+      <div class="hero-meta reveal" id="heroMeta"></div>
+    </div>
+    <div class="scroll-cue" aria-hidden="true">Листайте<i></i></div>
+  </section>
+
+  <!-- ═══ Бегущая строка ═══ -->
+  <div class="marquee" aria-hidden="true"><div class="marquee-track" id="marquee"></div></div>
+
+  <!-- ═══ Горячие предложения ═══ -->
+  <section class="section hot" id="hot" hidden>
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <span class="section-eyebrow">Сегодня</span>
+          <h2 class="section-title"><span class="split-line"><span>Шеф</span></span><span class="split-line"><span><em>рекомендует</em></span></span></h2>
+          <p class="section-lead">Подборка обновляется в течение дня — по тому, что сейчас лучше всего на нашей кухне.</p>
+        </div>
+        <div style="display:flex;align-items:center;gap:14px">
+          <div class="hot-nav">
+            <button class="btn btn--ghost btn--icon" type="button" id="hotPrev" aria-label="Назад"></button>
+            <button class="btn btn--ghost btn--icon" type="button" id="hotNext" aria-label="Вперёд"></button>
+          </div>
+        </div>
+      </div>
+      <div class="hot-rail" id="hotRail"></div>
+    </div>
+  </section>
+
+  <!-- ═══ История / свежесть ═══ -->
+  <section class="section story" id="story">
+    <div class="container">
+      <span class="section-eyebrow">Почему ИСТОК</span>
+      <p class="story-text" id="storyText" style="margin-top:22px">Мы следим за каждой партией продуктов — от поставки до вашей тарелки. Закончился ингредиент — блюдо сразу помечается <em>«нет в наличии»</em>. Если продукт свежий сегодня — он станет <em>хитом дня</em>.</p>
+      <div class="features">
+        <article class="feature reveal">
+          <div class="feature-ico" data-icon="leaf"></div>
+          <div class="feature-num"><span data-count="100">0</span><small>%</small></div>
+          <div class="feature-title">Каждая партия под контролем</div>
+          <p class="feature-text">Сроки годности отслеживаются по партиям. Используем сначала то, что пришло раньше.</p>
+        </article>
+        <article class="feature reveal">
+          <div class="feature-ico" data-icon="zap"></div>
+          <div class="feature-num"><span data-count="1">0</span><small>сек</small></div>
+          <div class="feature-title">Честное меню в реальном времени</div>
+          <p class="feature-text">Закончился продукт — блюдо мгновенно уходит в стоп. Вы не закажете то, чего нет.</p>
+        </article>
+        <article class="feature reveal">
+          <div class="feature-ico" data-icon="clock"></div>
+          <div class="feature-num"><span data-count="40">0</span><small>мин</small></div>
+          <div class="feature-title">Горячим до двери</div>
+          <p class="feature-text">Доставляем за 40–60 минут. Отслеживайте статус заказа прямо на сайте.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ Меню ═══ -->
+  <section class="section" id="menu" style="padding-top:clamp(40px,6vw,80px)">
+    <div class="container">
+      <div class="section-head" style="margin-bottom:10px">
+        <div>
+          <span class="section-eyebrow">Меню</span>
+          <h2 class="section-title"><span class="split-line"><span>Выберите</span></span><span class="split-line"><span><em>своё</em></span></span></h2>
+        </div>
+        <p class="section-lead" id="menuLead" style="max-width:380px">129 позиций: бургеры, пицца, роллы, супы и напитки.</p>
+      </div>
+      <div class="menu-toolbar" id="menuToolbar">
+        <div class="toolbar-row">
+          <nav class="chips" id="chips" aria-label="Категории меню"></nav>
+          <div class="search" id="search" role="search">
+            <span id="searchIco"></span>
+            <input type="search" id="searchInput" placeholder="Найти блюдо…" autocomplete="off" enterkeyhint="search" aria-label="Поиск по меню">
+            <button class="search-clear" type="button" id="searchClear" aria-label="Очистить поиск"></button>
+          </div>
+        </div>
+      </div>
+      <p class="visually-hidden" aria-live="polite" id="menuStatus"></p>
+      <div id="menuRoot"></div>
+    </div>
+  </section>
+</main>
+
+<!-- ═══ Подвал ═══ -->
+<footer class="footer" id="contacts">
+  <div class="container">
+    <div class="footer-cta">
+      <div>
+        <span class="section-eyebrow">Контакты</span>
+        <h2 class="section-title">Голодны? <em>Мы рядом.</em></h2>
+      </div>
+      <div style="display:flex;gap:12px;flex-wrap:wrap;justify-content:flex-start">
+        <a href="#menu" class="btn btn--primary btn--lg" data-scroll data-magnetic>Заказать доставку</a>
+        <a href="#" class="btn btn--ghost btn--lg" id="footerPhone" data-magnetic></a>
+      </div>
+    </div>
+    <div class="footer-cols" id="footerCols"></div>
+    <div class="footer-bar">
+      <span><span data-logo="mark"></span>© <span id="year"></span> ИСТОК · Всё начинается со вкуса</span>
+      <span class="mode-pill" id="modePill"><i></i><span>Проверяем сервер…</span></span>
+      <a href="panel/login.html">Вход для персонала</a>
+    </div>
+  </div>
+</footer>
+
+<!-- ═══ Корзина ═══ -->
+<div class="scrim" id="scrim"></div>
+<aside class="drawer" id="drawer" role="dialog" aria-modal="true" aria-labelledby="drawerTitle" aria-hidden="true" data-lenis-prevent>
+  <div class="drawer-handle" id="drawerHandle"></div>
+  <div class="drawer-head">
+    <h2 class="drawer-title" id="drawerTitle">Корзина <small id="drawerCount"></small></h2>
+    <button class="modal-close" type="button" id="drawerClose" aria-label="Закрыть корзину"></button>
+  </div>
+  <div class="drawer-body" id="drawerBody"></div>
+  <div class="drawer-foot" id="drawerFoot" hidden>
+    <div class="free-ship" id="freeShip"></div>
+    <div class="total-row"><span>Итого</span><b id="drawerTotal">0 ₽</b></div>
+    <button class="btn btn--primary btn--lg btn--block" type="button" id="checkoutBtn">Оформить заказ</button>
+  </div>
+</aside>
+<button class="cart-fab" id="cartFab" type="button" aria-label="Открыть корзину">
+  <span class="fab-count" id="fabCount">0</span><span>Корзина</span><span class="fab-sum" id="fabSum">0 ₽</span>
+</button>
+
+<!-- GSAP + ScrollTrigger + Lenis (если CDN недоступен — сайт работает без анимаций) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+<script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js" defer></script>
+<script type="module" src="assets/js/site/main.js"></script>
+</body>
+</html>

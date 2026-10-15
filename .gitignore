@@ -1,0 +1,27 @@
+# Секреты и данные — никогда в репозиторий
+.env
+flagman/backend/config/
+flagman/backend/data/
+flagman/android/keystore/
+*.dump
+*.jks
+*.keystore
+istok/server/orders/
+
+# Зависимости и сборки
+node_modules/
+flagman/backend/target/
+flagman/frontend/dist/
+*.tsbuildinfo
+flagman/desktop/.cache/
+flagman/desktop/stage/
+flagman/desktop/out/
+flagman/android/.gradle/
+flagman/android/build/
+flagman/android/app/build/
+flagman/android/local.properties
+flagman/android/Flagman.apk
+
+.DS_Store
+*.log
+~$*

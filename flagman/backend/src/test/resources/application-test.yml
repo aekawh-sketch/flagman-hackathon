@@ -1,0 +1,9 @@
+spring:
+  datasource:
+    url: ${TEST_DB_URL:jdbc:postgresql://localhost:5432/flagman_test}
+  flyway:
+    clean-disabled: false
+
+stock:
+  seed: false
+  uploads-dir: ./target/test-uploads

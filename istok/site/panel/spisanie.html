@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="ru" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<script>
+  /* Открыто двойным щелчком (file://)? Браузер блокирует JS-модули — показываем инструкцию */
+  if (location.protocol === 'file:') document.addEventListener('DOMContentLoaded', function () {
+    var p = decodeURIComponent(location.pathname).split(String.fromCharCode(92)).join('/');
+    var i = p.toLowerCase().lastIndexOf('/frontend/');
+    var url = 'http://localhost:8080/' + (i >= 0 ? p.slice(i + 10) : 'index.html');
+    document.body.innerHTML = '<div style="position:fixed;inset:0;z-index:99999;display:grid;place-items:center;background:#14110F;color:#F6EFE6;font:16px/1.6 Inter,system-ui,sans-serif;padding:24px">' +
+      '<div style="max-width:560px;text-align:center">' +
+      '<div style="font:700 44px/1.1 Manrope,Inter,sans-serif;letter-spacing:.2em;color:#E2603F">ИСТОК</div>' +
+      '<h1 style="font:700 26px/1.3 Manrope,Inter,sans-serif;margin:22px 0 10px">Откройте сайт через локальный сервер</h1>' +
+      '<p style="color:rgba(246,239,230,.7)">Страница открыта как файл, поэтому браузер заблокировал JavaScript: анимации, меню, корзина и панель не работают.</p>' +
+      '<ol style="text-align:left;margin:22px auto;max-width:440px;color:rgba(246,239,230,.85)">' +
+      '<li>Закройте эту вкладку.</li><li>В папке проекта дважды щёлкните <b>start.bat</b>.</li><li>Браузер сам откроет сайт по адресу <b>localhost:8080</b>.</li></ol>' +
+      '<a href="' + url + '" style="display:inline-block;margin-top:6px;padding:14px 26px;border-radius:999px;background:#C94E2F;color:#fff;font-weight:700;text-decoration:none">Сервер уже запущен — открыть</a>' +
+      '</div></div>';
+  });
+</script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Списание — ИСТОК</title>
+<meta name="robots" content="noindex">
+<link rel="icon" href="../shared/img/favicon.svg" type="image/svg+xml">
+<script>(function(){try{var t=localStorage.getItem('istok_theme');if(!t)t=matchMedia('(prefers-color-scheme: light)').matches?'light':'dark';document.documentElement.dataset.theme=t}catch(e){}})()</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../shared/css/tokens.css">
+<link rel="stylesheet" href="../shared/css/base.css">
+<link rel="stylesheet" href="css/panel.css">
+</head>
+<body class="panel booting">
+<div class="app">
+  <aside class="sidebar" id="sidebar"></aside>
+  <div class="main">
+    <header class="topbar" id="topbar"></header>
+    <main class="content" id="content"></main>
+  </div>
+</div>
+<script type="module" src="js/spisanie.js"></script>
+</body>
+</html>
