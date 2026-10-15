@@ -3,9 +3,7 @@ package ru.sphere.stock.security;
 import java.time.Duration;
 import java.time.Instant;
 import java.util.List;
-import java.util.Map;
 import java.util.Set;
-import java.util.concurrent.ConcurrentHashMap;
 import org.springframework.http.HttpStatus;
 import org.springframework.jdbc.core.simple.JdbcClient;
 import org.springframework.security.crypto.password.PasswordEncoder;
@@ -14,12 +12,14 @@ import org.springframework.transaction.annotation.Transactional;
 import ru.sphere.stock.infra.ApiException;
 import ru.sphere.stock.infra.Hashing;
 import ru.sphere.stock.ledger.Actor;
+import ru.sphere.stock.redis.SharedStore;
 import ru.sphere.stock.tenant.TenantDirectory;
 
 /**
  * Учётные записи (ТЗ 6.1, 16.4): учётка одна на всю систему — логин, пароль, личный PIN (подпись под списанием
  * в панели ресторана). Роль и точка — у членства в предприятии, поэтому один человек может работать
  * в нескольких ресторанах. После 5 неверных попыток — блокировка на 5 минут. Пароли и PIN — только хэши.
+ * Счётчики попыток и блокировки — в Redis: перебор не обойти перезапуском склада или запросами к другому серверу.
  */
 @Service
 public class UserService {
@@ -37,19 +37,19 @@ public class UserService {
 
     private static final int MAX_ATTEMPTS = 5;
     private static final Duration LOCKOUT = Duration.ofMinutes(5);
-
-    private record Attempts(int count, Instant lockedUntil) {
-    }
+    /** Неверные попытки считаются в этом окне: пять ошибок за неделю — не перебор. */
+    private static final Duration ATTEMPTS_WINDOW = Duration.ofMinutes(15);
 
     private final JdbcClient jdbc;
     private final PasswordEncoder encoder;
     private final TenantDirectory tenants;
-    private final Map<String, Attempts> attempts = new ConcurrentHashMap<>();
+    private final SharedStore shared;
 
-    public UserService(JdbcClient jdbc, PasswordEncoder encoder, TenantDirectory tenants) {
+    public UserService(JdbcClient jdbc, PasswordEncoder encoder, TenantDirectory tenants, SharedStore shared) {
         this.jdbc = jdbc;
         this.encoder = encoder;
         this.tenants = tenants;
+        this.shared = shared;
     }
 
     // ── Вход ───────────────────────────────────────────────────────────────
@@ -71,7 +71,7 @@ public class UserService {
             fail(key);
             throw new ApiException(HttpStatus.UNAUTHORIZED, "Неверный логин или пароль");
         }
-        attempts.remove(key);
+        shared.delete("auth:fail:" + key);
         if (locationId == null || locationId.isBlank()) {
             return principal((Long) row.get()[0], null);
         }
@@ -101,7 +101,7 @@ public class UserService {
             fail(key);
             throw new ApiException(HttpStatus.UNAUTHORIZED, "Неверный PIN");
         }
-        attempts.remove(key);
+        shared.delete("auth:fail:" + key);
         Long tenant = locationId == null ? null : tenants.tenantOfOrNull(locationId);
         StockPrincipal p = principal(userId, tenant);
         if (locationId != null && !p.canAccess(locationId)) {
@@ -389,18 +389,20 @@ public class UserService {
         }
     }
 
+    /** Блокировка — ключ Redis {@code auth:lock:…} со сроком жизни 5 минут; в значении — до какого момента. */
     private void checkLock(String key) {
-        Attempts a = attempts.get(key);
-        if (a != null && a.lockedUntil() != null && Instant.now().isBefore(a.lockedUntil())) {
-            long min = Math.max(1, Duration.between(Instant.now(), a.lockedUntil()).toMinutes());
+        Instant until = shared.get("auth:lock:" + key, Instant.class).orElse(null);
+        if (until != null && Instant.now().isBefore(until)) {
+            long min = Math.max(1, (Duration.between(Instant.now(), until).toSeconds() + 59) / 60);   // 4:59 → «5 мин»
             throw new ApiException(HttpStatus.TOO_MANY_REQUESTS, "Слишком много попыток. Подождите " + min + " мин.");
         }
     }
 
+    /** Неверная попытка: счётчик {@code auth:fail:…} +1 (INCR); пятая — блокировка, счёт заново. */
     private void fail(String key) {
-        attempts.compute(key, (k, a) -> {
-            int c = (a == null || a.lockedUntil() != null ? 0 : a.count()) + 1;
-            return c >= MAX_ATTEMPTS ? new Attempts(0, Instant.now().plus(LOCKOUT)) : new Attempts(c, null);
-        });
+        if (shared.hit("auth:fail:" + key, ATTEMPTS_WINDOW).count() >= MAX_ATTEMPTS) {
+            shared.put("auth:lock:" + key, Instant.now().plus(LOCKOUT), LOCKOUT);
+            shared.delete("auth:fail:" + key);
+        }
     }
 }

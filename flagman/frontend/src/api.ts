@@ -228,7 +228,9 @@ export const api = {
   startInventory: (loc: string) => post<InventoryCount>(`/api/${loc}/inventory`),
   inventoryLines: (loc: string, id: number, lines: { productId: string; actual: number }[]) =>
     put<InventoryCount>(`/api/${loc}/inventory/${id}/lines`, lines),
-  submitInventory: (loc: string, id: number) => post<InventoryCount>(`/api/${loc}/inventory/${id}/submit`),
+  /** Провести: введённый факт сохраняется вместе с проведением, одной транзакцией. */
+  submitInventory: (loc: string, id: number, lines: { productId: string; actual: number }[] = []) =>
+    post<InventoryCount>(`/api/${loc}/inventory/${id}/submit`, { lines }),
   confirmInventory: (loc: string, id: number) => post<InventoryCount>(`/api/${loc}/inventory/${id}/confirm`),
   anomalies: (loc: string, status?: string, from?: string, to?: string) =>
     get<Anomaly[]>(`/api/${loc}/anomalies${q({ status, from, to })}`),

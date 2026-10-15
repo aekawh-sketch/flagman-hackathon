@@ -1,7 +1,8 @@
 # Склад «Флагман» на VPS: http://31.76.28.248:8085 — интерфейс и API на одном адресе (для Android-приложения тоже).
 # Сайт ИСТОК с панелью ресторана (касса): http://31.76.28.248:8086 — ходит в склад внутри сети Docker по ключу сайта.
 # Портал поставщика: http://31.76.28.248:8087 — шлёт накладные в склад по API ключом поставщика.
-# Секреты — в .env рядом (DB_PASSWORD, SITE_API_KEY, SUPPLIER_API_KEY, ADMIN_TOKEN), их создаёт deploy.sh; в git не попадают.
+# Секреты — в .env рядом (DB_PASSWORD, SITE_API_KEY, SUPPLIER_API_KEY, ADMIN_TOKEN, REDIS_PASSWORD), их создаёт deploy.sh;
+# в git не попадают.
 name: flagman
 
 services:
@@ -21,16 +22,37 @@ services:
     # Наружу база не открыта — только сервер склада в этой же сети Docker
     mem_limit: 512m
 
+  # Redis: сессии сотрудников, общий кеш меню и горячих предложений, счётчики входа и запросов, события между
+  # серверами склада (Pub/Sub). Наружу не открыт, с паролем. Пишет на диск (AOF): перезапуск не выкидывает сотрудников.
+  redis:
+    image: redis:7.4-alpine
+    restart: unless-stopped
+    environment:
+      REDIS_PASSWORD: ${REDIS_PASSWORD:?нет REDIS_PASSWORD в .env}
+    # У всех ключей склада есть срок жизни — при нехватке памяти Redis вытесняет давно не нужные (volatile-lru)
+    command: ["sh", "-c", "exec redis-server --requirepass \"$$REDIS_PASSWORD\" --appendonly yes --maxmemory 96mb --maxmemory-policy volatile-lru"]
+    volumes:
+      - redis:/data
+    healthcheck:
+      test: ["CMD-SHELL", "REDISCLI_AUTH=\"$$REDIS_PASSWORD\" redis-cli ping | grep -q PONG"]
+      interval: 5s
+      retries: 20
+    mem_limit: 128m
+
   app:
     build: .
     restart: unless-stopped
     depends_on:
       db:
         condition: service_healthy
+      redis:
+        condition: service_healthy
     environment:
       DB_URL: jdbc:postgresql://db:5432/flagman
       DB_USER: flagman
       DB_PASSWORD: ${DB_PASSWORD}
+      REDIS_HOST: redis
+      REDIS_PASSWORD: ${REDIS_PASSWORD}
       DEMO_MODE: "true"           # демо-панель и генератор заказов — это демо-стенд
       SEED: "true"                # пустая база — демо-ресторан ИСТОК за ~10 с
       CORS_ORIGINS: http://31.76.28.248:8085
@@ -89,5 +111,6 @@ services:
 
 volumes:
   db:
+  redis:
   uploads:
   istok-orders:

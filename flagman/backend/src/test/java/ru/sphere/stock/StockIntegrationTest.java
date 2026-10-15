@@ -47,6 +47,7 @@ import ru.sphere.stock.trace.TraceService;
 import ru.sphere.stock.delivery.SupplierReturnService;
 import ru.sphere.stock.antifraud.AnomalyDetails;
 import ru.sphere.stock.antifraud.AnomalyService;
+import ru.sphere.stock.antifraud.InventoryService;
 import ru.sphere.stock.kitchen.EscPos;
 import ru.sphere.stock.kitchen.KitchenPrintService;
 import ru.sphere.stock.kitchen.KitchenTicket;
@@ -86,6 +87,7 @@ class StockIntegrationTest {
     @Autowired TraceService trace;
     @Autowired SupplierReturnService returns;
     @Autowired AnomalyService anomalyService;
+    @Autowired InventoryService inventory;
     @Autowired AnomalyDetails anomalyDetails;
     @Autowired OperationsService operations;
     @Autowired PlatformService platform;
@@ -1403,5 +1405,24 @@ class StockIntegrationTest {
             String visible = line.replaceAll("[\\x00-\\x1F]", "").replaceAll("^[@t!aEdV]+", "");
             assertThat(visible.length()).as(line).isLessThanOrEqualTo(EscPos.width(58) + 3);
         }
+    }
+
+    /** «Провести» сохраняет введённый факт сам — одной транзакцией с проведением. */
+    @Test
+    void conductingAStocktakeSavesTheCountedFactInTheSameStep() {
+        deliver("d1", "salmon", 1000, 72);
+        long bad = inventory.start(LOC, storekeeper);
+        assertThatThrownBy(() -> inventory.submit(LOC, bad, List.of(new InventoryService.LineIn("salmon", 900),
+                new InventoryService.LineIn("no-such-product", 1)), storekeeper)).hasMessageContaining("Проверьте строку");
+        assertThat(inventory.get(LOC, bad).lines()).as("не провелось — не сохранился и факт").isEmpty();
+        assertThat(inventory.get(LOC, bad).status()).isEqualTo("OPEN");
+
+        var done = inventory.submit(LOC, bad, List.of(new InventoryService.LineIn("salmon", 900)), manager);
+        assertThat(done.status()).isEqualTo("CONFIRMED");
+        assertThat(done.lines()).singleElement().satisfies(l -> {
+            assertThat(l.actual()).isEqualTo(900);
+            assertThat(l.diff()).isEqualTo(-100);
+        });
+        assertThat(qtyLeft("salmon")).isEqualTo(900);
     }
 }

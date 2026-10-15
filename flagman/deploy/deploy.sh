@@ -32,11 +32,12 @@ cp "$ROOT/deploy/istok-init-db.js" "$STAGE/istok/server/init-db.js"
 # Портал поставщика — так же: без .env (его ключ — от этого компьютера), без README
 rsync -a --exclude node_modules --exclude README.md --exclude '.*' "$SUPPLIER/" "$STAGE/supplier/"
 
-# Секреты создаются один раз на сервере и никуда не уходят: пароль базы, ключ сайта к складу, служебный пароль панели
+# Секреты создаются один раз на сервере и никуда не уходят: пароль базы, ключ сайта к складу, служебный пароль панели,
+# пароль Redis
 ssh "$HOST" sh -s "$DIR" <<'REMOTE'
 set -eu
 mkdir -p "$1" && cd "$1" && umask 077 && touch .env
-for k in DB_PASSWORD SITE_API_KEY SUPPLIER_API_KEY ADMIN_TOKEN; do
+for k in DB_PASSWORD SITE_API_KEY SUPPLIER_API_KEY ADMIN_TOKEN REDIS_PASSWORD; do
   grep -q "^$k=" .env && continue
   v=$(openssl rand -hex 24)
   [ "$k" = SITE_API_KEY ] && v="sk_istok_$v"

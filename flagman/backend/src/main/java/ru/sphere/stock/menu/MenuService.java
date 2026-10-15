@@ -1,6 +1,7 @@
 package ru.sphere.stock.menu;
 
 import java.sql.Timestamp;
+import java.time.Duration;
 import java.time.Instant;
 import java.util.ArrayList;
 import java.util.Comparator;
@@ -24,6 +25,7 @@ import ru.sphere.stock.domain.Production;
 import ru.sphere.stock.domain.Requirements;
 import ru.sphere.stock.domain.StopList;
 import ru.sphere.stock.infra.AppClock;
+import ru.sphere.stock.redis.LocationCache;
 import ru.sphere.stock.stock.StockRepository;
 
 /**
@@ -41,24 +43,43 @@ public class MenuService {
     public record Alternative(String variantId, String name, long portions, long priceKop, boolean hot) {
     }
 
+    /**
+     * Меню в кеше и до какого момента оно верно без изменений склада: до ближайшего истечения срока партии —
+     * тогда продукт перестаёт продаваться, хотя никто ничего не менял.
+     */
+    public record MenuSnapshot(Instant computedAt, Instant validUntil, List<VariantStatus> variants) {
+        public MenuSnapshot {
+            variants = List.copyOf(variants);        // один снимок читают все запросы сервера — только для чтения
+        }
+
+        boolean validAt(Instant now) {
+            return !now.isBefore(computedAt) && (validUntil == null || now.isBefore(validUntil));
+        }
+    }
+
+    /** Страховка на случай изменения в обход приложения: дольше полминуты меню в кеше не живёт. */
+    private static final Duration MENU_TTL = Duration.ofSeconds(30);
+
     private final JdbcClient jdbc;
     private final AppClock clock;
     private final StockRepository batches;
     private final CatalogService catalog;
     private final AlertService alerts;
     private final ObjectProvider<InsightsService> insights;
+    private final LocationCache cache;
     /** Брутто на порцию по снимку каталога: у каждого предприятия свой снимок (ТЗ 16.4). */
     private final Map<CatalogService.Snapshot, Map<String, Map<String, Long>>> memo =
             java.util.Collections.synchronizedMap(new java.util.WeakHashMap<>());
 
     public MenuService(JdbcClient jdbc, AppClock clock, StockRepository batches, CatalogService catalog,
-                       AlertService alerts, ObjectProvider<InsightsService> insights) {
+                       AlertService alerts, ObjectProvider<InsightsService> insights, LocationCache cache) {
         this.jdbc = jdbc;
         this.clock = clock;
         this.batches = batches;
         this.catalog = catalog;
         this.alerts = alerts;
         this.insights = insights;
+        this.cache = cache;
     }
 
     /** Брутто на порцию для всех вариантов с техкартой — пересчитывается только при смене каталога. */
@@ -79,9 +100,21 @@ public class MenuService {
         return out;
     }
 
+    /**
+     * Меню со стоп-листом — самый частый запрос (касса, сайт, дашборд): берётся из кеша Redis, пока не изменился
+     * склад точки и не истёк срок ни одной партии.
+     */
     public List<VariantStatus> menu(String locationId) {
         Instant now = clock.now();
-        return statuses(locationId, available(batches.liveByProduct(locationId), now));
+        return cache.get(locationId, "menu", null, MenuSnapshot.class, MENU_TTL, m -> m.validAt(now),
+                () -> computeMenu(locationId, now)).variants();
+    }
+
+    private MenuSnapshot computeMenu(String locationId, Instant now) {
+        Map<String, List<BatchState>> live = batches.liveByProduct(locationId);
+        Instant validUntil = live.values().stream().flatMap(List::stream).map(BatchState::expiresAt)
+                .filter(now::isBefore).min(Comparator.naturalOrder()).orElse(null);
+        return new MenuSnapshot(now, validUntil, statuses(locationId, available(live, now)));
     }
 
     /**
@@ -171,7 +204,9 @@ public class MenuService {
                 });
         boolean changed = false;
         Timestamp ts = Timestamp.from(now);
-        List<VariantStatus> all = menu(locationId);
+        // Свежий расчёт — он же сразу ложится в кеш: следующий запрос меню его не повторит
+        List<VariantStatus> all = cache.refresh(locationId, "menu", null, MENU_TTL,
+                () -> computeMenu(locationId, now)).variants();
         Map<String, List<VariantStatus>> enteredByProduct = new LinkedHashMap<>();
         for (VariantStatus s : all) {
             if (!s.tracked()) {

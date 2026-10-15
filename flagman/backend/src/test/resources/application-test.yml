@@ -7,3 +7,6 @@ spring:
 stock:
   seed: false
   uploads-dir: ./target/test-uploads
+  # Свой префикс у каждого прогона: кеш и счётчики прошлых прогонов (и рабочего склада) не мешают тестам
+  redis:
+    prefix: "flagman-test-${random.uuid}:"

@@ -9,7 +9,6 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.context.ApplicationEventPublisher;
 import org.springframework.jdbc.core.simple.JdbcClient;
-import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.support.TransactionTemplate;
 import ru.sphere.stock.domain.Money;
@@ -74,7 +73,7 @@ public class ExpiryJob {
         this.tenants = tenants;
     }
 
-    @Scheduled(fixedDelay = 2000, initialDelay = 3000)
+    /** Раз в 2 секунды — по расписанию из {@link ru.sphere.stock.infra.ScheduledJobs}. */
     public void tick() {
         try {
             for (String loc : tenants.allLocations()) {

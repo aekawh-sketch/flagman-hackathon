@@ -12,6 +12,7 @@ import org.springframework.jdbc.core.simple.JdbcClient;
 import org.springframework.stereotype.Service;
 import ru.sphere.stock.catalog.CatalogService;
 import ru.sphere.stock.domain.OpenHours;
+import ru.sphere.stock.redis.LocationCache;
 
 /**
  * Единая модель прогноза (п. 6): расход продукта в рабочий час и продажи вариантов в день.
@@ -25,17 +26,15 @@ public class ForecastService {
     public record Rates(Map<String, Double> productPerOpenHour, Map<String, Double> variantPerDay, double hoursPerDay) {
     }
 
-    private record Key(String locationId, long hourBucket) {
-    }
-
     private final JdbcClient jdbc;
     private final CatalogService catalog;
-    private final Map<Key, Rates> cache = new ConcurrentHashMap<>();
+    private final LocationCache cache;
     private final Map<String, OpenHours> hours = new ConcurrentHashMap<>();
 
-    public ForecastService(JdbcClient jdbc, CatalogService catalog) {
+    public ForecastService(JdbcClient jdbc, CatalogService catalog, LocationCache cache) {
         this.jdbc = jdbc;
         this.catalog = catalog;
+        this.cache = cache;
     }
 
     public OpenHours hours(String locationId) {
@@ -52,17 +51,10 @@ public class ForecastService {
         hours.clear();
     }
 
-    /** Кэш на час «системного» времени: прогноз меняется медленно. */
+    /** Кеш Redis на час «системного» времени: прогноз меняется медленно; сбрасывается изменением склада. */
     public Rates rates(String locationId, Instant now) {
-        Key key = new Key(locationId, now.getEpochSecond() / 3600);
-        return cache.computeIfAbsent(key, k -> {
-            cache.keySet().removeIf(old -> old.locationId().equals(locationId) && old.hourBucket() != k.hourBucket());
-            return compute(locationId, now);
-        });
-    }
-
-    public void invalidate(String locationId) {
-        cache.keySet().removeIf(k -> k.locationId().equals(locationId));
+        return cache.get(locationId, "forecast", now.getEpochSecond() / 3600, Rates.class, Duration.ofHours(1),
+                r -> true, () -> compute(locationId, now));
     }
 
     private Rates compute(String locationId, Instant now) {

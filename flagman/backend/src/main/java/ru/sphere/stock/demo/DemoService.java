@@ -10,7 +10,6 @@ import org.flywaydb.core.Flyway;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.jdbc.core.simple.JdbcClient;
-import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.support.TransactionTemplate;
 import ru.sphere.stock.admin.AuditService;
@@ -83,7 +82,7 @@ public class DemoService {
     }
 
     /** Генератор догоняет часы системы. */
-    @Scheduled(fixedDelay = 2000, initialDelay = 5000)
+    /** Раз в 2 секунды — по расписанию из {@link ru.sphere.stock.infra.ScheduledJobs}. */
     public void tick() {
         if (!props.demoMode() || !simulator.ready() || seed.status().startsWith("seeding")
                 || !settings.getBool(TenantDirectory.DEMO, SettingsService.GENERATOR_ENABLED)) {

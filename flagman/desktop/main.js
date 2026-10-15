@@ -326,6 +326,7 @@ async function startServer() {
       UPLOADS_DIR: UPLOADS,
       WEB_DIR: path.join(RES, "web"),
       EXIT_ON_STDIN_CLOSE: "true",
+      SPRING_PROFILES_ACTIVE: "no-redis",   // Redis в коробке нет: кеш и счётчики — в памяти, сессии — в Tomcat
       CORS_ORIGINS: `http://127.0.0.1:${port},http://localhost:${port}`,
       SITE_API_KEY: keys.SITE_API_KEY,
       SUPPLIER_API_KEY: keys.SUPPLIER_API_KEY,

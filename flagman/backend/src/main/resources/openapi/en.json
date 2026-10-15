@@ -462,5 +462,7 @@
   "Заявка на новое предприятие": "Request a new enterprise",
   "Предприятия создаёт только администратор платформы: ему — сразу (CREATED, он становится админом, сессия переходит в предприятие). Человек без предприятия подаёт заявку администратору платформы (PENDING). Сотрудникам предприятий любой роли — 403.": "Only the platform administrator creates enterprises: for them it is created at once (CREATED, they become its admin, the session moves into it). A person without an enterprise submits a request to the platform administrator (PENDING). Staff of enterprises in any role get 403.",
   "Мои заявки на предприятие": "My enterprise requests",
-  "Отозвать свою заявку на предприятие": "Withdraw my enterprise request"
+  "Отозвать свою заявку на предприятие": "Withdraw my enterprise request",
+  "Факт из запроса сохраняется и пересчёт проводится одной транзакцией. Если расхождение дороже порога и отправил не управляющий — ждёт подтверждения.": "Counts from the request are saved and the stocktake is submitted in one transaction. If the discrepancy exceeds the threshold and the sender is not a manager, it waits for confirmation.",
+  "Факт по продуктам — сохраняется вместе с проведением; можно не передавать": "Counted quantities per product — saved together with the submission; optional"
 }

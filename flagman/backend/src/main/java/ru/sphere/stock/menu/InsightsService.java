@@ -7,7 +7,6 @@ import java.util.Comparator;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.concurrent.ConcurrentHashMap;
 import org.springframework.stereotype.Service;
 import ru.sphere.stock.catalog.CatalogService;
 import ru.sphere.stock.domain.BatchState;
@@ -20,6 +19,7 @@ import ru.sphere.stock.domain.RiskAnalyzer;
 import ru.sphere.stock.domain.StopForecast;
 import ru.sphere.stock.domain.StopList;
 import ru.sphere.stock.infra.AppClock;
+import ru.sphere.stock.redis.LocationCache;
 import ru.sphere.stock.stock.StockRepository;
 
 /**
@@ -55,47 +55,41 @@ public class InsightsService {
                              String cause, String text) {
     }
 
-    private record CacheKey(String locationId, long bucket) {
-    }
+    /** Горячие предложения пересчитываются не реже, чем раз в 15 минут времени склада (ТЗ 5.10, шаг 6). */
+    private static final Duration HOT_PERIOD = Duration.ofMinutes(15);
 
     private final AppClock clock;
     private final StockRepository batches;
     private final CatalogService catalog;
     private final MenuService menu;
     private final ForecastService forecast;
-    private final Map<CacheKey, HotOffersResult> hotCache = new ConcurrentHashMap<>();
+    private final LocationCache cache;
 
     public InsightsService(AppClock clock, StockRepository batches, CatalogService catalog, MenuService menu,
-                           ForecastService forecast) {
+                           ForecastService forecast, LocationCache cache) {
         this.clock = clock;
         this.batches = batches;
         this.catalog = catalog;
         this.menu = menu;
         this.forecast = forecast;
+        this.cache = cache;
     }
 
-    /** Кэш до следующего изменения склада или 15 минут системного времени (ТЗ 5.10, шаг 6). */
+    /** Кеш Redis до следующего изменения склада или 15 минут системного времени (ТЗ 5.10, шаг 6). */
     public HotOffersResult hotOffers(String locationId) {
         Instant now = clock.now();
-        CacheKey key = new CacheKey(locationId, now.getEpochSecond() / 900);
-        HotOffersResult cached = hotCache.get(key);
-        if (cached != null) {
-            return cached;
-        }
-        HotOffersResult r = computeHot(locationId, now);
-        hotCache.keySet().removeIf(k -> k.locationId().equals(locationId));
-        hotCache.put(key, r);
-        return r;
+        return cache.get(locationId, "hot", hotBucket(now), HotOffersResult.class, HOT_PERIOD, r -> true,
+                () -> computeHot(locationId, now));
     }
 
+    /** Горячие блюда, если они уже посчитаны, — без расчёта (подсказка «похожие блюда» на кассе). */
     public List<String> cachedHotIds(String locationId) {
-        return hotCache.entrySet().stream().filter(e -> e.getKey().locationId().equals(locationId))
-                .flatMap(e -> e.getValue().offers().stream().map(HotOfferDto::variantId)).toList();
+        return cache.peek(locationId, "hot", hotBucket(clock.now()), HotOffersResult.class)
+                .map(r -> r.offers().stream().map(HotOfferDto::variantId).toList()).orElse(List.of());
     }
 
-    public void invalidate(String locationId) {
-        hotCache.keySet().removeIf(k -> k.locationId().equals(locationId));
-        forecast.invalidate(locationId);
+    private static long hotBucket(Instant now) {
+        return now.getEpochSecond() / HOT_PERIOD.toSeconds();
     }
 
     private HotOffersResult computeHot(String locationId, Instant now) {

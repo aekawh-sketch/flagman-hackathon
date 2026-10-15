@@ -7,6 +7,19 @@ spring:
     password: ${DB_PASSWORD:}
     hikari:
       maximum-pool-size: ${DB_POOL:20}
+  # Redis: сессии сотрудников, кеш меню и горячих предложений, счётчики входа и запросов, события между серверами.
+  # Без Redis (коробочная версия для Windows) — профиль no-redis в конце файла.
+  data:
+    redis:
+      host: ${REDIS_HOST:localhost}
+      port: ${REDIS_PORT:6379}
+      password: ${REDIS_PASSWORD:}
+      timeout: 1s                # команда дольше секунды — Redis считаем недоступным, склад работает без кеша
+      connect-timeout: 2s
+  session:
+    data:
+      redis:
+        namespace: ${stock.redis.prefix}session    # ключи сессий: flagman:session:sessions:<id>, живут 12 ч
   flyway:
     locations: classpath:db/migration
     clean-disabled: ${FLYWAY_CLEAN_DISABLED:false}   # сброс демо-данных; в проде — true
@@ -42,6 +55,14 @@ stock:
   # Коробочная версия (../desktop, DesktopConfig): папка собранного интерфейса и выход, когда оболочка закрылась
   web-dir: ${WEB_DIR:}
   exit-on-stdin-close: ${EXIT_ON_STDIN_CLOSE:false}
+  redis:
+    enabled: true
+    prefix: ${REDIS_PREFIX:flagman:}      # общий префикс ключей и каналов склада в Redis
+  # Запросов в минуту (Redis, общий счёт у всех серверов); 0 — без ограничения
+  rate-limit:
+    user-per-minute: ${RATE_LIMIT_USER:3000}   # сотрудник; живые обновления при ускоренных часах — до ~20 в секунду
+    key-per-minute: ${RATE_LIMIT_KEY:6000}     # API-ключ: ключ сайта — это все гости ресторана сразу
+    ip-per-minute: ${RATE_LIMIT_IP:600}        # без входа: вход, виджет меню
 
 springdoc:
   swagger-ui:
@@ -65,3 +86,26 @@ management:
 logging:
   level:
     ru.sphere.stock: INFO
+
+---
+# Без Redis — коробочная версия для Windows (desktop/main.js) или SPRING_PROFILES_ACTIVE=no-redis: один сервер,
+# кеш и счётчики — в памяти процесса (LocalSharedStore), сессии — в Tomcat, как до Redis.
+spring:
+  config:
+    activate:
+      on-profile: no-redis
+  autoconfigure:
+    exclude:
+      - org.springframework.boot.data.redis.autoconfigure.DataRedisAutoConfiguration
+      - org.springframework.boot.data.redis.autoconfigure.DataRedisReactiveAutoConfiguration
+      - org.springframework.boot.data.redis.autoconfigure.DataRedisRepositoriesAutoConfiguration
+      - org.springframework.boot.data.redis.autoconfigure.health.DataRedisHealthContributorAutoConfiguration
+      - org.springframework.boot.data.redis.autoconfigure.health.DataRedisReactiveHealthContributorAutoConfiguration
+      - org.springframework.boot.data.redis.autoconfigure.observation.LettuceObservationAutoConfiguration
+      - org.springframework.boot.session.autoconfigure.SessionAutoConfiguration
+      - org.springframework.boot.session.autoconfigure.SessionsEndpointAutoConfiguration
+      - org.springframework.boot.session.data.redis.autoconfigure.SessionDataRedisAutoConfiguration
+
+stock:
+  redis:
+    enabled: false

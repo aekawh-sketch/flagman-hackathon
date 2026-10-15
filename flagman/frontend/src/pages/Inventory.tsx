@@ -42,6 +42,24 @@ export function InventoryPage() {
       notifyError(e);
     }
   };
+  // Введённый факт уходит вместе с проведением — отдельно сохранять не нужно
+  const submit = async () => {
+    if (!active) return;
+    const lines = Object.entries(facts).filter(([, v]) => v !== "").map(([productId, v]) => ({ productId, actual: Number(v) }));
+    if (!lines.length && !active.lines.length) {
+      notifyError(new Error("Введите факт хотя бы по одному продукту"));
+      return;
+    }
+    try {
+      const done = await api.submitInventory(loc, active.id, lines);
+      setFacts({});
+      notifyOk(done.status === "AWAITING_APPROVAL" ? "Отправлено: расхождение крупное — ждёт подтверждения управляющего"
+        : "Инвентаризация проведена");
+      refresh();
+    } catch (e) {
+      notifyError(e);
+    }
+  };
   const products = useMemo(() => (stock.data ?? [])
     .filter((p) => !search || p.name.toLowerCase().includes(search.toLowerCase())), [stock.data, search]);
 
@@ -60,15 +78,9 @@ export function InventoryPage() {
       {active && (
         <Section mb="4" title={<HStack>Пересчёт от {dateTime(active.startedAt)} <Badge colorPalette={STATUS[active.status].palette}>{STATUS[active.status].label}</Badge></HStack>}
           actions={active.status === "OPEN" ? counter && (
-            <HStack>
-              <Button size="sm" variant="outline" onClick={() => run(() => api.inventoryLines(loc, active.id,
-                Object.entries(facts).filter(([, v]) => v !== "").map(([productId, v]) => ({ productId, actual: Number(v) }))), "Факт сохранён")}>
-                Сохранить факт
-              </Button>
-              <Button size="sm" colorPalette="teal" onClick={() => run(() => api.submitInventory(loc, active.id), "Отправлено")}>
-                Провести
-              </Button>
-            </HStack>
+            <Button size="sm" colorPalette="teal" onClick={submit}>
+              Провести
+            </Button>
           ) : can("MANAGER") ? (
             <Button size="sm" colorPalette="orange" onClick={() => run(() => api.confirmInventory(loc, active.id), "Инвентаризация проведена")}>
               Подтвердить

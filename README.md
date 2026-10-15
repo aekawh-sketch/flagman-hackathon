@@ -40,7 +40,7 @@ PIN для подписи списаний: админ 1111, управляющ�
 ```
  Сайт клиента и касса (istok, :8086) ─── ключ сайта ──────┐
                                                             ▼
- Портал поставщика (supplier, :8087) ─ ключ поставщика ─▶  Склад «Флагман» (flagman, :8085) ──▶ PostgreSQL 16
+ Портал поставщика (supplier, :8087) ─ ключ поставщика ─▶  Склад «Флагман» (flagman, :8085) ──▶ PostgreSQL 16 + Redis 7
                                                             ▲
  CRM в браузере, Windows, Android ─── вход сотрудника ─────┘
 ```
@@ -53,7 +53,7 @@ PIN для подписи списаний: админ 1111, управляющ�
 
 ```
 flagman/            склад — основной продукт
-  backend/          Java 25, Spring Boot 4.1, PostgreSQL 16 (Flyway), 79 автотестов
+  backend/          Java 25, Spring Boot 4.1, PostgreSQL 16 (Flyway), Redis, 86 автотестов
     src/main/java/ru/sphere/stock/domain/   ядро на чистой Java: FEFO, сроки, стоп-лист, прогнозы, горячие предложения
   frontend/         React 19, TypeScript, Chakra UI 3, TanStack Query, Recharts
   desktop/          программа для Windows (Electron)
@@ -71,10 +71,11 @@ supplier/           портал поставщика «ФрешПоставка
 |---|---|
 | Сервер склада | Java 25, Spring Boot 4.1 (Web MVC, Security, JDBC, Validation, Actuator), виртуальные потоки |
 | База | PostgreSQL 16, миграции Flyway; SQL через JdbcClient, без ORM |
+| Redis | сессии сотрудников (Spring Session), двухуровневый кеш меню и горячих предложений с версией склада, защита от перебора паролей, лимит запросов, события между серверами (Pub/Sub) — что и где, со скриншотами кода: [`flagman/presentation/redis`](flagman/presentation/redis) |
 | API | REST + OpenAPI (Swagger на русском и английском), живые обновления SSE |
 | Интерфейс | React 19, TypeScript, Chakra UI 3, TanStack Query, React Router, Recharts, Vite, PWA |
 | Сайт и касса, портал поставщика | Node.js 22 (Express), PostgreSQL |
-| Тесты | JUnit 5 + Spring Boot Test, интеграционные — на настоящем PostgreSQL |
+| Тесты | JUnit 5 + Spring Boot Test, интеграционные — на настоящих PostgreSQL и Redis |
 | Сервер | Docker Compose на VPS |
 
 Ключевые решения: заказ «всё или ничего» в одной транзакции под блокировкой склада точки; журнал движений только
@@ -83,7 +84,8 @@ supplier/           портал поставщика «ФрешПоставка
 
 ## Запуск у себя
 
-Нужны Java 25, Node 22 и PostgreSQL 16.
+Нужны Java 25, Node 22, PostgreSQL 16 и Redis 7+ (на маке: `brew install redis && brew services start redis`).
+Без Redis склад тоже запускается: `SPRING_PROFILES_ACTIVE=no-redis` — кеш и счётчики в памяти процесса.
 
 **Склад:**
 
@@ -122,9 +124,9 @@ cd supplier && npm start                             # :3002; .env: PORT, FLAGMA
 cd flagman/backend && ./mvnw test
 ```
 
-79 тестов: ядро (FEFO, сроки, прогнозы, стоп-лист, горячие предложения) и интеграционные на настоящем PostgreSQL —
-50 параллельных заказов на последние порции, идемпотентность, журнал и обнаружение подделки, изоляция предприятий,
-частичная приёмка, печать чеков на кухню и другие.
+86 тестов: ядро (FEFO, сроки, прогнозы, стоп-лист, горячие предложения) и интеграционные на настоящих PostgreSQL
+и Redis — 50 параллельных заказов на последние порции, идемпотентность, журнал и обнаружение подделки, изоляция
+предприятий, частичная приёмка, печать чеков на кухню, кеш меню в Redis и его сброс, блокировка входа, Pub/Sub и другие.
 
 ## Деплой на сервер
 
@@ -132,8 +134,9 @@ cd flagman/backend && ./mvnw test
 sh flagman/deploy/deploy.sh
 ```
 
-Собирает склад, выкладывает склад, сайт с кассой и портал поставщика в Docker Compose на сервер (`/opt/flagman`).
-Секреты (пароль базы, ключи сайта и поставщика) создаются на сервере один раз и хранятся только там, в `.env`.
+Собирает склад, выкладывает склад, Redis, сайт с кассой и портал поставщика в Docker Compose на сервер (`/opt/flagman`).
+Секреты (пароли базы и Redis, ключи сайта и поставщика) создаются на сервере один раз и хранятся только там, в `.env`.
+Redis наружу не открыт — к нему ходит только склад внутри сети Docker.
 
 ## Чего нет в репозитории
 

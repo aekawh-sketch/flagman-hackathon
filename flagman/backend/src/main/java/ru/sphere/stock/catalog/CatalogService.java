@@ -14,6 +14,9 @@ import org.springframework.jdbc.core.simple.JdbcClient;
 import org.springframework.transaction.support.TransactionSynchronization;
 import org.springframework.transaction.support.TransactionSynchronizationManager;
 import org.springframework.stereotype.Service;
+import ru.sphere.stock.infra.Json;
+import ru.sphere.stock.redis.LocationCache;
+import ru.sphere.stock.redis.SharedStore;
 import ru.sphere.stock.tenant.TenantDirectory;
 import ru.sphere.stock.domain.Catalog;
 import ru.sphere.stock.domain.ProductInfo;
@@ -117,14 +120,30 @@ public class CatalogService {
         }
     }
 
+    /** Сообщение серверам склада через Redis Pub/Sub: каталог изменился; {@code tenantId == null} — у всех. */
+    public record CatalogChanged(Long tenantId) {
+    }
+
+    private static final String CHANNEL = "catalog";
+
     private final JdbcClient jdbc;
     private final TenantDirectory tenants;
-    /** У каждого предприятия свой каталог (ТЗ 16.4): ID продукта уникален только внутри предприятия. */
+    private final LocationCache cache;
+    private final SharedStore shared;
+    /**
+     * У каждого предприятия свой каталог (ТЗ 16.4): ID продукта уникален только внутри предприятия. Снимок —
+     * в памяти процесса: его читает почти каждый запрос, гонять его через сеть дороже, чем держать рядом.
+     * Общий у серверов — только сигнал «каталог изменился» (Redis Pub/Sub), по нему каждый сбрасывает свой снимок.
+     */
     private final Map<Long, Snapshot> snapshots = new ConcurrentHashMap<>();
 
-    public CatalogService(JdbcClient jdbc, TenantDirectory tenants) {
+    public CatalogService(JdbcClient jdbc, TenantDirectory tenants, LocationCache cache, SharedStore shared,
+                          Json json) {
         this.jdbc = jdbc;
         this.tenants = tenants;
+        this.cache = cache;
+        this.shared = shared;
+        shared.subscribe(CHANNEL, payload -> drop(json.read(payload, CatalogChanged.class).tenantId()));
     }
 
     public Snapshot get(long tenantId) {
@@ -143,23 +162,42 @@ public class CatalogService {
      */
     public void invalidate(long tenantId) {
         snapshots.remove(tenantId);
-        afterTransaction(() -> snapshots.remove(tenantId));
+        afterTransaction(() -> {
+            snapshots.remove(tenantId);
+            tenants.locations(tenantId).forEach(cache::changed);     // меню точек в Redis — с новыми ценами и техкартами
+            shared.publish(CHANNEL, new CatalogChanged(tenantId));    // другие серверы сбросят свой снимок
+        });
     }
 
     public void invalidate() {
         snapshots.clear();
-        afterTransaction(snapshots::clear);
+        afterTransaction(() -> {
+            snapshots.clear();
+            cache.changedAll();
+            shared.publish(CHANNEL, new CatalogChanged(null));
+        });
     }
 
-    private static void afterTransaction(Runnable action) {
-        if (TransactionSynchronizationManager.isSynchronizationActive()) {
-            TransactionSynchronizationManager.registerSynchronization(new TransactionSynchronization() {
-                @Override
-                public void afterCompletion(int status) {
-                    action.run();
-                }
-            });
+    private void drop(Long tenantId) {
+        if (tenantId == null) {
+            snapshots.clear();
+        } else {
+            snapshots.remove(tenantId);
         }
+    }
+
+    /** Когда транзакция завершится (вне транзакции — сразу). */
+    private static void afterTransaction(Runnable action) {
+        if (!TransactionSynchronizationManager.isSynchronizationActive()) {
+            action.run();
+            return;
+        }
+        TransactionSynchronizationManager.registerSynchronization(new TransactionSynchronization() {
+            @Override
+            public void afterCompletion(int status) {
+                action.run();
+            }
+        });
     }
 
     private Snapshot load(long tenantId) {

@@ -106,6 +106,15 @@ public class InventoryService {
         return get(locationId, countId);
     }
 
+    /** Ввести факт и сразу провести — одной транзакцией: не проведётся — не сохранится и факт. */
+    @Transactional
+    public CountDto submit(String locationId, long countId, List<LineIn> lines, Actor actor) {
+        if (lines != null && !lines.isEmpty()) {
+            setLines(locationId, countId, lines);
+        }
+        return submit(locationId, countId, actor);
+    }
+
     /** Отправить: если расхождение дороже порога и отправил не управляющий — ждёт подтверждения. */
     @Transactional
     public CountDto submit(String locationId, long countId, Actor actor) {

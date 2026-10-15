@@ -3,6 +3,7 @@ package ru.sphere.stock.web;
 import java.util.List;
 import java.util.Map;
 import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.media.Schema;
 import ru.sphere.stock.config.OpenApiConfig;
 import org.springframework.core.io.FileSystemResource;
 import org.springframework.http.MediaType;
@@ -174,11 +175,17 @@ public class AntifraudController {
         return inventory.setLines(loc, id, lines);
     }
 
-    @Operation(summary = "Провести пересчёт", description = "Если расхождение дороже порога и отправил не управляющий — ждёт подтверждения.", tags = OpenApiConfig.T_INVENTORY)
+    public record SubmitIn(
+            @Schema(description = "Факт по продуктам — сохраняется вместе с проведением; можно не передавать") List<InventoryService.LineIn> lines) {
+    }
+
+    @Operation(summary = "Провести пересчёт", description = "Факт из запроса сохраняется и пересчёт проводится одной транзакцией. "
+            + "Если расхождение дороже порога и отправил не управляющий — ждёт подтверждения.", tags = OpenApiConfig.T_INVENTORY)
     @PostMapping("/inventory/{id}/submit")
-    public InventoryService.CountDto submit(@PathVariable String loc, @PathVariable long id) {
+    public InventoryService.CountDto submit(@PathVariable String loc, @PathVariable long id,
+                                            @RequestBody(required = false) SubmitIn in) {
         StockPrincipal p = Access.requireRole(loc, "STOREKEEPER", "MANAGER");
-        return inventory.submit(loc, id, p.actor());
+        return inventory.submit(loc, id, in == null ? null : in.lines(), p.actor());
     }
 
     @Operation(summary = "Подтвердить пересчёт", tags = OpenApiConfig.T_INVENTORY)

@@ -6,12 +6,15 @@ import java.net.URI;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
+import java.nio.charset.StandardCharsets;
+import java.util.Base64;
 import java.util.List;
 import java.util.UUID;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.test.context.ActiveProfiles;
 import ru.sphere.stock.security.UserService;
 import ru.sphere.stock.tenant.PlatformService;
@@ -42,6 +45,9 @@ class PlatformApiTest {
 
     @Autowired
     ru.sphere.stock.tenant.TenantService tenantService;
+
+    @Autowired
+    StringRedisTemplate redis;
 
     private HttpResponse<String> call(String method, String path, String key) throws Exception {
         return call(method, path, key, "{\"comment\":\"Проверено в CRM\"}");
@@ -236,5 +242,31 @@ class PlatformApiTest {
 
     private PlatformService.TenantDto tenant(long id) {
         return platform.tenants().stream().filter(t -> t.id() == id).findFirst().orElseThrow();
+    }
+
+    /** Сессия сотрудника — в Redis (Spring Session): её найдёт любой сервер склада, перезапуск её не стирает. */
+    @Test
+    void staffSessionIsKeptInRedis() throws Exception {
+        String login = "s-" + UUID.randomUUID().toString().substring(0, 8);
+        users.createAccount(login, "Сотрудник", "secret1");
+        HttpResponse<String> res = HttpClient.newHttpClient().send(HttpRequest.newBuilder(
+                        URI.create("http://localhost:" + port + "/api/auth/login"))
+                .header("Content-Type", "application/json")
+                .POST(HttpRequest.BodyPublishers.ofString("{\"login\":\"" + login + "\",\"password\":\"secret1\"}"))
+                .build(), HttpResponse.BodyHandlers.ofString());
+        assertThat(res.statusCode()).isEqualTo(200);
+        String cookie = res.headers().allValues("set-cookie").stream().filter(c -> c.startsWith("SESSION="))
+                .reduce((a, b) -> b).orElseThrow();
+        assertThat(cookie).contains("HttpOnly", "SameSite=Strict");
+        String value = cookie.substring("SESSION=".length(), cookie.indexOf(';'));
+        String id = new String(Base64.getDecoder().decode(value), StandardCharsets.UTF_8);
+        assertThat(redis.keys("flagman-test-*:session:sessions:" + id)).as("сессия в Redis, в ключах склада").hasSize(1);
+
+        // Новый клиент, только с cookie: сервер нашёл сессию в Redis — это тот же сотрудник
+        HttpResponse<String> me = HttpClient.newHttpClient().send(HttpRequest.newBuilder(
+                        URI.create("http://localhost:" + port + "/api/auth/me")).header("Cookie", "SESSION=" + value).build(),
+                HttpResponse.BodyHandlers.ofString());
+        assertThat(me.statusCode()).isEqualTo(200);
+        assertThat(me.body()).contains(login);
     }
 }

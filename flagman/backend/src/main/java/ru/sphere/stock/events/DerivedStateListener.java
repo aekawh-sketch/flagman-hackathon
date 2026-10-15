@@ -12,8 +12,8 @@ import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.event.TransactionPhase;
 import org.springframework.transaction.event.TransactionalEventListener;
-import ru.sphere.stock.menu.InsightsService;
 import ru.sphere.stock.menu.MenuService;
+import ru.sphere.stock.redis.LocationCache;
 
 /**
  * После коммита изменения склада: пересчитать стоп-лист и горячие предложения и сообщить браузерам
@@ -26,21 +26,21 @@ public class DerivedStateListener {
     private static final Logger log = LoggerFactory.getLogger(DerivedStateListener.class);
 
     private final MenuService menu;
-    private final InsightsService insights;
+    private final LocationCache cache;
     private final EventBus bus;
     private final ScheduledExecutorService executor = Executors.newSingleThreadScheduledExecutor(
             Thread.ofVirtual().name("derived-state").factory());
     private final Map<String, Set<String>> pending = new ConcurrentHashMap<>();
 
-    public DerivedStateListener(MenuService menu, InsightsService insights, EventBus bus) {
+    public DerivedStateListener(MenuService menu, LocationCache cache, EventBus bus) {
         this.menu = menu;
-        this.insights = insights;
+        this.cache = cache;
         this.bus = bus;
     }
 
     @TransactionalEventListener(phase = TransactionPhase.AFTER_COMMIT, fallbackExecution = true)
     public void onStockChanged(StockChanged e) {
-        insights.invalidate(e.locationId());
+        cache.changed(e.locationId());          // меню, горячие предложения и прогноз точки в Redis устарели — сразу
         boolean[] first = {false};
         pending.compute(e.locationId(), (k, v) -> {
             if (v == null) {

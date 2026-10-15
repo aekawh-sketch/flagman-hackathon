@@ -25,7 +25,7 @@ import ru.sphere.stock.infra.AppClock;
 import ru.sphere.stock.infra.Json;
 import ru.sphere.stock.ledger.Actor;
 import ru.sphere.stock.menu.ForecastService;
-import ru.sphere.stock.menu.InsightsService;
+import ru.sphere.stock.redis.LocationCache;
 import ru.sphere.stock.web.UploadService;
 
 /**
@@ -92,14 +92,14 @@ public class PlatformService {
     private final Json json;
     private final TenantDirectory directory;
     private final CatalogService catalog;
-    private final InsightsService insights;
+    private final LocationCache cache;
     private final ForecastService forecast;
     private final UploadService uploads;
     private final InviteService invites;
     private final HttpClient http = HttpClient.newBuilder().connectTimeout(Duration.ofSeconds(5)).build();
 
     public PlatformService(JdbcClient jdbc, AppClock clock, TenantService tenants, StockProperties props, Json json,
-                           TenantDirectory directory, CatalogService catalog, InsightsService insights,
+                           TenantDirectory directory, CatalogService catalog, LocationCache cache,
                            ForecastService forecast, UploadService uploads, InviteService invites) {
         this.jdbc = jdbc;
         this.clock = clock;
@@ -108,7 +108,7 @@ public class PlatformService {
         this.json = json;
         this.directory = directory;
         this.catalog = catalog;
-        this.insights = insights;
+        this.cache = cache;
         this.forecast = forecast;
         this.uploads = uploads;
         this.invites = invites;
@@ -413,7 +413,7 @@ public class PlatformService {
             // ID точек освободились: новая точка с тем же ID не должна получить прогнозы и предложения удалённой
             directory.invalidate();
             catalog.invalidate(tenantId);
-            locations.forEach(insights::invalidate);
+            locations.forEach(cache::changed);         // меню, предложения и прогноз этих точек в Redis
             forecast.invalidateHours();
             for (String photo : photos) {
                 boolean used = jdbc.sql("""
